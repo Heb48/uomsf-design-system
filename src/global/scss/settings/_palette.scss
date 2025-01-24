@@ -24,15 +24,20 @@ $green-02: #00aa45 !default;
 $green-03: #a8edb3 !default;
 $green-04: #dbfadf !default;
 
-$teal-01: #0b3f47 !default;
-$teal-02: #2e808e !default;
-$teal-03: #8cdbe5 !default;
-$teal-04: #d1eeea !default;
+$laughing-kookaburra-light-100: #46c8f0 !default;
+$laughing-kookaburra-light-75: #74d6f4 !default;
+$laughing-kookaburra-light-50: #a3e4f7 !default;
+$laughing-kookaburra-light-25: #d1f1fb !default;
 
-$blue-01: #002664 !default;
-$blue-02: #146cfd !default;
-$blue-03: #8ce0ff !default;
-$blue-04: #cbedfd !default;
+$mt-william-greenstone-light-100: #abc1a7 !default;
+$mt-william-greenstone-light-75: #c0d0bd !default;
+$mt-william-greenstone-light-50: #d5e0d3 !default;
+$mt-william-greenstone-light-25: #eaefe9 !default;
+
+$traditional-heritage-blue-100: #002664 !default;
+$traditional-heritage-blue-75: #146cfd !default;
+$traditional-heritage-blue-50: #8ce0ff !default;
+$traditional-heritage-blue-25: #cbedfd !default;
 
 $purple-01: #441170 !default;
 $purple-02: #8055f1 !default;
@@ -65,10 +70,10 @@ $brown-03: #e8d0b5 !default;
 $brown-04: #ede3d7 !default;
 
 $brand-colors: (
-  'blue-01': $blue-01,
-  'blue-02': $blue-02,
-  'blue-03': $blue-03,
-  'blue-04': $blue-04,
+  'traditional-heritage-blue-100': $traditional-heritage-blue-100,
+  'traditional-heritage-blue-75': $traditional-heritage-blue-75,
+  'traditional-heritage-blue-50': $traditional-heritage-blue-50,
+  'traditional-heritage-blue-25': $traditional-heritage-blue-25,
   'purple-01': $purple-01,
   'purple-02': $purple-02,
   'purple-03': $purple-03,
@@ -97,10 +102,14 @@ $brand-colors: (
   'green-02': $green-02,
   'green-03': $green-03,
   'green-04': $green-04,
-  'teal-01': $teal-01,
-  'teal-02': $teal-02,
-  'teal-03': $teal-03,
-  'teal-04': $teal-04,
+  'laughing-kookaburra-light-100': $laughing-kookaburra-light-100,
+  'laughing-kookaburra-light-75': $laughing-kookaburra-light-75,
+  'laughing-kookaburra-light-50': $laughing-kookaburra-light-50,
+  'laughing-kookaburra-light-25': $laughing-kookaburra-light-25,
+  'mt-william-greenstone-light-100': $mt-william-greenstone-light-100,
+  'mt-william-greenstone-light-75': $mt-william-greenstone-light-75,
+  'mt-william-greenstone-light-50': $mt-william-greenstone-light-50,
+  'mt-william-greenstone-light-25': $mt-william-greenstone-light-25,
   'black': $black,
   'grey-01': $grey-01,
   'grey-02': $grey-02,

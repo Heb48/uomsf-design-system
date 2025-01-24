@@ -41,7 +41,11 @@ $nsw-z-index: (
 // Base Colours
 $nsw-base-colours: (
   brand-dark: var(--nsw-brand-dark),
-  brand-light: var(--nsw-brand-light),
+  // brand-light: var(--nsw-brand-light),
+  primary-dark: var(--nsw-primary-dark),
+  // primary-light: var(--nsw-primary-light),
+  secondary-dark: var(--nsw-secondary-dark),
+  // secondary-light: var(--nsw-secondary-light),
   brand-supplementary: var(--nsw-brand-supplementary),
   brand-accent: var(--nsw-brand-accent),
   black: var(--nsw-black),
@@ -55,7 +59,7 @@ $nsw-base-colours: (
 
 $nsw-base-colours-rgb: (
   brand-dark: rgba(var(--nsw-brand-dark-rgb), var(--nsw-bg-opacity)),
-  brand-light: rgba(var(--nsw-brand-light-rgb), var(--nsw-bg-opacity)),
+  // brand-light: rgba(var(--nsw-brand-light-rgb), var(--nsw-bg-opacity)),
   brand-supplementary: rgba(var(--nsw-brand-supplementary-rgb), var(--nsw-bg-opacity)),
   brand-accent: rgba(var(--nsw-brand-accent-rgb), var(--nsw-bg-opacity)),
   black: rgba(var(--nsw-black-rgb), var(--nsw-bg-opacity)),
@@ -72,13 +76,13 @@ $nsw-base-colours-rgb: (
 $nsw-bg-colours: map-merge($nsw-base-colours-rgb, (
   transparent: transparent,
   info-dark: rgba(var(--nsw-status-info-rgb), var(--nsw-bg-opacity)),
-  info-light: rgba(var(--nsw-status-info-bg-rgb), var(--nsw-bg-opacity)),
+  // info-light: rgba(var(--nsw-status-info-bg-rgb), var(--nsw-bg-opacity)),
   success-dark: rgba(var(--nsw-status-success-rgb), var(--nsw-bg-opacity)),
-  success-light: rgba(var(--nsw-status-success-bg-rgb), var(--nsw-bg-opacity)),
+  // success-light: rgba(var(--nsw-status-success-bg-rgb), var(--nsw-bg-opacity)),
   warning-dark: rgba(var(--nsw-status-warning-rgb), var(--nsw-bg-opacity)),
-  warning-light: rgba(var(--nsw-status-warning-bg-rgb), var(--nsw-bg-opacity)),
+  // warning-light: rgba(var(--nsw-status-warning-bg-rgb), var(--nsw-bg-opacity)),
   error-dark: rgba(var(--nsw-status-error-rgb), var(--nsw-bg-opacity)),
-  error-light: rgba(var(--nsw-status-error-bg-rgb), var(--nsw-bg-opacity))
+  // error-light: rgba(var(--nsw-status-error-bg-rgb), var(--nsw-bg-opacity))
 ));
 
 // Text Colours

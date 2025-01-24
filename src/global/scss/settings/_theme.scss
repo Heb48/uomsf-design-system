@@ -1,9 +1,13 @@
 @use 'sass:color';
 
 // Theme Colours
-$brand-dark: $blue-01 !default;
-$brand-light: $blue-04 !default;
-$brand-supplementary: $blue-02 !default;
+$brand-dark: $traditional-heritage-blue-100 !default;
+// $brand-light: $traditional-heritage-blue-25 !default;
+$primary: $laughing-kookaburra-light-100 !default;
+$primary-hover: $laughing-kookaburra-light-25 !default;
+$secondary: $mt-william-greenstone-light-100 !default;
+$secondary-hover: $mt-william-greenstone-light-50 !default;
+$brand-supplementary: $traditional-heritage-blue-75 !default;
 $brand-accent: $red-02 !default;
 $off-white: $grey-50 !default;
 
@@ -23,7 +27,10 @@ $error-bg: #f7e7eb !default;
 
 $theme-colors: (
   'brand-dark': $brand-dark,
-  'brand-light': $brand-light,
+  'primary': $primary,
+  'primary-hover': $primary-hover,
+  'secondary': $secondary,
+  'secondary-hover': $secondary-hover,
   'brand-supplementary': $brand-supplementary,
   'brand-accent': $brand-accent,
   'black': $black,
@@ -128,7 +135,7 @@ $state-colors-rgb: map-loop($state-colors, to-rgb, '$value') !default;
   --nsw-text-visited: var(--nsw-visited);
 
   /* Font */
-  --nsw-font-family: 'Public Sans', sans-serif;
+  --nsw-font-family: 'Source Sans Pro', sans-serif;
   --nsw-font-size: 16px;
   --nsw-line-height: 1.5;
   --nsw-font-normal: 400;
@@ -173,7 +180,7 @@ $state-colors-rgb: map-loop($state-colors, to-rgb, '$value') !default;
   --nsw-border-width: 1px;
   --nsw-border-style: solid;
   --nsw-border-color: var(--nsw-brand-accent);
-  --nsw-border-radius: #{rem(4px)};
+  --nsw-border-radius: 0;
 
   /* Shadows */
   --nsw-box-shadow: 0 #{rem(4px)} #{rem(12px)} 0 rgba(var(--nsw-black-rgb), 0.15);
