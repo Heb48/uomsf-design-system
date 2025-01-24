@@ -1,9 +1,9 @@
 @use 'sass:color';
 
 // Purple Theme Colours
-$teal-dark: $teal-01 !default;
-$teal-light: $teal-04 !default;
-$teal-supplementary: $teal-02 !default;
+$teal-dark: $laughing-kookaburra-light-100 !default;
+$teal-light: $laughing-kookaburra-light-25 !default;
+$teal-supplementary: $laughing-kookaburra-light-75 !default;
 $teal-accent: $fuchsia-02 !default;
 
 // Purple State Colours
@@ -50,6 +50,6 @@ $teal-colors-rgb: map-loop($teal-colors, to-rgb, '$value') !default;
 }
 
 .teal-accent {
-  --nsw-brand-accent: #{$teal-02};
-  --nsw-brand-accent-rgb: #{to-rgb($teal-02)};
+  --nsw-brand-accent: #{$laughing-kookaburra-light-75};
+  --nsw-brand-accent-rgb: #{to-rgb($laughing-kookaburra-light-75)};
 }
