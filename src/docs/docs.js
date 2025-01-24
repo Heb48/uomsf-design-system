@@ -58,7 +58,7 @@ function initDocs() {
     linkURL = sanitisedURL.pathname + sanitisedURL.search + sanitisedURL.hash
 
     if (linkURL === '/') linkURL = '/home/index.html'
-    
+
     if (currentURL.match(linkURL)) {
       link.classList.add('current')
 

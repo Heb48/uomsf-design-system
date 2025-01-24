@@ -3,7 +3,7 @@ title: Data visualisation
 no-blank: true
 intro: Graphs and charts allow data to be comprehended quickly, allowing for faster analysis and conclusions
 order: 30
-meta-description: NSW Design System data visualisation method allows users to comprehend data comprehended quickly, allowing for faster analysis and conclusions.  
+meta-description: NSW Design System data visualisation method allows users to comprehend data comprehended quickly, allowing for faster analysis and conclusions.
 meta-index: true
 ---
 
@@ -105,7 +105,7 @@ meta-index: true
 //Set a default theme to avoid rework
 var nswStyles = getComputedStyle(document.body)
 Chart.defaults.backgroundColor = [
-  nswStyles.getPropertyValue('--nsw-palette-blue-02'),
+  nswStyles.getPropertyValue('--nsw-palette-traditional-heritage-blue-75'),
   nswStyles.getPropertyValue('--nsw-palette-red-02'),
   nswStyles.getPropertyValue('--nsw-palette-yellow-02'),
   nswStyles.getPropertyValue('--nsw-palette-green-02'),
@@ -113,7 +113,7 @@ Chart.defaults.backgroundColor = [
   nswStyles.getPropertyValue('--nsw-palette-orange-02'),
   nswStyles.getPropertyValue('--nsw-palette-fuchsia-02'),
 ];
-Chart.defaults.font.family = "'Public Sans'";
+Chart.defaults.font.family = "'Source Sans Pro'";
 Chart.defaults.font.size = 14;
 Chart.defaults.font.weight = 400;
 <\/script>
@@ -134,9 +134,9 @@ const data = {
     label: 'Example Dataset',
     data: [300, 50, 100],
     backgroundColor: [
-      nswStyles.getPropertyValue('--nsw-palette-blue-01'),
-      nswStyles.getPropertyValue('--nsw-palette-blue-02'),
-      nswStyles.getPropertyValue('--nsw-palette-blue-03')
+      nswStyles.getPropertyValue('--nsw-palette-traditional-heritage-blue-100'),
+      nswStyles.getPropertyValue('--nsw-palette-traditional-heritage-blue-75'),
+      nswStyles.getPropertyValue('--nsw-palette-traditional-heritage-blue-50')
     ],
     hoverOffset: 4
   }]
@@ -160,7 +160,7 @@ var myChart = new Chart(
 
 var nswStyles = getComputedStyle(document.body)
 Chart.defaults.backgroundColor = [
-  nswStyles.getPropertyValue('--nsw-palette-blue-02'),
+  nswStyles.getPropertyValue('--nsw-palette-traditional-heritage-blue-75'),
   nswStyles.getPropertyValue('--nsw-palette-red-02'),
   nswStyles.getPropertyValue('--nsw-palette-yellow-02'),
   nswStyles.getPropertyValue('--nsw-palette-green-02'),
@@ -168,7 +168,7 @@ Chart.defaults.backgroundColor = [
   nswStyles.getPropertyValue('--nsw-palette-orange-02'),
   nswStyles.getPropertyValue('--nsw-palette-fuchsia-02'),
 ];
-Chart.defaults.font.family = "'Public Sans'";
+Chart.defaults.font.family = "'Source Sans Pro'";
 Chart.defaults.font.size = 14;
 Chart.defaults.font.weight = 400;
 Chart.defaults.plugins.legend.position = 'bottom';
@@ -210,7 +210,7 @@ var barChart = new Chart(ctx, {
       datasets: [{
         label: false,
         data: [125, 50, 100, 75, 50, 25, 75],
-        backgroundColor: [nswStyles.getPropertyValue('--nsw-palette-blue-02')],
+        backgroundColor: [nswStyles.getPropertyValue('--nsw-palette-traditional-heritage-blue-75')],
       }],
     },
     options: {

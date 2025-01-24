@@ -163,8 +163,8 @@ $header-height: 151px;
             }
           }
 
-          > li > a {      
-            @include breakpoint($nsw-desktop-breakpoint) {      
+          > li > a {
+            @include breakpoint($nsw-desktop-breakpoint) {
               &.active {
                 box-shadow: none;
               }
@@ -308,7 +308,7 @@ $header-height: 151px;
     &.nsw-docs__example--dark {
       background-color: var(--nsw-grey-01);
     }
-    
+
     &.nsw-docs__example--light {
       background-color: var(--nsw-grey-04);
     }
@@ -692,7 +692,7 @@ $header-height: 151px;
     gap: 0.375rem;
     align-items: center;
   }
-  
+
   &__swatch {
     position: relative;
     display: block;
