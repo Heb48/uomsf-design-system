@@ -28,7 +28,7 @@
     // margin: 0;
     padding: 0;
   }
-  
+
   button,
   input,
   textarea,
@@ -44,7 +44,7 @@
     // addresses issue from button padding-inline-end and padding-inline-start which are set to 16px
     padding: 0;
   }
-  
+
   img,
   video,
   svg {
@@ -116,7 +116,7 @@
       transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     }
   }
-  
+
   &__item {
     flex-shrink: 0;
     width: var(--carousel-item-auto-size);
@@ -137,7 +137,7 @@
 
   &[data-drag=on] .nsw-carousel__item {
     user-select: none;
-  
+
     img {
       pointer-events: none;
     }
@@ -162,7 +162,7 @@
     transition: 0.2s;
     border: 2px solid var(--nsw-brand-dark);
     cursor: pointer;
-    
+
     &:hover {
       @include nsw-hover();
     }
@@ -180,14 +180,14 @@
         outline-offset: 2px;
       }
     }
-    
+
     &[disabled] {
       pointer-events: none;
       opacity: 0.5;
       box-shadow: none;
-      border: 2px solid rgba(var(--nsw-palette-blue-01-rgb), 0.2);
+      border: 2px solid rgba(var(--nsw-palette-traditional-heritage-blue-100-rgb), 0.2);
     }
-    
+
     .nsw-icon {
       --size: 20px;
       display: block;
@@ -284,7 +284,7 @@
       }
     }
   }
-  
+
   &__nav-item {
     button {
       background-color: transparent;

@@ -218,7 +218,7 @@
     }
 
     &:focus:not(:hover) {
-      box-shadow: 0 0 0 2px rgba(var(--nsw-palette-blue-01-rgb), 0.2), 0 2px 4px rgba(var(--nsw-palette-blue-01-rgb), 0.3);
+      box-shadow: 0 0 0 2px rgba(var(--nsw-palette-traditional-heritage-blue-100-rgb), 0.2), 0 2px 4px rgba(var(--nsw-palette-traditional-heritage-blue-100-rgb), 0.3);
     }
 
     &--today {
@@ -252,7 +252,7 @@
     &--selected {
       border-radius: var(--nsw-border-radius);
       background-color: var(--nsw-brand-dark);
-      box-shadow: 0 2px 4px rgba(var(--nsw-palette-blue-01-rgb), 0.3);
+      box-shadow: 0 2px 4px rgba(var(--nsw-palette-traditional-heritage-blue-100-rgb), 0.3);
       color: var(--nsw-white);
       z-index: 2;
     }
@@ -266,7 +266,7 @@
     }
 
     &.nsw-date-picker__date--range {
-      background-color: rgba(var(--nsw-palette-blue-01-rgb), 0.2);
+      background-color: rgba(var(--nsw-palette-traditional-heritage-blue-100-rgb), 0.2);
       color: var(--nsw-text-dark);
 
       &:focus,
@@ -281,12 +281,12 @@
       &-start,
       &-end {
         background-color: var(--nsw-brand-dark);
-        box-shadow: 0 2px 4px rgba(var(--nsw-palette-blue-01-rgb), 0.3);
+        box-shadow: 0 2px 4px rgba(var(--nsw-palette-traditional-heritage-blue-100-rgb), 0.3);
         color: var(--nsw-white);
         z-index: 2;
 
         &:focus:not(:hover) {
-          box-shadow: 0 0 0 2px rgba(var(--nsw-palette-blue-01-rgb), 0.2), 0 2px 4px rgba(var(--nsw-palette-blue-01-rgb), 0.3);
+          box-shadow: 0 0 0 2px rgba(var(--nsw-palette-traditional-heritage-blue-100-rgb), 0.2), 0 2px 4px rgba(var(--nsw-palette-traditional-heritage-blue-100-rgb), 0.3);
         }
       }
 
