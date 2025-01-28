@@ -6,41 +6,41 @@ core: true
 no-blank: true
 code: css
 model: json/palettes.json
-intro: Colour plays an important role in creating a consistent and strong visual identity for NSW Government digital products and services.
-meta-description: NSW Design System colour framework and application for NSW Government digital products and services. 
+intro: Colour plays an important role in creating a consistent and strong visual identity for UOM digital products and services.
+meta-description: UOM Education Cloud Design System colour framework and application for UOM digital products and services.
 meta-index: true
 ---
 
-<nav class="nsw-in-page-nav" aria-labelledby="in-page-nav">
-  <div class="nsw-in-page-nav__title">On this page</div>
-  <ul class="nsw-in-page-nav__list">
+<nav class="uom-in-page-nav" aria-labelledby="in-page-nav">
+  <div class="uom-in-page-nav__title">On this page</div>
+  <ul class="uom-in-page-nav__list">
     <li>
       <a href="#ds-colour">Design System base colour theme</a>
     </li>
     <li>
-      <a href="#gov-colour">NSW Government colour palette</a>
+      <a href="#gov-colour">UOM colour palette</a>
     </li>
   </ul>
 </nav>
 
 <h2 id="ds-colour">Design System base colour theme</h2>
-<p>The design system contains a colour framework using NSW Government brand colours, which may be changed if your brand classification allows.</p>
-<p>The default colours reflect <strong>masterbrand corporate</strong> colour usage. It uses blues, reds and greys from the NSW Government wider colour palette to communicate a strong association with NSW Government.</p>
+<p>The design system contains a colour framework using UOM brand colours, which may be changed if your brand classification allows.</p>
+<p>The default colours reflect <strong>masterbrand corporate</strong> colour usage. It uses blues, reds and greys from the UOM wider colour palette to communicate a strong association with UOM.</p>
 <p>Instead of using specific hex colours, using the colour framework in the design system means your styles and components will automatically re-theme if you change your core brand colours. Guidance on further theming options are available for <a href="/docs/content/design/theming.html">Designing</a> and <a href="/docs/content/develop/theming.html">Developing</a>.
 </p>
 <h3>Brand colours</h3>
 <p>Components and core styles inherit these colours to create a consistent yet flexible theme to optimise your user's experience. The default colour palette below reflects <strong>masterbrand corporate</strong> colour usage. Visit the theming gudiance for <a href="/docs/content/design/theming.html">Designing</a> and <a href="/docs/content/develop/theming.html">Developing</a> for how you can adapt your brand colour palette based on your brand classification.</p>
-<div class="nsw-in-page-alert nsw-in-page-alert--info">
-  <span class="material-icons nsw-material-icons nsw-in-page-alert__icon" focusable="false" aria-hidden="true">info</span>
-  <div class="nsw-in-page-alert__content">
-    <h4 class="nsw-in-page-alert__title">You don't need to use hex colours in code</h4>
+<div class="uom-in-page-alert uom-in-page-alert--info">
+  <span class="material-icons uom-material-icons uom-in-page-alert__icon" focusable="false" aria-hidden="true">info</span>
+  <div class="uom-in-page-alert__content">
+    <h4 class="uom-in-page-alert__title">You don't need to use hex colours in code</h4>
     <p>Use either CSS variables (below) or, if you're creating a one-off layout, you can use our helper classes for dark, light, and supplementary colours.</p>
     <p>By using CSS variables, any branding or theming changes will automatically reflect in your product. See CSS variables below, or see the <a href="/docs/content/utilities/background.html">Utility classes</a> docs.</p>
   </div>
 </div>
 
-<div class="nsw-section nsw-section--white nsw-block nsw-p-x-sm nsw-p-top-sm">
-  <div class="nsw-table nsw-table--valign-middle">
+<div class="uom-section uom-section--white uom-block uom-p-x-sm uom-p-top-sm">
+  <div class="uom-table uom-table--valign-middle">
     <table>
       <thead>
         <tr>
@@ -53,7 +53,7 @@ meta-index: true
       <tbody>
         <tr>
           <td>
-            <div class="nsw-docs__swatch" style="background-color: var(--nsw-brand-dark)"></div>
+            <div class="uom-docs__swatch" style="background-color: var(--uom-brand-dark)"></div>
           </td>
           <td>
             <p>Brand Dark</p>
@@ -62,12 +62,12 @@ meta-index: true
             <p>Blue 01 (<code>#002664</code>)</p>
           </td>
           <td>
-            <p><code>--nsw-brand-dark</code></p>
+            <p><code>--uom-brand-dark</code></p>
           </td>
         </tr>
         <tr>
           <td>
-            <div class="nsw-docs__swatch" style="background-color: var(--nsw-brand-light)"></div>
+            <div class="uom-docs__swatch" style="background-color: var(--uom-brand-light)"></div>
           </td>
           <td>
             <p>Brand Light</p>
@@ -76,12 +76,12 @@ meta-index: true
             <p>Blue 04 (<code>#CBEDFD</code>)</p>
           </td>
           <td>
-            <p><code>--nsw-brand-light</code></p>
+            <p><code>--uom-brand-light</code></p>
           </td>
         </tr>
         <tr>
           <td>
-            <div class="nsw-docs__swatch" style="background-color: var(--nsw-brand-supplementary)"></div>
+            <div class="uom-docs__swatch" style="background-color: var(--uom-brand-supplementary)"></div>
           </td>
           <td>
             <p>Brand Supplementary</p>
@@ -90,12 +90,12 @@ meta-index: true
             <p>Blue 02 (<code>#146CFD</code>)</p>
           </td>
           <td>
-            <p><code>--nsw-brand-supplementary</code></p>
+            <p><code>--uom-brand-supplementary</code></p>
           </td>
         </tr>
         <tr>
           <td>
-            <div class="nsw-docs__swatch" style="background-color: var(--nsw-brand-accent)"></div>
+            <div class="uom-docs__swatch" style="background-color: var(--uom-brand-accent)"></div>
           </td>
           <td>
             <p>Brand Accent</p>
@@ -104,7 +104,7 @@ meta-index: true
             <p>Red 02 (<code>#D7153A</code>)</p>
           </td>
           <td>
-            <p><code>--nsw-brand-accent</code></p>
+            <p><code>--uom-brand-accent</code></p>
           </td>
         </tr>
       </tbody>
@@ -115,8 +115,8 @@ meta-index: true
 <h3>Grey colours</h3>
 <p>Used for backgrounds, borders and divider lines to build contrast within content and components for a structured interface. Additional swatches of black and off white have been added to the digital palette to allow for greater contrast to be applied.</p>
 
-<div class="nsw-section nsw-section--white nsw-block nsw-p-x-sm nsw-p-top-sm">
-  <div class="nsw-table nsw-table--valign-middle">
+<div class="uom-section uom-section--white uom-block uom-p-x-sm uom-p-top-sm">
+  <div class="uom-table uom-table--valign-middle">
     <table>
       <tbody>
       <tr>
@@ -143,7 +143,7 @@ meta-index: true
       </tr>
       <tr>
         <td>
-          <div class="nsw-docs__swatch" style="background-color: var(--nsw-black)"></div>
+          <div class="uom-docs__swatch" style="background-color: var(--uom-black)"></div>
         </td>
         <td>
           <p>Black</p>
@@ -152,12 +152,12 @@ meta-index: true
           <p><code>#000000</code></p>
         </td>
         <td>
-          <p><code>--nsw-black</code></p>
+          <p><code>--uom-black</code></p>
         </td>
       </tr>
       <tr>
         <td>
-          <div class="nsw-docs__swatch" style="background-color: var(--nsw-grey-01)"></div>
+          <div class="uom-docs__swatch" style="background-color: var(--uom-grey-01)"></div>
         </td>
         <td>
           <p>Grey 01</p>
@@ -166,38 +166,38 @@ meta-index: true
           <p><code>#22272B</code></p>
         </td>
         <td>
-          <p><code>--nsw-grey-01</code></p>
+          <p><code>--uom-grey-01</code></p>
         </td>
       </tr>
       <tr>
         <td>
-          <div class="nsw-docs__swatch" style="background-color: var(--nsw-grey-02)"></div>
+          <div class="uom-docs__swatch" style="background-color: var(--uom-grey-02)"></div>
         </td>
         <td>
           <p>Grey 02</p>
         </td>
         <td><code>#495054</code></td>
-        <td><code>--nsw-grey-02</code></td>
+        <td><code>--uom-grey-02</code></td>
       </tr>
       <tr>
         <td>
-          <div class="nsw-docs__swatch" style="background-color: var(--nsw-grey-03)"></div>
+          <div class="uom-docs__swatch" style="background-color: var(--uom-grey-03)"></div>
         </td>
         <td>Grey 03</td>
         <td><code>#CDD3D6</code></td>
-        <td><code>--nsw-grey-03</code></td>
+        <td><code>--uom-grey-03</code></td>
       </tr>
       <tr>
         <td>
-          <div class="nsw-docs__swatch" style="background-color: var(--nsw-grey-04)"></div>
+          <div class="uom-docs__swatch" style="background-color: var(--uom-grey-04)"></div>
         </td>
         <td>Grey 04</td>
         <td><code>#EBEBEB</code></td>
-        <td><code>--nsw-grey-04</code></td>
+        <td><code>--uom-grey-04</code></td>
       </tr>
       <tr>
         <td>
-          <div class="nsw-docs__swatch" style="background-color: var(--nsw-off-white)"></div>
+          <div class="uom-docs__swatch" style="background-color: var(--uom-off-white)"></div>
         </td>
         <td>
           <p>Off white</p>
@@ -206,12 +206,12 @@ meta-index: true
           <p><code>#F2F2F2</code></p>
         </td>
         <td>
-          <p><code>--nsw-off-white</code></p>
+          <p><code>--uom-off-white</code></p>
         </td>
       </tr>
       <tr>
         <td>
-          <div class="nsw-docs__swatch" style="border: 1px solid var(--nsw-text-dark); background-color: var(--nsw-white)"></div>
+          <div class="uom-docs__swatch" style="border: 1px solid var(--uom-text-dark); background-color: var(--uom-white)"></div>
         </td>
         <td>
           <p>White</p>
@@ -220,7 +220,7 @@ meta-index: true
           <p><code>#FFFFFF</code></p>
         </td>
         <td>
-          <p><code>--nsw-white</code></p>
+          <p><code>--uom-white</code></p>
         </td>
       </tr>
       </tbody>
@@ -231,8 +231,8 @@ meta-index: true
 <h3>Text colours</h3>
 <p>This set of text colours have a ratio of at least 4.5:1 (or 3:1 for text larger than 18 point) to met Web Content Accessibility Guidelines (WCAG 2.2). </p>
 
-<div class="nsw-section nsw-section--white nsw-block nsw-p-x-sm nsw-p-top-sm">
-  <div class="nsw-table nsw-table--valign-middle">
+<div class="uom-section uom-section--white uom-block uom-p-x-sm uom-p-top-sm">
+  <div class="uom-table uom-table--valign-middle">
     <table>
       <tbody>
       <tr>
@@ -259,30 +259,30 @@ meta-index: true
       </tr>
       <tr>
         <td>
-          <div class="nsw-docs__swatch" style="background-color: var(--nsw-text-dark)"></div>
+          <div class="uom-docs__swatch" style="background-color: var(--uom-text-dark)"></div>
         </td>
         <td>
-          <p>Text dark<br><span style="font-size:var(--nsw-font-size-xxs-desktop)">For use on light backgrounds</span></p>
+          <p>Text dark<br><span style="font-size:var(--uom-font-size-xxs-desktop)">For use on light backgrounds</span></p>
         </td>
         <td>
           <p><code>#22272B</code></p>
         </td>
         <td>
-          <p><code>--nsw-text-dark</code></p>
+          <p><code>--uom-text-dark</code></p>
         </td>
       </tr>
       <tr>
         <td>
-          <div class="nsw-docs__swatch" style="border: 1px solid var(--nsw-text-dark); background-color: var(--nsw-text-light)"></div>
+          <div class="uom-docs__swatch" style="border: 1px solid var(--uom-text-dark); background-color: var(--uom-text-light)"></div>
         </td>
         <td>
-          <p>Text light<br><span style="font-size:var(--nsw-font-size-xxs-desktop)">For use on dark backgrounds</span></p>
+          <p>Text light<br><span style="font-size:var(--uom-font-size-xxs-desktop)">For use on dark backgrounds</span></p>
         </td>
         <td>
           <p><code>#FFFFFF</code></p>
         </td>
         <td>
-          <p><code>--nsw-text-light</code></p>
+          <p><code>--uom-text-light</code></p>
         </td>
       </tr>
       </tbody>
@@ -292,10 +292,10 @@ meta-index: true
 
 <h3>Link state colours</h3>
 
-<p>Link state colours are in addition to the NSW Government colour palette to maintain consistent and accessible text and not conflict with brand colours.</p>
+<p>Link state colours are in addition to the UOM colour palette to maintain consistent and accessible text and not conflict with brand colours.</p>
 
-<div class="nsw-section nsw-section--white nsw-block nsw-p-x-sm nsw-p-top-sm">
-  <div class="nsw-table nsw-table--valign-middle">
+<div class="uom-section uom-section--white uom-block uom-p-x-sm uom-p-top-sm">
+  <div class="uom-table uom-table--valign-middle">
     <table>
       <tbody>
       <tr>
@@ -322,7 +322,7 @@ meta-index: true
       </tr>
       <tr>
         <td>
-          <div class="nsw-docs__swatch" style="color: var(--nsw-link)"></div>
+          <div class="uom-docs__swatch" style="color: var(--uom-link)"></div>
         </td>
         <td>
           <p>Link</p>
@@ -331,12 +331,12 @@ meta-index: true
           <p><code>#002664</code></p>
         </td>
         <td>
-          <p><code>--nsw-link</code></p>
+          <p><code>--uom-link</code></p>
         </td>
       </tr>
       <tr>
         <td>
-          <div class="nsw-docs__swatch" style="background-color: var(--nsw-visited)"></div>
+          <div class="uom-docs__swatch" style="background-color: var(--uom-visited)"></div>
         </td>
         <td>
           <p>Link visited</p>
@@ -344,11 +344,11 @@ meta-index: true
         <td>
           <p><code>#551A8B</code></p>
         </td>
-        <td><code>--nsw-visited</code></td>
+        <td><code>--uom-visited</code></td>
       </tr>
       <tr>
         <td>
-          <div class="nsw-docs__swatch" style="background-color: var(--nsw-hover)"></div>
+          <div class="uom-docs__swatch" style="background-color: var(--uom-hover)"></div>
         </td>
         <td>
           <p>Link hover background</p>
@@ -357,12 +357,12 @@ meta-index: true
           <p><code>rgba(0, 38, 100, 0.1)</code></p>
         </td>
         <td>
-          <p><code>--nsw-hover</code></p>
+          <p><code>--uom-hover</code></p>
         </td>
       </tr>
       <tr>
         <td>
-          <div class="nsw-docs__swatch" style="background-color: var(--nsw-active)"></div>
+          <div class="uom-docs__swatch" style="background-color: var(--uom-active)"></div>
         </td>
         <td>
           <p>Link active background</p>
@@ -371,12 +371,12 @@ meta-index: true
           <p><code>rgba(0, 38, 100, 0.2)</code></p>
         </td>
         <td>
-          <p><code>--nsw-active</code></p>
+          <p><code>--uom-active</code></p>
         </td>
       </tr>
       <tr>
         <td>
-          <div class="nsw-docs__swatch" style="background-color: var(--nsw-focus)"></div>
+          <div class="uom-docs__swatch" style="background-color: var(--uom-focus)"></div>
         </td>
         <td>
           <p>Link focus</p>
@@ -385,12 +385,12 @@ meta-index: true
           <p><code>#0085B3</code></p>
         </td>
         <td>
-          <p><code>--nsw-focus</code></p>
+          <p><code>--uom-focus</code></p>
         </td>
       </tr>
       <tr>
         <td>
-          <div class="nsw-docs__swatch" style="background-color: var(--nsw-disabled)"></div>
+          <div class="uom-docs__swatch" style="background-color: var(--uom-disabled)"></div>
         </td>
         <td>
           <p>Link disabled</p>
@@ -399,91 +399,91 @@ meta-index: true
           <p><code>#8093B2</code></p>
         </td>
         <td>
-          <p><code>--nsw-disabled</code></p>
+          <p><code>--uom-disabled</code></p>
         </td>
       </tr>
-      <tr class="nsw-section--invert" style="background-color: var(--nsw-palette-grey-01)">
+      <tr class="uom-section--invert" style="background-color: var(--uom-palette-grey-01)">
         <td>
-          <div class="nsw-docs__swatch" style="background-color: var(--nsw-link-light)"></div>
+          <div class="uom-docs__swatch" style="background-color: var(--uom-link-light)"></div>
         </td>
         <td>
           <p>Link dark background</p>
         </td>
         <td>
-          <p><code style="color: var(--nsw-text-dark);">#E6E9F0</code></p>
+          <p><code style="color: var(--uom-text-dark);">#E6E9F0</code></p>
         </td>
         <td>
-          <p><code style="color: var(--nsw-text-dark);">--nsw-link-light</code></p>
+          <p><code style="color: var(--uom-text-dark);">--uom-link-light</code></p>
         </td>
       </tr>
-      <tr class="nsw-section--invert" style="background-color: var(--nsw-palette-grey-01)">
+      <tr class="uom-section--invert" style="background-color: var(--uom-palette-grey-01)">
         <td>
-          <div class="nsw-docs__swatch" style="background-color: var(--nsw-visited-light)"></div>
+          <div class="uom-docs__swatch" style="background-color: var(--uom-visited-light)"></div>
         </td>
         <td>
           <p>Link visited dark background</p>
         </td>
         <td>
-          <p><code style="color: var(--nsw-text-dark);">#DDD1E8</code></p>
+          <p><code style="color: var(--uom-text-dark);">#DDD1E8</code></p>
         </td>
         <td>
-          <p><code style="color: var(--nsw-text-dark);">--nsw-visited-light</code></p>
+          <p><code style="color: var(--uom-text-dark);">--uom-visited-light</code></p>
         </td>
       </tr>
-      <tr class="nsw-section--invert" style="background-color: var(--nsw-palette-grey-01)">
+      <tr class="uom-section--invert" style="background-color: var(--uom-palette-grey-01)">
         <td>
-          <div class="nsw-docs__swatch" style="background-color: var(--nsw-hover-light)"></div>
+          <div class="uom-docs__swatch" style="background-color: var(--uom-hover-light)"></div>
         </td>
         <td>
           <p>Link hover dark background</p>
         </td>
         <td>
-          <p><code style="color: var(--nsw-text-dark);">rgba(230, 233, 240, 0.1)</code></p>
+          <p><code style="color: var(--uom-text-dark);">rgba(230, 233, 240, 0.1)</code></p>
         </td>
         <td>
-          <p><code style="color: var(--nsw-text-dark);">--nsw-hover-light</code></p>
+          <p><code style="color: var(--uom-text-dark);">--uom-hover-light</code></p>
         </td>
       </tr>
-      <tr class="nsw-section--invert" style="background-color: var(--nsw-palette-grey-01)">
+      <tr class="uom-section--invert" style="background-color: var(--uom-palette-grey-01)">
         <td>
-          <div class="nsw-docs__swatch" style="background-color: var(--nsw-active-light)"></div>
+          <div class="uom-docs__swatch" style="background-color: var(--uom-active-light)"></div>
         </td>
         <td>
           <p>Link active dark background</p>
         </td>
         <td>
-          <p><code style="color: var(--nsw-text-dark);">rgba(230, 233, 240, 0.2)</code></p>
+          <p><code style="color: var(--uom-text-dark);">rgba(230, 233, 240, 0.2)</code></p>
         </td>
         <td>
-          <p><code style="color: var(--nsw-text-dark);">--nsw-active-light</code></p>
+          <p><code style="color: var(--uom-text-dark);">--uom-active-light</code></p>
         </td>
       </tr>
-      <tr class="nsw-section--invert" style="background-color: var(--nsw-palette-grey-01)">
+      <tr class="uom-section--invert" style="background-color: var(--uom-palette-grey-01)">
         <td>
-          <div class="nsw-docs__swatch" style="background-color: var(--nsw-focus-light)"></div>
+          <div class="uom-docs__swatch" style="background-color: var(--uom-focus-light)"></div>
         </td>
         <td>
           <p>Link focus dark background</p>
         </td>
         <td>
-          <p><code style="color: var(--nsw-text-dark);">#CCE7F0</code></p>
+          <p><code style="color: var(--uom-text-dark);">#CCE7F0</code></p>
         </td>
         <td>
-          <p><code style="color: var(--nsw-text-dark);">--nsw-focus-light</code></p>
+          <p><code style="color: var(--uom-text-dark);">--uom-focus-light</code></p>
         </td>
       </tr>
-      <tr class="nsw-section--invert" style="background-color: var(--nsw-palette-grey-01)">
+      <tr class="uom-section--invert" style="background-color: var(--uom-palette-grey-01)">
         <td>
-          <div class="nsw-docs__swatch" style="background-color: var(--nsw-disabled)"></div>
+          <div class="uom-docs__swatch" style="background-color: var(--uom-disabled)"></div>
         </td>
         <td>
           <p>Link disabled dark background</p>
         </td>
         <td>
-          <p><code style="color: var(--nsw-text-dark);">#8093B2</code></p>
+          <p><code style="color: var(--uom-text-dark);">#8093B2</code></p>
         </td>
         <td>
-          <p><code style="color: var(--nsw-text-dark);">--nsw-disabled</code></p>
+          <p><code style="color: var(--uom-text-dark);">--uom-disabled</code></p>
         </td>
       </tr>
       </tbody>
@@ -492,10 +492,10 @@ meta-index: true
 </div>
 
 <h3>Status colours</h3>
-<p>Status colours are only to be used when providing contextual or transactional feedback to the user. Refer to individual colours below for when each should be used. Components using these colours also contain usage guidance.</p><p>These are in addition to the NSW Government colour palette to maintain a strong connection to their status and not conflict with brand colours. They should not be used outside their status meaning.</p>
+<p>Status colours are only to be used when providing contextual or transactional feedback to the user. Refer to individual colours below for when each should be used. Components using these colours also contain usage guidance.</p><p>These are in addition to the UOM colour palette to maintain a strong connection to their status and not conflict with brand colours. They should not be used outside their status meaning.</p>
 
-<div class="nsw-section nsw-section--white nsw-block nsw-p-x-sm nsw-p-top-sm">
-  <div class="nsw-table nsw-table--valign-middle">
+<div class="uom-section uom-section--white uom-block uom-p-x-sm uom-p-top-sm">
+  <div class="uom-table uom-table--valign-middle">
     <table>
       <tbody>
       <tr>
@@ -522,23 +522,23 @@ meta-index: true
       </tr>
       <tr>
         <td>
-          <div class="nsw-docs__swatch"
-               style="background-color: var(--nsw-status-info)"></div>
+          <div class="uom-docs__swatch"
+               style="background-color: var(--uom-status-info)"></div>
         </td>
         <td>
-          <p>Info Blue<br><span style="font-size:var(--nsw-font-size-xxs-desktop)">Highlight non-critical information</span></p>
+          <p>Info Blue<br><span style="font-size:var(--uom-font-size-xxs-desktop)">Highlight non-critical information</span></p>
         </td>
         <td>
           <p><code>#2E5299</code></p>
         </td>
         <td>
-          <p><code>--nsw-status-info</code></p>
+          <p><code>--uom-status-info</code></p>
         </td>
       </tr>
       <tr>
         <td>
-          <div class="nsw-docs__swatch"
-               style="background-color: var(--nsw-status-info-bg)"></div>
+          <div class="uom-docs__swatch"
+               style="background-color: var(--uom-status-info-bg)"></div>
         </td>
         <td>
           <p>Info Blue Bg</p>
@@ -547,52 +547,52 @@ meta-index: true
           <p><code>#EAEDF4</code></p>
         </td>
         <td>
-          <p><code>--nsw-status-info-bg</code></p>
+          <p><code>--uom-status-info-bg</code></p>
         </td>
       </tr>
       <tr>
         <td>
-          <div class="nsw-docs__swatch" style="background-color: var(--nsw-status-success)"></div>
+          <div class="uom-docs__swatch" style="background-color: var(--uom-status-success)"></div>
         </td>
         <td>
-          <p>Success Green<br><span style="font-size:var(--nsw-font-size-xxs-desktop)">Communicate a successful action</span></p>
+          <p>Success Green<br><span style="font-size:var(--uom-font-size-xxs-desktop)">Communicate a successful action</span></p>
         </td>
         <td>
           <p><code>#008A07</code></p>
         </td>
         <td>
-          <p><code>--nsw-status-success</code></p>
+          <p><code>--uom-status-success</code></p>
         </td>
       </tr>
       <tr>
         <td>
-          <div class="nsw-docs__swatch" style="background-color: var(--nsw-status-success-bg)"></div>
+          <div class="uom-docs__swatch" style="background-color: var(--uom-status-success-bg)"></div>
         </td>
         <td>Success Green Bg</td>
         <td>
           <p><code>#E5F6E6</code></p>
         </td>
         <td>
-          <p><code>--nsw-status-success-bg</code></p>
+          <p><code>--uom-status-success-bg</code></p>
         </td>
       </tr>
       <tr>
         <td>
-          <div class="nsw-docs__swatch"
-               style="background-color: var(--nsw-status-warning)"></div>
+          <div class="uom-docs__swatch"
+               style="background-color: var(--uom-status-warning)"></div>
         </td>
         <td>
-          <p>Warning Orange<br><span style="font-size:var(--nsw-font-size-xxs-desktop)">Warn of possible negative outcome</span></p>
+          <p>Warning Orange<br><span style="font-size:var(--uom-font-size-xxs-desktop)">Warn of possible negative outcome</span></p>
         </td>
         <td>
           <p><code>#C95000</code></p>
         </td>
-        <td><code>--nsw-status-warning</code></td>
+        <td><code>--uom-status-warning</code></td>
       </tr>
       <tr>
         <td>
-          <div class="nsw-docs__swatch"
-               style="background-color: var(--nsw-status-warning-bg)"></div>
+          <div class="uom-docs__swatch"
+               style="background-color: var(--uom-status-warning-bg)"></div>
         </td>
         <td>
           <p>Warning Orange Bg</p>
@@ -600,27 +600,27 @@ meta-index: true
         <td>
           <p><code>#FBEEE5</code></p>
         </td>
-        <td><code>--nsw-status-warning-bg</code>&nbsp;</td>
+        <td><code>--uom-status-warning-bg</code>&nbsp;</td>
       </tr>
       <tr>
         <td>
-          <div class="nsw-docs__swatch" style="background-color: var(--nsw-status-error)"></div>
+          <div class="uom-docs__swatch" style="background-color: var(--uom-status-error)"></div>
         </td>
         <td>
-          <p>Error Red<br><span style="font-size:var(--nsw-font-size-xxs-desktop)">Alert of an immediate error or blocker</span></p>
+          <p>Error Red<br><span style="font-size:var(--uom-font-size-xxs-desktop)">Alert of an immediate error or blocker</span></p>
         </td>
         <td><code>#B81237</code></td>
-        <td><code>--nsw-status-error</code></td>
+        <td><code>--uom-status-error</code></td>
       </tr>
       <tr>
         <td>
-          <div class="nsw-docs__swatch" style="background-color: var(--nsw-status-error-bg)"></div>
+          <div class="uom-docs__swatch" style="background-color: var(--uom-status-error-bg)"></div>
         </td>
         <td>
           <p>Error Red Bg</p>
         </td>
         <td><code>#F7E7EB</code></td>
-        <td><code>--nsw-status-error-bg</code></td>
+        <td><code>--uom-status-error-bg</code></td>
       </tr>
       </tbody>
     </table>
@@ -628,10 +628,10 @@ meta-index: true
 </div>
 <br>
 
-<h2 id="gov-colour">NSW Government colour palette</h2>
-<p>Use these colours to create your own NSW Design System theme. See <a href="/docs/content/design/theming.html">theming guidance for designers</a> or <a href="/docs/content/develop/theming.html">theming guidance for developers</a>.</p>
-<div class="nsw-section nsw-section--white nsw-block nsw-p-x-sm nsw-p-top-sm">
-  <div class="nsw-table nsw-table--valign-middle">
+<h2 id="gov-colour">UOM colour palette</h2>
+<p>Use these colours to create your own UOM Education Cloud Design System theme. See <a href="/docs/content/design/theming.html">theming guidance for designers</a> or <a href="/docs/content/develop/theming.html">theming guidance for developers</a>.</p>
+<div class="uom-section uom-section--white uom-block uom-p-x-sm uom-p-top-sm">
+  <div class="uom-table uom-table--valign-middle">
     <table>
       <tbody>
       <tr>
@@ -659,7 +659,7 @@ meta-index: true
       {{#each model.palettes}}
         <tr>
           <td>
-            <div class="nsw-docs__swatch" style="{{#if-equals @key 'white'}} border: 1px solid var(--nsw-text-dark);{{/if-equals}} background-color: var(--nsw-palette-{{@key}})"></div>
+            <div class="uom-docs__swatch" style="{{#if-equals @key 'white'}} border: 1px solid var(--uom-text-dark);{{/if-equals}} background-color: var(--uom-palette-{{@key}})"></div>
           </td>
           <td>
             <p>{{capitalize @key}}</p>
@@ -668,7 +668,7 @@ meta-index: true
             <p><code>{{capitalize this "all"}}</code></p>
           </td>
           <td>
-            <p><code>--nsw-palette-{{@key}}</code></p>
+            <p><code>--uom-palette-{{@key}}</code></p>
           </td>
         </tr>
       {{/each}}

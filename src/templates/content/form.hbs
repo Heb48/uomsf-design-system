@@ -15,19 +15,19 @@ model:
 {{>_masthead content="#content" nav="#main-nav"}}
 {{>_header header-title="Premier & Cabinet"}}
 {{>_main-nav model.nav-basic}}
-<div class="nsw-container nsw-p-bottom-xs">
+<div class="uom-container uom-p-bottom-xs">
   {{>_breadcrumbs model.breadcrumbs}}
 </div>
 
-<div class="nsw-container nsw-p-top-sm nsw-p-bottom-lg">
-  <div class="nsw-layout">
-    <main id="content" class="nsw-layout__main">
+<div class="uom-container uom-p-top-sm uom-p-bottom-lg">
+  <div class="uom-layout">
+    <main id="content" class="uom-layout__main">
       <h1>Contact us</h1>
       <p>We welcome your feedback, questions, comments and <a href="#">complaints</a>. We keep customers at the heart of what we do, and use your feedback to improve what we do and how we do it.</p>
       <p>Including all the information requested will allow us to respond to your query more quickly and accurately.</p>
       <p>Answer all questions unless they are marked as (optional).</p>
-      <form class="nsw-form">
-        <div class="nsw-form__group">
+      <form class="uom-form">
+        <div class="uom-form__group">
           {{>_select
             id="contact-type"
             label="Type of feedback:"
@@ -37,7 +37,7 @@ model:
             option-3="Other enquiry"
           }}
         </div>
-        <div class="nsw-form__group">
+        <div class="uom-form__group">
           {{>_textarea
             id="contact-feedback"
             label="Give us your feedback:"
@@ -45,54 +45,54 @@ model:
           }}
         </div>
         <h2>Personal details</h2>
-        <div class="nsw-form__group">
+        <div class="uom-form__group">
           {{>_text-input
             id="contact-first-name"
             label="First name"
           }}
         </div>
-        <div class="nsw-form__group">
+        <div class="uom-form__group">
           {{>_text-input
             id="contact-last-name"
             label="Last name"
           }}
         </div>
-        <div class="nsw-form__group">
+        <div class="uom-form__group">
           {{>_text-input
             id="contact-email"
             type="email"
             label="Email address"
           }}
         </div>
-        <div class="nsw-form__group">
+        <div class="uom-form__group">
           {{>_text-input
             id="contact-phone"
             type="tel"
             label="Phone number (optional)"
           }}
         </div>
-        <div class="nsw-form__group">
+        <div class="uom-form__group">
           {{>_button-input type="submit" style="dark" text="Submit"}}
         </div>
       </form>
     </main>
-    <div class="nsw-layout__sidebar nsw-layout__sidebar--desktop">
+    <div class="uom-layout__sidebar uom-layout__sidebar--desktop">
     </div>
   </div>
 </div>
 
-<div class="nsw-section nsw-section--off-white">
-  <div class="nsw-container">
-    <div class="nsw-layout">
-      <div class="nsw-layout__main">
-        <div class="nsw-grid">
-          <div class="nsw-col nsw-col-md-4">
+<div class="uom-section uom-section--off-white">
+  <div class="uom-container">
+    <div class="uom-layout">
+      <div class="uom-layout__main">
+        <div class="uom-grid">
+          <div class="uom-col uom-col-md-4">
             {{>_card model.card-media-1 highlight=true}}
           </div>
-          <div class="nsw-col nsw-col-md-4">
+          <div class="uom-col uom-col-md-4">
             {{>_card model.card-media-2 highlight=true}}
           </div>
-          <div class="nsw-col nsw-col-md-4">
+          <div class="uom-col uom-col-md-4">
             {{>_card model.card-media-3 highlight=true}}
           </div>
         </div>

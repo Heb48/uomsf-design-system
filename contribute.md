@@ -1,4 +1,4 @@
-Contributing to the NSW Design System
+Contributing to the UOM Education Cloud Design System
 ======================
 
 Thank you for your interest in contributing to the design system components, we really appreciate it.
@@ -29,7 +29,7 @@ Wherever you are, and whatever your discipline is, you are invited to contribute
 
 ## Contributing a new component
 
-The NSW Design System was created for you as a toolkit of style, patterns, standards and guidance for everyone creating distinctly NSW digital products and services. We are the caretakers and publishers of the design system. To help us with the up keep we need a few things from newly proposed component contributions. One of our goals is to ensure a welcoming environment for all contributors to our projects. If you’re unsure about anything, just ask us via the Digital NSW Community where the entire team will engage with you. 
+The UOM Education Cloud Design System was created for you as a toolkit of style, patterns, standards and guidance for everyone creating distinctly NSW digital products and services. We are the caretakers and publishers of the design system. To help us with the up keep we need a few things from newly proposed component contributions. One of our goals is to ensure a welcoming environment for all contributors to our projects. If you’re unsure about anything, just ask us via the Digital NSW Community where the entire team will engage with you. 
 
 We appreciate all well intended contributions.
 
@@ -41,7 +41,7 @@ To be considered for inclusion in the design system, components and patterns mus
 |---|---|
 | [Useful](#useful) | It addresses a user need that’s shared by multiple services or products |
 | [Unique](#unique) | It doesn’t duplicate something which already exists in the design system, unless it’s intended to replace it. |
-| [Distinctly New South Wales](#distinctly-new-south-wales) | Suggested patterns and components must be aligned to the distinctly NSW look and feel.  Download the latest [NSW Design System Figma UI kit](https://www.digital.nsw.gov.au/design-system/getting-started/design-system-figma-ui-kit). |
+| [Distinctly New South Wales](#distinctly-new-south-wales) | Suggested patterns and components must be aligned to the distinctly NSW look and feel.  Download the latest [UOM Education Cloud Design System Figma UI kit](https://www.digital.nsw.gov.au/design-system/getting-started/design-system-figma-ui-kit). |
 
 
 ### Before publication
@@ -92,7 +92,7 @@ If a component is similar in function consider extending it rather than duplicat
 
 ### Distinctly New South Wales
 
-We would like NSW Government website users to feel like they are on a NSW Government website, to ensure this is the case all suggested patterns and components must be aligned to the distinctly NSW look and feel. Download the latest [NSW Design System Figma UI kit](https://www.digital.nsw.gov.au/design-system/getting-started/design-system-figma-ui-kit).
+We would like UOM website users to feel like they are on a UOM website, to ensure this is the case all suggested patterns and components must be aligned to the distinctly NSW look and feel. Download the latest [UOM Education Cloud Design System Figma UI kit](https://www.digital.nsw.gov.au/design-system/getting-started/design-system-figma-ui-kit).
 
 **[⬆ back to top](#contents)**
 

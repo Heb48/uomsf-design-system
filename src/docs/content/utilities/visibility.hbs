@@ -9,7 +9,7 @@ meta-index: true
 ---
 
 <p>Grid classes give you the option to show or hide elements in certain breakpoints. For example, displaying an image on a large screen when it supports the content, but hiding it on a small screen when it hinders the users access to information.</p>
-<p>The classes are named using the format <code>nsw-{display}-{breakpoint}</code></p>
+<p>The classes are named using the format <code>uom-{display}-{breakpoint}</code></p>
 <p>Where <strong>breakpoint</strong> is one of <strong>xs, sm, md, lg, xl</strong>.</p>
 <p>Where <strong>display</strong> is one of:</p>
 <ul>
@@ -19,14 +19,14 @@ meta-index: true
 
 <h4>Showing</h4>
 {{#>_docs-example separated="true"}}
-  <div class="nsw-show-lg">
+  <div class="uom-show-lg">
     <p>This text is only visible in large breakpoint and up</p>
   </div>
 {{/_docs-example}}
 
 <h4>Hiding</h4>
 {{#>_docs-example separated="true"}}
-  <div class="nsw-hide-lg">
+  <div class="uom-hide-lg">
     <p>This text is only visible from large breakpoint and lower</p>
   </div>
 {{/_docs-example}}
@@ -43,7 +43,7 @@ meta-index: true
 
 <p>Both <code>.sr-only</code> and <code>.sr-only-focusable</code> can also be used as mixins.</p>
 
-{{#>_docs-code open=true separated=true}} 
+{{#>_docs-code open=true separated=true}}
 // Usage as a mixin
 
 .visually-hidden-title {

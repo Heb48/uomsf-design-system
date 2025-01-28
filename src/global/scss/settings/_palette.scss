@@ -29,6 +29,12 @@ $laughing-kookaburra-light-75: #74d6f4 !default;
 $laughing-kookaburra-light-50: #a3e4f7 !default;
 $laughing-kookaburra-light-25: #d1f1fb !default;
 
+$magpie-light-100: #c8c8c8 !default;
+$magpie-light-75: #d6d6d6 !default;
+$magpie-light-50: #e4e4e4 !default;
+$magpie-light-25: #f1f1f1 !default;
+$magpie-light-20: #f4f4f4 !default;
+
 $mt-william-greenstone-light-100: #abc1a7 !default;
 $mt-william-greenstone-light-75: #c0d0bd !default;
 $mt-william-greenstone-light-50: #d5e0d3 !default;
@@ -38,6 +44,8 @@ $traditional-heritage-blue-100: #002664 !default;
 $traditional-heritage-blue-75: #146cfd !default;
 $traditional-heritage-blue-50: #8ce0ff !default;
 $traditional-heritage-blue-25: #cbedfd !default;
+
+$traditional-heritage-blue-dark: #000f46 !default;
 
 $purple-01: #441170 !default;
 $purple-02: #8055f1 !default;
@@ -74,6 +82,7 @@ $brand-colors: (
   'traditional-heritage-blue-75': $traditional-heritage-blue-75,
   'traditional-heritage-blue-50': $traditional-heritage-blue-50,
   'traditional-heritage-blue-25': $traditional-heritage-blue-25,
+  'traditional-heritage-blue-dark': $traditional-heritage-blue-dark,
   'purple-01': $purple-01,
   'purple-02': $purple-02,
   'purple-03': $purple-03,
@@ -123,10 +132,10 @@ $brand-colors-rgb: map-loop($brand-colors, to-rgb, '$value') !default;
 
 :root {
   @each $color, $value in $brand-colors {
-    --nsw-palette-#{$color}: #{$value};
+    --uom-palette-#{$color}: #{$value};
   }
 
   @each $color, $value in $brand-colors-rgb {
-    --nsw-palette-#{$color}-rgb: #{$value};
+    --uom-palette-#{$color}-rgb: #{$value};
   }
 }

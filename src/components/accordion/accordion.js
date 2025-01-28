@@ -8,9 +8,9 @@ function createButtons({ textContent }) {
   button.setAttribute('type', 'button')
   button.setAttribute('aria-expanded', 'false')
   button.setAttribute('aria-controls', uID)
-  button.classList.add('nsw-accordion__button')
+  button.classList.add('uom-accordion__button')
   button.insertAdjacentHTML('beforeend', `
-  <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  <span class="material-icons uom-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
   `)
 
   fragment.appendChild(button)
@@ -21,12 +21,12 @@ function createButtons({ textContent }) {
 class Accordion {
   constructor(element) {
     this.element = element
-    const [expandAll, collapseAll] = Array.from(this.element.querySelectorAll('.nsw-accordion__toggle button'))
-    this.accordionHeadingClass = '.nsw-accordion__title'
+    const [expandAll, collapseAll] = Array.from(this.element.querySelectorAll('.uom-accordion__toggle button'))
+    this.accordionHeadingClass = '.uom-accordion__title'
     this.headings = this.element.querySelectorAll(this.accordionHeadingClass)
     this.expandAllBtn = expandAll
     this.collapseAllBtn = collapseAll
-    this.isExpandedOnLoad = this.element.querySelectorAll('.nsw-accordion__open')
+    this.isExpandedOnLoad = this.element.querySelectorAll('.uom-accordion__open')
     this.buttons = []
     this.content = []
     this.toggleEvent = (event) => this.toggle(event)

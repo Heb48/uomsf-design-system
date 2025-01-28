@@ -1,11 +1,11 @@
-.nsw-link-list {
+.uom-link-list {
   @include component-spacing();
 
   &__title {
     @include font-size('lg');
-    font-weight: var(--nsw-font-bold);
+    font-weight: var(--uom-font-bold);
     padding-bottom: rem(16px);
-    
+
     @include breakpoint('md') {
       padding-bottom: rem(24px);
     }
@@ -19,24 +19,24 @@
 
   li {
     margin: 0;
-    border-top: 1px solid var(--nsw-grey-04);
+    border-top: 1px solid var(--uom-grey-04);
 
     &:last-child {
-      border-bottom: 1px solid var(--nsw-grey-04);
+      border-bottom: 1px solid var(--uom-grey-04);
     }
   }
 
 
   a {
     padding: rem(16px);
-    color: var(--nsw-brand-dark);
+    color: var(--uom-brand-dark);
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
 
     &:hover {
-      @include nsw-hover;
+      @include uom-hover;
       outline-width: 0;
     }
 
@@ -47,28 +47,28 @@
     span {
       text-decoration: underline;
 
-      span.nsw-material-icons {
+      span.uom-material-icons {
         bottom: rem(-5px);
       }
     }
 
-    .nsw-material-icons {
+    .uom-material-icons {
       text-decoration: none;
       bottom: 0;
     }
 
-    .nsw-section--invert & {    
-      color: var(--nsw-text-light);
+    .uom-section--invert & {
+      color: var(--uom-text-light);
 
       &:hover {
-        @include nsw-hover-light;
+        @include uom-hover-light;
         outline-width: 0;
       }
     }
   }
 
-  .nsw-material-icons {
-    font-size: rem(map-get($nsw-icon-sizes, 20));
+  .uom-material-icons {
+    font-size: rem(map-get($uom-icon-sizes, 20));
     margin-left: rem(16px);
   }
 }

@@ -240,7 +240,7 @@ function compileJS() {
           plugins: [babel({ babelHelpers: 'bundled' }), nodeResolve()],
         },
         {
-          name: 'NSW',
+          name: 'UOM',
           format: 'umd',
         },
       ),

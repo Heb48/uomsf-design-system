@@ -2,7 +2,7 @@
 import { v4 as uuidv4 } from 'uuid'
 
 export const uniqueId = (prefix) => {
-  const prefixValue = (prefix === undefined ? 'nsw' : prefix)
+  const prefixValue = (prefix === undefined ? 'uom' : prefix)
   const uuid = uuidv4()
   return `${prefixValue}-${uuid}`
 }

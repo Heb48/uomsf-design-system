@@ -1,8 +1,8 @@
 /* stylelint-disable max-nesting-depth */
 
-$nsw-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M29.362 3.742l-18.867 19.204-7.857-7.997-2.638 2.685 9.175 9.34 1.319 1.284 1.318-1.284 20.187-20.547z"></path></svg>';
+$uom-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M29.362 3.742l-18.867 19.204-7.857-7.997-2.638 2.685 9.175 9.34 1.319 1.284 1.318-1.284 20.187-20.547z"></path></svg>';
 
-.nsw-form {
+.uom-form {
   margin-top: rem(48px);
 
   &:first-child {
@@ -26,44 +26,44 @@ $nsw-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
     &--valid {
       margin-top: rem(8px);
       padding: rem(8px);
-      font-weight: var(--nsw-font-bold);
-      color: var(--nsw-text-dark);
+      font-weight: var(--uom-font-bold);
+      color: var(--uom-text-dark);
       background-repeat: no-repeat;
       background-position: left rem(8px) top rem(8px);
       background-size: 1rem auto;
       display: flex;
       align-items: center;
 
-      .nsw-material-icons {
-        font-size: rem(map-get($nsw-icon-sizes, 20));
+      .uom-material-icons {
+        font-size: rem(map-get($uom-icon-sizes, 20));
         margin-right: rem(4px);
       }
     }
 
     &--error {
-      background-color: var(--nsw-status-error-bg);
+      background-color: var(--uom-status-error-bg);
 
-      .nsw-material-icons {
-        color: var(--nsw-status-error);
+      .uom-material-icons {
+        color: var(--uom-status-error);
       }
     }
 
     &--valid {
-      background-color: var(--nsw-status-success-bg);
+      background-color: var(--uom-status-success-bg);
 
-      .nsw-material-icons {
-        color: var(--nsw-status-success);
+      .uom-material-icons {
+        color: var(--uom-status-success);
       }
     }
   }
 
   &__label {
     @include font-size('sm');
-    font-weight: var(--nsw-font-bold);
+    font-weight: var(--uom-font-bold);
     display: block;
 
     &--small {
-      font-weight: var(--nsw-font-normal);
+      font-weight: var(--uom-font-normal);
     }
 
     + select {
@@ -73,7 +73,7 @@ $nsw-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
     + input,
     + textarea,
     + select,
-    + .nsw-form__input-group {
+    + .uom-form__input-group {
       margin-top: rem(4px);
     }
   }
@@ -81,57 +81,57 @@ $nsw-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
   &__required {
     &::after {
       content: ' *';
-      color: var(--nsw-status-error);
+      color: var(--uom-status-error);
     }
   }
 
   &__input {
     @include font-size('sm');
     padding: rem(11px) rem(16px);
-    border-radius: var(--nsw-border-radius);
-    background-color: var(--nsw-white);
-    color: var(--nsw-text-dark);
-    border: 1px solid var(--nsw-grey-01);
+    border-radius: var(--uom-border-radius);
+    background-color: var(--uom-white);
+    color: var(--uom-text-dark);
+    border: 1px solid var(--uom-grey-01);
     vertical-align: middle;
     appearance: none;
     -webkit-appearance: none; /* stylelint-disable-line property-no-vendor-prefix */
     width: 100%;
 
     &:focus {
-      @include nsw-focus;
+      @include uom-focus;
 
-      .nsw-section--invert & {    
-        @include nsw-focus($color: var(--nsw-focus-light));
+      .uom-section--invert & {
+        @include uom-focus($color: var(--uom-focus-light));
       }
     }
 
     &:disabled {
-      border-color: var(--nsw-grey-03);
-      color: var(--nsw-grey-03);
+      border-color: var(--uom-grey-03);
+      color: var(--uom-grey-03);
       cursor: not-allowed;
       opacity: 1;
     }
 
     &[aria-invalid='true'],
     &.has-error {
-      border-color: var(--nsw-status-error);
+      border-color: var(--uom-status-error);
       border-width: 2px;
     }
   }
 
   &__input {
     &:hover {
-      background-image: linear-gradient(var(--nsw-hover), var(--nsw-hover));
+      background-image: linear-gradient(var(--uom-hover), var(--uom-hover));
     }
 
     &:disabled {
-      background: var(--nsw-off-white);
+      background: var(--uom-off-white);
     }
 
     &[aria-invalid='true'],
     &.has-error {
       &:hover {
-        background: var(--nsw-status-error-bg);
+        background: var(--uom-status-error-bg);
       }
     }
   }
@@ -139,17 +139,17 @@ $nsw-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
   &__input-group {
     display: flex;
 
-    .nsw-form__input {
+    .uom-form__input {
       border-right-width: 0;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
-      
+
       &:focus {
         position: relative;
       }
     }
 
-    .nsw-button {
+    .uom-button {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -159,75 +159,75 @@ $nsw-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
       border-bottom-left-radius: 0;
       border-width: 1px;
       white-space: nowrap;
-      border-color: var(--nsw-grey-01);
+      border-color: var(--uom-grey-01);
 
-      .nsw-section--invert & {    
-        color: var(--nsw-text-light);
-        background-color: var(--nsw-brand-dark);
-        border-color: var(--nsw-white);
+      .uom-section--invert & {
+        color: var(--uom-text-light);
+        background-color: var(--uom-brand-dark);
+        border-color: var(--uom-white);
       }
 
       &:focus {
-        @include nsw-focus();
+        @include uom-focus();
 
-        .nsw-section--invert & {    
-          @include nsw-focus($color: var(--nsw-focus-light));
+        .uom-section--invert & {
+          @include uom-focus($color: var(--uom-focus-light));
         }
       }
     }
 
-    .nsw-material-icons {
+    .uom-material-icons {
       display: block;
-      font-size: rem(map-get($nsw-icon-sizes, 36));
+      font-size: rem(map-get($uom-icon-sizes, 36));
       position: static;
 
-      .nsw-section--invert & {    
-        color: var(--nsw-text-light);
+      .uom-section--invert & {
+        color: var(--uom-text-light);
 
         &:hover {
-          color: var(--nsw-text-light);
+          color: var(--uom-text-light);
         }
       }
     }
 
     &--icon {
-      .nsw-button {
+      .uom-button {
         padding: 0;
         min-width: rem(60px);
-        border-color: var(--nsw-grey-01);
+        border-color: var(--uom-grey-01);
         border-left-width: 0;
 
-        .nsw-material-icons:first-child {
+        .uom-material-icons:first-child {
           margin-right: 0;
         }
 
-        .nsw-section--invert & {  
-          color: var(--nsw-white);
-          border-color: var(--nsw-white);
+        .uom-section--invert & {
+          color: var(--uom-white);
+          border-color: var(--uom-white);
 
           &:hover {
-            @include nsw-hover-light;
+            @include uom-hover-light;
           }
 
-          .nsw-material-icons {
-            color: var(--nsw-text-light);
+          .uom-material-icons {
+            color: var(--uom-text-light);
           }
         }
       }
 
-      .nsw-button--white {
-        .nsw-material-icons {
-          color: var(--nsw-brand-dark);
+      .uom-button--white {
+        .uom-material-icons {
+          color: var(--uom-brand-dark);
 
-          .nsw-section--invert & {    
-            color: var(--nsw-text-light);
+          .uom-section--invert & {
+            color: var(--uom-text-light);
           }
         }
       }
     }
 
     &--large {
-      .nsw-form__input {
+      .uom-form__input {
         padding: rem(16px);
       }
     }
@@ -239,11 +239,11 @@ $nsw-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
 
   &__predictive-list {
     @include z-index;
-    border-radius: var(--nsw-border-radius);
+    border-radius: var(--uom-border-radius);
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    background-color: var(--nsw-white);
-    box-shadow: 0 4px 12px 0 rgba(var(--nsw-black-rgb), 0.15);
+    background-color: var(--uom-white);
+    box-shadow: 0 4px 12px 0 rgba(var(--uom-black-rgb), 0.15);
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -265,11 +265,11 @@ $nsw-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
     a {
       display: block;
       padding: rem(10px);
-      color: var(--nsw-text-dark);
-      font-weight: var(--nsw-font-normal);
+      color: var(--uom-text-dark);
+      font-weight: var(--uom-font-normal);
 
       &:hover {
-        @include nsw-hover;
+        @include uom-hover;
         outline-width: 0;
       }
 
@@ -279,7 +279,7 @@ $nsw-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
       }
 
       span {
-        font-weight: var(--nsw-font-bold);
+        font-weight: var(--uom-font-bold);
       }
     }
   }
@@ -300,7 +300,7 @@ $nsw-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
 
   &__legend {
     @include font-size('sm');
-    font-weight: var(--nsw-font-bold);
+    font-weight: var(--uom-font-bold);
     width: 100%;
     display: block;
   }
@@ -310,60 +310,60 @@ $nsw-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
     position: absolute;
     opacity: 0;
 
-    &:first-child + .nsw-form__checkbox-label,
-    &:first-child + .nsw-form__radio-label {
+    &:first-child + .uom-form__checkbox-label,
+    &:first-child + .uom-form__radio-label {
       margin-top: 0;
     }
 
-    &:hover + .nsw-form__checkbox-label::before,
-    &:hover + .nsw-form__radio-label::before {
-      background-image: linear-gradient(var(--nsw-hover), var(--nsw-hover));
+    &:hover + .uom-form__checkbox-label::before,
+    &:hover + .uom-form__radio-label::before {
+      background-image: linear-gradient(var(--uom-hover), var(--uom-hover));
     }
 
-    &:checked + .nsw-form__checkbox-label::after {
-      background-image: svg-url($nsw-form-tick);
-      background-color: var(--nsw-brand-dark);
+    &:checked + .uom-form__checkbox-label::after {
+      background-image: svg-url($uom-form-tick);
+      background-color: var(--uom-brand-dark);
     }
 
-    &:checked + .nsw-form__radio-label::after {
-      background-color: var(--nsw-brand-dark);
+    &:checked + .uom-form__radio-label::after {
+      background-color: var(--uom-brand-dark);
     }
 
     &:disabled {
-      + .nsw-form__checkbox-label,
-      + .nsw-form__radio-label {
+      + .uom-form__checkbox-label,
+      + .uom-form__radio-label {
         cursor: not-allowed;
       }
 
-      + .nsw-form__checkbox-label::before,
-      + .nsw-form__radio-label::before {
-        border-color: var(--nsw-grey-03);
-        background-color: var(--nsw-off-white);
+      + .uom-form__checkbox-label::before,
+      + .uom-form__radio-label::before {
+        border-color: var(--uom-grey-03);
+        background-color: var(--uom-off-white);
       }
 
-      &:checked + .nsw-form__checkbox-label::after,
-      &:checked + .nsw-form__radio-label::after {
-        background-color: var(--nsw-grey-03);
+      &:checked + .uom-form__checkbox-label::after,
+      &:checked + .uom-form__radio-label::after {
+        background-color: var(--uom-grey-03);
       }
     }
 
-    &:focus + .nsw-form__checkbox-label::before {
-      @include nsw-focus;
+    &:focus + .uom-form__checkbox-label::before {
+      @include uom-focus;
     }
 
-    &:focus + .nsw-form__radio-label::before {
-      box-shadow: 0 0 0 3px var(--nsw-text-light), 0 0 0 6px var(--nsw-focus);
+    &:focus + .uom-form__radio-label::before {
+      box-shadow: 0 0 0 3px var(--uom-text-light), 0 0 0 6px var(--uom-focus);
     }
 
-    &[aria-invalid='true'] + .nsw-form__checkbox-label,
-    &.has-error + .nsw-form__checkbox-label {
+    &[aria-invalid='true'] + .uom-form__checkbox-label,
+    &.has-error + .uom-form__checkbox-label {
       &:hover::before {
-        background-image: linear-gradient(var(--nsw-status-error-bg), var(--nsw-status-error-bg));
+        background-image: linear-gradient(var(--uom-status-error-bg), var(--uom-status-error-bg));
       }
 
       &::before {
         border-width: 2px;
-        border-color: var(--nsw-status-error);
+        border-color: var(--uom-status-error);
       }
     }
   }
@@ -383,12 +383,12 @@ $nsw-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
       width: rem(32px);
       height: rem(32px);
       margin-right: rem(16px);
-      border: 1px var(--nsw-grey-01) solid;
+      border: 1px var(--uom-grey-01) solid;
       top: 0;
       left: 0;
       display: inline-block;
       vertical-align: middle;
-      background-color: var(--nsw-white);
+      background-color: var(--uom-white);
       position: absolute;
     }
 
@@ -407,7 +407,7 @@ $nsw-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
 
   &__checkbox-label {
     &::before {
-      border-radius: var(--nsw-border-radius);
+      border-radius: var(--uom-border-radius);
     }
   }
 

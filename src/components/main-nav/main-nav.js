@@ -66,7 +66,7 @@ class Navigation {
 
   handleOutsideClick(event) {
     // removes handleOutsideClick functionality from docs site
-    if (this.nav.closest('.nsw-docs')) return
+    if (this.nav.closest('.uom-docs')) return
 
     if (!this.mainNavIsOpen) return
 
@@ -159,7 +159,7 @@ class Navigation {
 
   buttonClickDesktop(event) {
     const isDesktop = this.breakpoint.matches
-    if (!isDesktop || !event.target.closest('.nsw-main-nav__sub-nav')) {
+    if (!isDesktop || !event.target.closest('.uom-main-nav__sub-nav')) {
       this.saveElements(event)
       this.toggleSubNavDesktop()
       event.preventDefault()
@@ -177,7 +177,7 @@ class Navigation {
   escapeClose(e) {
     if (e.key === 'Escape') {
     // removes handleOutsideClick functionality from docs site
-      if (this.nav.closest('.nsw-docs')) return
+      if (this.nav.closest('.uom-docs')) return
 
       const { link } = this.whichSubNavLatest()
       const isExpanded = link.getAttribute('aria-expanded') === 'true'
@@ -203,7 +203,7 @@ class Navigation {
   showSubNav({ propertyName }) {
     const { submenu } = this.whichSubNavLatest()
     if (propertyName !== 'transform') return
-    getFocusableElementBySelector(submenu.id, ['> div button', '> .nsw-main-nav__title a', '> ul > li > a']).all[2].focus()
+    getFocusableElementBySelector(submenu.id, ['> div button', '> .uom-main-nav__title a', '> ul > li > a']).all[2].focus()
     submenu.removeEventListener(this.transitionEvent, this.showSubNavTransitionEndEvent, false)
   }
 

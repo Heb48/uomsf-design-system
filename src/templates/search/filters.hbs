@@ -14,33 +14,33 @@ model:
 {{>_masthead content="#content" nav="#main-nav"}}
 {{>_header header-title="digital.nsw" header-description="Department of Customer Service"}}
 {{>_main-nav model.nav}}
-<div class="nsw-container nsw-p-bottom-xs">
+<div class="uom-container uom-p-bottom-xs">
   {{>_breadcrumbs model.breadcrumbs}}
 </div>
 
-<main id="content" class="nsw-container nsw-p-top-sm nsw-p-bottom-lg">
-  <div class="nsw-layout">
-    <div class="nsw-layout__main">
+<main id="content" class="uom-container uom-p-top-sm uom-p-bottom-lg">
+  <div class="uom-layout">
+    <div class="uom-layout__main">
       <h1>Search</h1>
-      <p class="nsw-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="uom-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-      <div class="nsw-m-top-lg">
+      <div class="uom-m-top-lg">
         {{>_input-group
           id="search-input"
           label="Search"
         }}
       </div>
     </div>
-    <div class="nsw-layout__sidebar nsw-layout__sidebar--desktop"></div>
+    <div class="uom-layout__sidebar uom-layout__sidebar--desktop"></div>
   </div>
-  <div class="nsw-layout">
-    <div class="nsw-layout__sidebar">
+  <div class="uom-layout">
+    <div class="uom-layout__sidebar">
       {{>_filters model.filters instant='true' filters-id='1'}}
     </div>
-    <div class="nsw-layout__main">
+    <div class="uom-layout__main">
       {{>_results-bar model.results-bar}}
 
-      <div class="nsw-search-results">
+      <div class="uom-search-results">
         {{>_list-item model.list-item}}
         {{>_list-item model.list-item}}
         {{>_list-item model.list-item}}
@@ -53,7 +53,7 @@ model:
         {{>_list-item model.list-item}}
       </div>
 
-      <div class="nsw-block">
+      <div class="uom-block">
         {{>_pagination}}
       </div>
     </div>

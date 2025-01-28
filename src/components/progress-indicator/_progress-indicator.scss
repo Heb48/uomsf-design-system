@@ -1,4 +1,4 @@
-.nsw-progress-indicator {
+.uom-progress-indicator {
   @include component-spacing();
 
   &__count {
@@ -12,14 +12,14 @@
     div {
       height: rem(4px);
       width: 100%;
-      background-color: var(--nsw-grey-04);
+      background-color: var(--uom-grey-04);
 
       &:not(:first-child) {
         margin-left: rem(4px);
       }
 
       &.active {
-        background-color: var(--nsw-brand-accent);
+        background-color: var(--uom-brand-accent);
       }
     }
   }

@@ -41,15 +41,15 @@ $purple-colors-rgb: map-loop($purple-colors, to-rgb, '$value') !default;
 
 .purple {
   @each $color, $value in $purple-colors {
-    --nsw-#{$color}: #{$value};
+    --uom-#{$color}: #{$value};
   }
 
   @each $color, $value in $purple-colors-rgb {
-    --nsw-#{$color}-rgb: #{$value};
+    --uom-#{$color}-rgb: #{$value};
   }
 }
 
 .purple-accent {
-  --nsw-brand-accent: #{$purple-02};
-  --nsw-brand-accent-rgb: #{to-rgb($purple-02)};
+  --uom-brand-accent: #{$purple-02};
+  --uom-brand-accent-rgb: #{to-rgb($purple-02)};
 }

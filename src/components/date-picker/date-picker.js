@@ -3,7 +3,7 @@ import { uniqueId } from '../../global/scripts/helpers/utilities'
 class DatePicker {
   constructor(element) {
     this.element = element
-    this.prefix = 'nsw-'
+    this.prefix = 'uom-'
     this.class = 'date-picker'
     this.uID = uniqueId('calendar-label')
     this.dateClass = `${this.prefix}${this.class}__date`
@@ -57,52 +57,52 @@ class DatePicker {
 
   initCreateCalendar() {
     const calendar = `
-    <div class="nsw-date-picker js-date-picker" role="dialog" aria-labelledby="${this.uID}">
-      <header class="nsw-date-picker__header">
-        <div class="nsw-date-picker__title">
-          <span class="nsw-date-picker__title-label js-date-picker__title-label" id="${this.uID}"></span>
+    <div class="uom-date-picker js-date-picker" role="dialog" aria-labelledby="${this.uID}">
+      <header class="uom-date-picker__header">
+        <div class="uom-date-picker__title">
+          <span class="uom-date-picker__title-label js-date-picker__title-label" id="${this.uID}"></span>
 
           <nav>
-            <ul class="nsw-date-picker__title-nav js-date-picker__title-nav">
+            <ul class="uom-date-picker__title-nav js-date-picker__title-nav">
               <li>
-                <button class="nsw-icon-button nsw-date-picker__title-nav-btn js-date-picker__year-nav-btn js-date-picker__year-nav-btn--prev" type="button">
-                  <span class="material-icons nsw-material-icons">keyboard_double_arrow_left</span>
+                <button class="uom-icon-button uom-date-picker__title-nav-btn js-date-picker__year-nav-btn js-date-picker__year-nav-btn--prev" type="button">
+                  <span class="material-icons uom-material-icons">keyboard_double_arrow_left</span>
                 </button>
-                <button class="nsw-icon-button nsw-date-picker__title-nav-btn js-date-picker__month-nav-btn js-date-picker__month-nav-btn--prev" type="button">
-                  <span class="material-icons nsw-material-icons">chevron_left</span>
+                <button class="uom-icon-button uom-date-picker__title-nav-btn js-date-picker__month-nav-btn js-date-picker__month-nav-btn--prev" type="button">
+                  <span class="material-icons uom-material-icons">chevron_left</span>
                 </button>
               </li>
 
               <li>
-                <button class="nsw-icon-button nsw-date-picker__title-nav-btn js-date-picker__month-nav-btn js-date-picker__month-nav-btn--next" type="button">
-                  <span class="material-icons nsw-material-icons">chevron_right</span>
+                <button class="uom-icon-button uom-date-picker__title-nav-btn js-date-picker__month-nav-btn js-date-picker__month-nav-btn--next" type="button">
+                  <span class="material-icons uom-material-icons">chevron_right</span>
                 </button>
-                <button class="nsw-icon-button nsw-date-picker__title-nav-btn js-date-picker__year-nav-btn js-date-picker__year-nav-btn--next" type="button">
-                  <span class="material-icons nsw-material-icons">keyboard_double_arrow_right</span>
+                <button class="uom-icon-button uom-date-picker__title-nav-btn js-date-picker__year-nav-btn js-date-picker__year-nav-btn--next" type="button">
+                  <span class="material-icons uom-material-icons">keyboard_double_arrow_right</span>
                 </button>
               </li>
             </ul>
           </nav>
         </div>
 
-        <ol class="nsw-date-picker__week">
-          <li><div class="nsw-date-picker__day">M<span class="sr-only">onday</span></div></li>
-          <li><div class="nsw-date-picker__day">T<span class="sr-only">uesday</span></div></li>
-          <li><div class="nsw-date-picker__day">W<span class="sr-only">ednesday</span></div></li>
-          <li><div class="nsw-date-picker__day">T<span class="sr-only">hursday</span></div></li>
-          <li><div class="nsw-date-picker__day">F<span class="sr-only">riday</span></div></li>
-          <li><div class="nsw-date-picker__day">S<span class="sr-only">aturday</span></div></li>
-          <li><div class="nsw-date-picker__day">S<span class="sr-only">unday</span></div></li>
+        <ol class="uom-date-picker__week">
+          <li><div class="uom-date-picker__day">M<span class="sr-only">onday</span></div></li>
+          <li><div class="uom-date-picker__day">T<span class="sr-only">uesday</span></div></li>
+          <li><div class="uom-date-picker__day">W<span class="sr-only">ednesday</span></div></li>
+          <li><div class="uom-date-picker__day">T<span class="sr-only">hursday</span></div></li>
+          <li><div class="uom-date-picker__day">F<span class="sr-only">riday</span></div></li>
+          <li><div class="uom-date-picker__day">S<span class="sr-only">aturday</span></div></li>
+          <li><div class="uom-date-picker__day">S<span class="sr-only">unday</span></div></li>
         </ol>
       </header>
 
-      <ol class="nsw-date-picker__dates js-date-picker__dates" aria-labelledby="${this.uID}">
-        
+      <ol class="uom-date-picker__dates js-date-picker__dates" aria-labelledby="${this.uID}">
+
       </ol>
 
-      <div class="nsw-date-picker__buttongroup">
-        <button type="button" class="nsw-button nsw-button--dark-outline-solid js-date-picker__close" value="cancel">Cancel</button>
-        <button type="button" class="nsw-button nsw-button--dark js-date-picker__accept" value="ok">OK</button>
+      <div class="uom-date-picker__buttongroup">
+        <button type="button" class="uom-button uom-button--dark-outline-solid js-date-picker__close" value="cancel">Cancel</button>
+        <button type="button" class="uom-button uom-button--dark js-date-picker__accept" value="ok">OK</button>
       </div>
     </div>`
 

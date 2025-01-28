@@ -1,20 +1,20 @@
-<div class="nsw-list-item{{#if reversed}} nsw-list-item--reversed{{/if}}{{#if block}} nsw-list-item--block{{/if}}">
-  <div class="nsw-list-item__content">{{#if label}}
-    <div class="nsw-list-item__label">{{label}}</div>{{/if}}{{#if date}}
-    <div class="nsw-list-item__info">{{date}}</div>{{/if}}
-    <div class="nsw-list-item__title"><a href="#">{{heading}}</a></div>{{#if url}}
-    <div class="nsw-list-item__info">{{url}}</div>{{/if}}
-    <div class="nsw-list-item__copy">{{copy}}</div>{{#if tags}}
-    <div class="nsw-list-item__tags">
-      <div class="nsw-list nsw-list--8">
+<div class="uom-list-item{{#if reversed}} uom-list-item--reversed{{/if}}{{#if block}} uom-list-item--block{{/if}}">
+  <div class="uom-list-item__content">{{#if label}}
+    <div class="uom-list-item__label">{{label}}</div>{{/if}}{{#if date}}
+    <div class="uom-list-item__info">{{date}}</div>{{/if}}
+    <div class="uom-list-item__title"><a href="#">{{heading}}</a></div>{{#if url}}
+    <div class="uom-list-item__info">{{url}}</div>{{/if}}
+    <div class="uom-list-item__copy">{{copy}}</div>{{#if tags}}
+    <div class="uom-list-item__tags">
+      <div class="uom-list uom-list--8">
         {{#each tags}}
-        <span class="nsw-tag">{{this}}</span>
+        <span class="uom-tag">{{this}}</span>
         {{/each}}
       </div>
     </div>{{/if}}
   </div>
   {{#if img}}
-  <div class="nsw-list-item__image">
+  <div class="uom-list-item__image">
     <img src="{{img}}" alt="">
   </div>
   {{/if}}

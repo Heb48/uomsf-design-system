@@ -61,13 +61,13 @@ class Tooltip {
 
     this.constructor.setAttributes(this.tooltipElement, {
       id: this.uID,
-      class: `nsw-tooltip__element nsw-tooltip__element--${this.tooltipTheme}`,
+      class: `uom-tooltip__element uom-tooltip__element--${this.tooltipTheme}`,
       role: 'tooltip',
     })
 
     if (this.tooltip) {
       this.arrowElement = document.createElement('div')
-      this.arrowElement.className = 'nsw-tooltip__arrow'
+      this.arrowElement.className = 'uom-tooltip__arrow'
     }
 
     this.tooltipContent = this.tooltip.getAttribute('data-tooltip-content')

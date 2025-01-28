@@ -43,15 +43,15 @@ $brown-colors-rgb: map-loop($brown-colors, to-rgb, '$value') !default;
 
 .brown {
   @each $color, $value in $brown-colors {
-    --nsw-#{$color}: #{$value};
+    --uom-#{$color}: #{$value};
   }
 
   @each $color, $value in $brown-colors-rgb {
-    --nsw-#{$color}-rgb: #{$value};
+    --uom-#{$color}-rgb: #{$value};
   }
 }
 
 .brown-accent {
-  --nsw-brand-accent: #{$brown-02};
-  --nsw-brand-accent-rgb: #{to-rgb($brown-02)};
+  --uom-brand-accent: #{$brown-02};
+  --uom-brand-accent-rgb: #{to-rgb($brown-02)};
 }

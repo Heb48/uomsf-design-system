@@ -5,25 +5,25 @@ class Carousel extends SwipeContent {
   constructor(element) {
     super(element)
     this.element = element
-    this.containerClass = 'nsw-carousel-container'
+    this.containerClass = 'uom-carousel-container'
     this.controlClass = 'js-carousel__control'
     this.wrapperClass = 'js-carousel__wrapper'
     this.counterClass = 'js-carousel__counter'
     this.counterTorClass = 'js-carousel__counter-tot'
     this.navClass = 'js-carousel__navigation'
     this.navItemClass = 'js-carousel__nav-item'
-    this.navigationItemClass = this.element.getAttribute('data-navigation-item-class') ? this.element.getAttribute('data-navigation-item-class') : 'nsw-carousel__nav-item'
-    this.navigationClass = this.element.getAttribute('data-navigation-class') ? this.element.getAttribute('data-navigation-class') : 'nsw-carousel__navigation'
-    this.paginationClass = this.element.getAttribute('data-pagination-class') ? this.element.getAttribute('data-pagination-class') : 'nsw-carousel__navigation--pagination'
-    this.draggingClass = 'nsw-carousel--is-dragging'
-    this.loadedClass = 'nsw-carousel--loaded'
-    this.animateClass = 'nsw-carousel__list--animating'
+    this.navigationItemClass = this.element.getAttribute('data-navigation-item-class') ? this.element.getAttribute('data-navigation-item-class') : 'uom-carousel__nav-item'
+    this.navigationClass = this.element.getAttribute('data-navigation-class') ? this.element.getAttribute('data-navigation-class') : 'uom-carousel__navigation'
+    this.paginationClass = this.element.getAttribute('data-pagination-class') ? this.element.getAttribute('data-pagination-class') : 'uom-carousel__navigation--pagination'
+    this.draggingClass = 'uom-carousel--is-dragging'
+    this.loadedClass = 'uom-carousel--loaded'
+    this.animateClass = 'uom-carousel__list--animating'
     this.cloneClass = 'js-clone'
     this.srClass = 'sr-only'
     this.srLiveAreaClass = 'js-carousel__aria-live'
-    this.hideControlsClass = 'nsw-carousel--hide-controls'
-    this.hideClass = 'nsw-display-none'
-    this.centerClass = 'nsw-justify-content-center'
+    this.hideControlsClass = 'uom-carousel--hide-controls'
+    this.hideClass = 'uom-display-none'
+    this.centerClass = 'uom-justify-content-center'
     this.listWrapper = this.element.querySelector(`.${this.wrapperClass}`)
     this.list = this.listWrapper ? this.listWrapper.querySelector('ol') : false
     this.items = this.list ? this.list.getElementsByTagName('li') : false
@@ -225,20 +225,20 @@ class Carousel extends SwipeContent {
       }
     })
 
-    const itemLinks = this.element.querySelectorAll('.nsw-carousel__item a')
+    const itemLinks = this.element.querySelectorAll('.uom-carousel__item a')
 
     if (itemLinks.length > 0) {
       itemLinks.forEach((link, index) => {
         link.addEventListener('focus', () => {
           const slider = link.closest('.js-carousel__wrapper')
-          const carousel = slider.querySelector('.nsw-carousel__list')
+          const carousel = slider.querySelector('.uom-carousel__list')
           if (carousel) {
             link.focus({ preventScroll: true })
           }
         })
 
         link.addEventListener('focusout', () => {
-          const item = link.closest('.nsw-carousel__item')
+          const item = link.closest('.uom-carousel__item')
           const dataIndex = Number(item.getAttribute('data-index')) + 1
           if (dataIndex % this.visibItemsNb === 0 && dataIndex !== this.items.length) {
             itemLinks[index + 1].focus({ preventScroll: true })

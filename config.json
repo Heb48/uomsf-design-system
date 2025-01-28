@@ -63,7 +63,7 @@
     "watch": ["./src/**/*.hbs", "./src/**/*.json"],
     "build": "./dist/",
     "metadata": {
-      "title": "Digital NSW Design System",
+      "title": "Digital UOM Education Cloud Design System",
       "description": "Design system for Digital NSW",
       "generator": "Metalsmith",
       "url": ""

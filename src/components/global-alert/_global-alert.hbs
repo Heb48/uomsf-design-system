@@ -1,14 +1,14 @@
-<div class="nsw-global-alert{{#if type}} nsw-global-alert--{{type}}{{/if}} js-global-alert" role="alert" data-cookie-name="{{cookie}}">
-  <div class="nsw-global-alert__wrapper">
-    <div class="nsw-global-alert__content">
-      <div class="nsw-global-alert__title">{{title}}</div>
+<div class="uom-global-alert{{#if type}} uom-global-alert--{{type}}{{/if}} js-global-alert" role="alert" data-cookie-name="{{cookie}}">
+  <div class="uom-global-alert__wrapper">
+    <div class="uom-global-alert__content">
+      <div class="uom-global-alert__title">{{title}}</div>
       <p>{{{content}}}{{#if link}}{{#if ctaHref}} <a href="{{ctaHref}}">{{ctaText}}</a>{{/if}}{{/if}}</p>
     </div>{{#unless link}}{{#if ctaText}}{{#if ctaHref}}
-    <p><a href="{{ctaHref}}" class="nsw-button{{#if-equals type "light"}} nsw-button--info{{else}} nsw-button--white{{/if-equals}}">{{ctaText}}</a></p>{{else}}
-    <p><button type="button" class="nsw-button{{#if-equals type "light"}} nsw-button--info{{else}} nsw-button--white{{/if-equals}}">{{ctaText}}</button></p>
+    <p><a href="{{ctaHref}}" class="uom-button{{#if-equals type "light"}} uom-button--info{{else}} uom-button--white{{/if-equals}}">{{ctaText}}</a></p>{{else}}
+    <p><button type="button" class="uom-button{{#if-equals type "light"}} uom-button--info{{else}} uom-button--white{{/if-equals}}">{{ctaText}}</button></p>
     {{/if}}{{/if}}{{/unless}}
-    <button class="nsw-icon-button js-close-alert" type="button" aria-expanded="true">
-      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">close</span>
+    <button class="uom-icon-button js-close-alert" type="button" aria-expanded="true">
+      <span class="material-icons uom-material-icons" focusable="false" aria-hidden="true">close</span>
       <span class="sr-only">Close message</span>
     </button>
   </div>

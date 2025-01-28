@@ -41,15 +41,15 @@ $orange-colors-rgb: map-loop($orange-colors, to-rgb, '$value') !default;
 
 .orange {
   @each $color, $value in $orange-colors {
-    --nsw-#{$color}: #{$value};
+    --uom-#{$color}: #{$value};
   }
 
   @each $color, $value in $orange-colors-rgb {
-    --nsw-#{$color}-rgb: #{$value};
+    --uom-#{$color}-rgb: #{$value};
   }
 }
 
 .orange-accent {
-  --nsw-brand-accent: #{$orange-02};
-  --nsw-brand-accent-rgb: #{to-rgb($orange-02)};
+  --uom-brand-accent: #{$orange-02};
+  --uom-brand-accent-rgb: #{to-rgb($orange-02)};
 }

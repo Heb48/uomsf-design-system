@@ -1,4 +1,4 @@
-.nsw-steps {
+.uom-steps {
   @include component-spacing();
   counter-reset: step;
 
@@ -6,7 +6,7 @@
     position: relative;
 
     &:last-child {
-      .nsw-steps__content {
+      .uom-steps__content {
         padding-bottom: 0;
 
         &::before {
@@ -22,10 +22,10 @@
       left: 0;
       width: rem(32px);
       height: rem(32px);
-      border: rem(4px) solid var(--nsw-brand-accent);
+      border: rem(4px) solid var(--uom-brand-accent);
       border-radius: 100%;
 
-      @include breakpoint('lg') { 
+      @include breakpoint('lg') {
         width: rem(48px);
         height: rem(48px);
         top: rem(-4px);
@@ -44,41 +44,41 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      color: var(--nsw-brand-accent);
-      font-weight: var(--nsw-font-bold);
+      color: var(--uom-brand-accent);
+      font-weight: var(--uom-font-bold);
       visibility: hidden;
 
-      @include breakpoint('lg') { 
+      @include breakpoint('lg') {
         width: rem(48px);
         height: rem(48px);
         top: rem(-4px);
-      }    
+      }
     }
 
     &--fill {
       &::before {
-        background-color: var(--nsw-brand-accent);
+        background-color: var(--uom-brand-accent);
       }
-      
+
       &::after {
-        color: var(--nsw-text-light);
+        color: var(--uom-text-light);
       }
 
-      .nsw-steps--dark & {
+      .uom-steps--dark & {
         &::before {
-          background-color: var(--nsw-brand-dark);
-        }   
-      }
-
-      .nsw-steps--light & {
-        &::before {
-          background-color: var(--nsw-brand-light);
+          background-color: var(--uom-brand-dark);
         }
       }
 
-      .nsw-steps--supplementary & {
+      .uom-steps--light & {
         &::before {
-          background-color: var(--nsw-brand-supplementary);
+          background-color: var(--uom-brand-light);
+        }
+      }
+
+      .uom-steps--supplementary & {
+        &::before {
+          background-color: var(--uom-brand-supplementary);
         }
       }
     }
@@ -88,7 +88,7 @@
     position: relative;
     padding: 0 0 rem(24px) rem(48px);
 
-    @include breakpoint('lg') { 
+    @include breakpoint('lg') {
       padding: 0 0 rem(32px) rem(72px);
     }
 
@@ -99,9 +99,9 @@
       bottom: rem(-1px);
       left: rem(14px);
       width: rem(4px);
-      background-color: var(--nsw-brand-accent);
+      background-color: var(--uom-brand-accent);
 
-      @include breakpoint('lg') { 
+      @include breakpoint('lg') {
         top: rem(44px);
         left: rem(22px);
         bottom: rem(4px);
@@ -110,79 +110,79 @@
   }
 
   &--dark {
-    .nsw-steps__item {
+    .uom-steps__item {
       &::before {
-        border-color: var(--nsw-brand-dark);
+        border-color: var(--uom-brand-dark);
       }
 
       &::after {
-        color: var(--nsw-brand-dark);
+        color: var(--uom-brand-dark);
       }
 
       &--fill {
         &::after {
-          color: var(--nsw-text-light);
+          color: var(--uom-text-light);
         }
       }
     }
 
-    .nsw-steps__content {
+    .uom-steps__content {
       &::before {
-        background-color: var(--nsw-brand-dark);
+        background-color: var(--uom-brand-dark);
       }
     }
   }
 
   &--light {
-    .nsw-steps__item {
+    .uom-steps__item {
       &::before {
-        border-color: var(--nsw-brand-light);
+        border-color: var(--uom-brand-light);
       }
 
       &::after {
-        color: var(--nsw-brand-light);
+        color: var(--uom-brand-light);
       }
 
       &--fill {
         &::after {
-          color: var(--nsw-text-dark);
+          color: var(--uom-text-dark);
         }
       }
     }
 
-    .nsw-steps__content {
+    .uom-steps__content {
       &::before {
-        background-color: var(--nsw-brand-light);
+        background-color: var(--uom-brand-light);
       }
     }
   }
 
   &--supplementary {
-    .nsw-steps__item {
+    .uom-steps__item {
       &::before {
-        border-color: var(--nsw-brand-supplementary);
+        border-color: var(--uom-brand-supplementary);
       }
 
       &::after {
-        color: var(--nsw-brand-supplementary);
+        color: var(--uom-brand-supplementary);
       }
 
       &--fill {
         &::after {
-          color: var(--nsw-text-light);
+          color: var(--uom-text-light);
         }
       }
     }
 
-    .nsw-steps__content {
+    .uom-steps__content {
       &::before {
-        background-color: var(--nsw-brand-supplementary);
+        background-color: var(--uom-brand-supplementary);
       }
     }
   }
 
   &--counters {
-    .nsw-steps__item {
+    .uom-steps__item {
       &::after {
         visibility: visible;
       }
@@ -190,51 +190,51 @@
   }
 
   &--fill {
-    .nsw-steps__item {
+    .uom-steps__item {
       &::before {
-        background-color: var(--nsw-brand-accent);
+        background-color: var(--uom-brand-accent);
       }
-      
+
       &::after {
-        color: var(--nsw-text-light);
+        color: var(--uom-text-light);
       }
     }
 
-    &.nsw-steps--dark {
-      .nsw-steps__item {
+    &.uom-steps--dark {
+      .uom-steps__item {
         &::before {
-          background-color: var(--nsw-brand-dark);
+          background-color: var(--uom-brand-dark);
         }
-      }      
+      }
     }
 
-    &.nsw-steps--light {
-      .nsw-steps__item {
+    &.uom-steps--light {
+      .uom-steps__item {
         &::before {
-          background-color: var(--nsw-brand-light);
+          background-color: var(--uom-brand-light);
         }
-      
+
         &::after {
-          color: var(--nsw-text-dark);
+          color: var(--uom-text-dark);
         }
-      }      
+      }
     }
 
-    &.nsw-steps--supplementary {
-      .nsw-steps__item {
+    &.uom-steps--supplementary {
+      .uom-steps__item {
         &::before {
-          background-color: var(--nsw-brand-supplementary);
+          background-color: var(--uom-brand-supplementary);
         }
-      }      
+      }
     }
   }
 
   &--medium {
-    .nsw-steps__item {
+    .uom-steps__item {
       &::before {
         top: rem(-2px);
 
-        @include breakpoint('lg') { 
+        @include breakpoint('lg') {
           width: rem(40px);
           height: rem(40px);
           top: rem(-4px);
@@ -244,17 +244,17 @@
       &::after {
         top: rem(-2px);
 
-        @include breakpoint('lg') { 
-          font-size: var(--nsw-font-size-md-mobile);
+        @include breakpoint('lg') {
+          font-size: var(--uom-font-size-md-mobile);
           width: rem(40px);
           height: rem(40px);
           top: rem(-4px);
-        }    
+        }
       }
     }
 
-    .nsw-steps__content {
-      @include breakpoint('lg') { 
+    .uom-steps__content {
+      @include breakpoint('lg') {
         padding-left: rem(64px);
       }
 
@@ -262,7 +262,7 @@
         top: rem(30px);
         bottom: rem(2px);
 
-        @include breakpoint('lg') { 
+        @include breakpoint('lg') {
           top: rem(36px);
           bottom: rem(4px);
           left: rem(18px);
@@ -272,11 +272,11 @@
   }
 
   &--small {
-    .nsw-steps__item {
+    .uom-steps__item {
       &::before {
         top: rem(-4px);
 
-        @include breakpoint('lg') { 
+        @include breakpoint('lg') {
           width: rem(32px);
           height: rem(32px);
           top: rem(-2px);
@@ -286,17 +286,17 @@
       &::after {
         top: rem(-4px);
 
-        @include breakpoint('lg') { 
-          font-size: var(--nsw-font-size-md-mobile);
+        @include breakpoint('lg') {
+          font-size: var(--uom-font-size-md-mobile);
           width: rem(32px);
           height: rem(32px);
           top: rem(-2px);
-        }    
+        }
       }
     }
 
-    .nsw-steps__content {
-      @include breakpoint('lg') { 
+    .uom-steps__content {
+      @include breakpoint('lg') {
         padding-left: rem(56px);
       }
 
@@ -304,7 +304,7 @@
         top: rem(28px);
         bottom: rem(4px);
 
-        @include breakpoint('lg') { 
+        @include breakpoint('lg') {
           top: rem(30px);
           bottom: rem(2px);
           left: rem(14px);

@@ -1,26 +1,26 @@
-.nsw-footer {
+.uom-footer {
   hr {
     margin: rem(16px) 0;
     height: 1px;
     border: 0;
-    background-color: var(--nsw-grey-03);
+    background-color: var(--uom-grey-03);
   }
 
-  a:not(.nsw-icon-button) {
+  a:not(.uom-icon-button) {
     line-height: 1.5;
     padding: rem(8px) rem(24px) rem(8px) 0;
-    
+
     @include breakpoint('md') {
       padding: rem(4px) rem(4px) rem(4px) 0;
     }
   }
 
   &__upper {
-    background-color: var(--nsw-white);
-    border-top: solid 1px var(--nsw-grey-03);
+    background-color: var(--uom-white);
+    border-top: solid 1px var(--uom-grey-03);
     padding-top: rem(24px);
 
-    .nsw-container {
+    .uom-container {
       padding-left: rem(8px);
       padding-right: rem(8px);
       display: flex;
@@ -57,7 +57,7 @@
       padding: 0;
 
       a {
-        font-weight: var(--nsw-font-normal);
+        font-weight: var(--uom-font-normal);
       }
     }
 
@@ -72,8 +72,8 @@
 
   &__lower {
     @include font-size('xs');
-    background-color: var(--nsw-grey-01);
-    color: var(--nsw-text-light);
+    background-color: var(--uom-grey-01);
+    color: var(--uom-text-light);
     padding: rem(16px) 0 rem(24px) 0;
 
     a {
@@ -164,19 +164,19 @@
   }
 
   &--dark {
-    .nsw-footer__lower {
-      background-color: var(--nsw-brand-dark);
+    .uom-footer__lower {
+      background-color: var(--uom-brand-dark);
     }
   }
 
   &--light {
     hr {
-      background-color: var(--nsw-grey-02);
+      background-color: var(--uom-grey-02);
     }
 
-    .nsw-footer__lower {
-      background-color: var(--nsw-brand-light);
-      color: var(--nsw-text-dark);
+    .uom-footer__lower {
+      background-color: var(--uom-brand-light);
+      color: var(--uom-text-dark);
 
       a {
         @include link-dark;

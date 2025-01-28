@@ -1,9 +1,9 @@
-.nsw-media {
+.uom-media {
   width: 100%;
   margin: rem(16px) auto;
 
-  .nsw-section--invert & {    
-    color: var(--nsw-text-dark);
+  .uom-section--invert & {
+    color: var(--uom-text-dark);
   }
 
   @include breakpoint('md') {
@@ -89,20 +89,20 @@
 
   figcaption {
     @include font-size('xs');
-    background-color: var(--nsw-off-white);
+    background-color: var(--uom-off-white);
     padding: rem(16px);
   }
 
   &--light {
     figcaption {
-      background-color: var(--nsw-brand-light);
+      background-color: var(--uom-brand-light);
     }
   }
 
   &--dark {
     figcaption {
-      background-color: var(--nsw-brand-dark);
-      color: var(--nsw-text-light);
+      background-color: var(--uom-brand-dark);
+      color: var(--uom-text-light);
     }
   }
 
@@ -113,8 +113,8 @@
       padding-right: 0;
       padding-bottom: 0;
 
-      .nsw-section--invert & {    
-        color: var(--nsw-text-light);
+      .uom-section--invert & {
+        color: var(--uom-text-light);
       }
     }
   }

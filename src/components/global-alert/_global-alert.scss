@@ -1,21 +1,21 @@
-.nsw-global-alert {
+.uom-global-alert {
   padding: rem(24px) 0;
-  background-color: var(--nsw-status-info);
-  color: var(--nsw-text-light);
+  background-color: var(--uom-status-info);
+  color: var(--uom-text-light);
 
-  .nsw-icon-button {
+  .uom-icon-button {
     position: absolute;
     top: rem(-8px);
     right: rem(4px);
-    color: var(--nsw-text-light);
+    color: var(--uom-text-light);
 
     &:hover {
-      @include nsw-hover;
-      background-color: var(--nsw-hover-light);
+      @include uom-hover;
+      background-color: var(--uom-hover-light);
     }
 
     &:focus {
-      @include nsw-focus($color: var(--nsw-text-light));
+      @include uom-focus($color: var(--uom-text-light));
     }
   }
 
@@ -26,7 +26,7 @@
 
   &__title {
     @include font-size('md');
-    font-weight: var(--nsw-font-bold);
+    font-weight: var(--uom-font-bold);
   }
 
   &__content {
@@ -37,31 +37,31 @@
     }
   }
 
-  .nsw-button {
+  .uom-button {
     margin-right: 0;
   }
 
   &--critical {
-    background-color: var(--nsw-status-error);
+    background-color: var(--uom-status-error);
   }
 
   &--light {
-    background-color: var(--nsw-status-info-bg);
-    color: var(--nsw-text-dark);
+    background-color: var(--uom-status-info-bg);
+    color: var(--uom-text-dark);
 
-    .nsw-global-alert__content a {
+    .uom-global-alert__content a {
       @include link-dark;
     }
 
-    .nsw-icon-button {
-      color: var(--nsw-brand-dark);
+    .uom-icon-button {
+      color: var(--uom-brand-dark);
 
       &:hover {
-        background-color: var(--nsw-hover);
+        background-color: var(--uom-hover);
       }
 
       &:focus {
-        outline-color: var(--nsw-focus);
+        outline-color: var(--uom-focus);
       }
     }
   }

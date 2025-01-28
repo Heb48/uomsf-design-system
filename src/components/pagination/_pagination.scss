@@ -1,4 +1,4 @@
-.nsw-pagination {
+.uom-pagination {
   @include component-spacing();
 
   ul {
@@ -24,14 +24,14 @@
     text-align: center;
     padding: rem(4px);
     min-width: rem(30px);
-    border-radius: var(--nsw-border-radius);
+    border-radius: var(--uom-border-radius);
 
     &:hover {
-      @include nsw-hover;
+      @include uom-hover;
       outline-width: 0;
 
-      .nsw-section--invert & {    
-        @include nsw-hover-light;
+      .uom-section--invert & {
+        @include uom-hover-light;
         outline-width: 0;
       }
     }
@@ -42,7 +42,7 @@
 
     &.active {
       position: relative;
-      color: var(--nsw-text-dark);
+      color: var(--uom-text-dark);
 
       &:hover {
         background-color: transparent;
@@ -55,14 +55,14 @@
         left: rem(4px);
         right: rem(4px);
         height: 2px;
-        background-color: var(--nsw-brand-accent);        
+        background-color: var(--uom-brand-accent);
       }
-      
-      .nsw-section--invert & {    
-        color: var(--nsw-text-light);
+
+      .uom-section--invert & {
+        color: var(--uom-text-light);
       }
     }
-    
+
     &.disabled,
     .disabled > & {
       pointer-events: none;

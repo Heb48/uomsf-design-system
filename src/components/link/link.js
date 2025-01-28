@@ -4,14 +4,14 @@ class ExternalLink {
   constructor(element) {
     this.element = element
     this.uID = uniqueId('external')
-    this.linkIcon = this.element.querySelector('.nsw-material-icons')
+    this.linkIcon = this.element.querySelector('.uom-material-icons')
     this.linkIconTitle = this.linkIcon ? this.linkIcon.getAttribute('title') : false
     this.linkElement = false
   }
 
   init() {
     if (this.element.tagName !== 'A') return
-    this.element.classList.add('nsw-link', 'nsw-link--icon')
+    this.element.classList.add('uom-link', 'uom-link--icon')
     this.constructor.setAttributes(this.element, {
       target: '_blank',
       rel: 'noopener',

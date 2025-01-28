@@ -1,45 +1,45 @@
-<{{#if instant}}div{{else}}form{{/if}} class="nsw-filters{{#if instant}} nsw-filters--instant{{/if}}{{#if popup}} nsw-filters--fixed{{/if}}{{#if right}} nsw-filters--right{{/if}}{{#if down}} nsw-filters--down{{/if}}{{#if js}} js-filters{{/if}}">{{#if (or right popup down)}}
-  <div class="nsw-filters__controls{{#unless no-count}} js-filters__count{{/unless}}">
+<{{#if instant}}div{{else}}form{{/if}} class="uom-filters{{#if instant}} uom-filters--instant{{/if}}{{#if popup}} uom-filters--fixed{{/if}}{{#if right}} uom-filters--right{{/if}}{{#if down}} uom-filters--down{{/if}}{{#if js}} js-filters{{/if}}">{{#if (or right popup down)}}
+  <div class="uom-filters__controls{{#unless no-count}} js-filters__count{{/unless}}">
     <button>
-      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">tune</span>
+      <span class="material-icons uom-material-icons" focusable="false" aria-hidden="true">tune</span>
       <span>{{#if name}}{{name}}{{else}}Filters{{/if}}</span>{{#if down}}
-      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>{{else}}
-      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_right</span>{{/if}}
+      <span class="material-icons uom-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>{{else}}
+      <span class="material-icons uom-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_right</span>{{/if}}
     </button>
   </div>{{/if}}
-  <div class="nsw-filters__wrapper">{{#if (or right popup)}}
-    <div class="nsw-filters__back">
-      <button class="nsw-icon-button nsw-icon-button--flex js-close-sub-nav" type="button">
+  <div class="uom-filters__wrapper">{{#if (or right popup)}}
+    <div class="uom-filters__back">
+      <button class="uom-icon-button uom-icon-button--flex js-close-sub-nav" type="button">
         {{#if right}}
-        <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">close</span>
+        <span class="material-icons uom-material-icons" focusable="false" aria-hidden="true">close</span>
         <span class="sr-only">Close filters</span>
         {{else}}
-        <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_left</span>
-        <span>Back</span> 
+        <span class="material-icons uom-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_left</span>
+        <span>Back</span>
         {{/if}}
       </button>
     </div>{{/if}}
-    <div class="nsw-filters__title">{{#if name}}{{name}}{{else}}Filters{{/if}}</div>
-    <div class="nsw-filters__list">{{#if input}}
-      <div class="nsw-filters__item">{{#if collapsed}}
-        <button class="nsw-filters__item-button">
-          <span class="nsw-filters__item-name">{{input.name}}</span>
-          <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+    <div class="uom-filters__title">{{#if name}}{{name}}{{else}}Filters{{/if}}</div>
+    <div class="uom-filters__list">{{#if input}}
+      <div class="uom-filters__item">{{#if collapsed}}
+        <button class="uom-filters__item-button">
+          <span class="uom-filters__item-name">{{input.name}}</span>
+          <span class="material-icons uom-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
         </button>{{/if}}
-        <div class="nsw-filters__item-content">
-          <label class="nsw-form__label{{#if collapsed}} sr-only{{/if}}" for="{{input.id}}-{{filters-id}}">{{input.name}}</label>
-          <input class="nsw-form__input" type="text" id="{{input.id}}-{{filters-id}}" name="filters-keyword"{{#if input.value}} value="{{input.value}}"{{/if}}>
+        <div class="uom-filters__item-content">
+          <label class="uom-form__label{{#if collapsed}} sr-only{{/if}}" for="{{input.id}}-{{filters-id}}">{{input.name}}</label>
+          <input class="uom-form__input" type="text" id="{{input.id}}-{{filters-id}}" name="filters-keyword"{{#if input.value}} value="{{input.value}}"{{/if}}>
         </div>
       </div>{{/if}}{{#if select}}
-      <div class="nsw-filters__item">{{#if collapsed}}
-        <button class="nsw-filters__item-button">
-          <span class="nsw-filters__item-name">{{select.name}}</span>
-          <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+      <div class="uom-filters__item">{{#if collapsed}}
+        <button class="uom-filters__item-button">
+          <span class="uom-filters__item-name">{{select.name}}</span>
+          <span class="material-icons uom-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
         </button>{{/if}}
-        <div class="nsw-filters__item-content">
-          <label class="nsw-form__label{{#if collapsed}} sr-only{{/if}}" for="{{select.id}}-{{filters-id}}">{{select.name}}</label>{{#if multiple}}
-          <div class="nsw-multi-select js-multi-select" data-select-text="Select regions" data-multi-select-text="{n} regions selected" data-n-multi-select="2">{{/if}}
-          <select{{#unless multiple}} class="nsw-form__select"{{/unless}} name="{{select.id}}-{{filters-id}}" id="{{select.id}}-{{filters-id}}"{{#if helper-text}} aria-describedby="{{#if helper-text}}{{select.id}}-{{filters-id}}-helper-text{{/if}}"{{/if}}{{#if error-text}} aria-invalid="true"{{/if}}{{#if multiple}} multiple{{/if}}>{{#unless multiple}}<option value="">Please select</option>{{/unless}}
+        <div class="uom-filters__item-content">
+          <label class="uom-form__label{{#if collapsed}} sr-only{{/if}}" for="{{select.id}}-{{filters-id}}">{{select.name}}</label>{{#if multiple}}
+          <div class="uom-multi-select js-multi-select" data-select-text="Select regions" data-multi-select-text="{n} regions selected" data-n-multi-select="2">{{/if}}
+          <select{{#unless multiple}} class="uom-form__select"{{/unless}} name="{{select.id}}-{{filters-id}}" id="{{select.id}}-{{filters-id}}"{{#if helper-text}} aria-describedby="{{#if helper-text}}{{select.id}}-{{filters-id}}-helper-text{{/if}}"{{/if}}{{#if error-text}} aria-invalid="true"{{/if}}{{#if multiple}} multiple{{/if}}>{{#unless multiple}}<option value="">Please select</option>{{/unless}}
           {{#each select.list}}
             <option value="{{this}}">{{this}}</option>
           {{/each}}
@@ -47,56 +47,56 @@
           </div>{{/if}}
         </div>
       </div>{{/if}}{{#if checkboxes}}
-      <div class="nsw-filters__item">{{#if collapsed}}
-        <button class="nsw-filters__item-button">
-          <span class="nsw-filters__item-name">{{checkboxes.name}}</span>
-          <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+      <div class="uom-filters__item">{{#if collapsed}}
+        <button class="uom-filters__item-button">
+          <span class="uom-filters__item-name">{{checkboxes.name}}</span>
+          <span class="material-icons uom-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
         </button>{{/if}}
-        <div class="nsw-filters__item-content">
-          <fieldset class="nsw-form__fieldset">
-            <legend class="nsw-form__legend{{#if collapsed}} sr-only{{/if}}">{{checkboxes.name}}</legend>{{#each checkboxes.list}}
-            <input class="nsw-form__checkbox-input" type="checkbox" name="{{name}}" value="{{title}}" id="{{id}}-{{../filters-id}}"{{#if checked}} checked{{/if}}>
-            <label class="nsw-form__checkbox-label" for="{{id}}-{{../filters-id}}">{{title}}</label>{{/each}}{{#if checkboxes.all}}
-            <div class="nsw-filters__all nsw-display-none">{{#each checkboxes.all}}
-              <input class="nsw-form__checkbox-input" type="checkbox" name="{{name}}" value="{{title}}" id="{{id}}-{{../filters-id}}"{{#if checked}} checked{{/if}}>
-              <label class="nsw-form__checkbox-label" for="{{id}}-{{../filters-id}}">{{title}}</label>{{/each}}
+        <div class="uom-filters__item-content">
+          <fieldset class="uom-form__fieldset">
+            <legend class="uom-form__legend{{#if collapsed}} sr-only{{/if}}">{{checkboxes.name}}</legend>{{#each checkboxes.list}}
+            <input class="uom-form__checkbox-input" type="checkbox" name="{{name}}" value="{{title}}" id="{{id}}-{{../filters-id}}"{{#if checked}} checked{{/if}}>
+            <label class="uom-form__checkbox-label" for="{{id}}-{{../filters-id}}">{{title}}</label>{{/each}}{{#if checkboxes.all}}
+            <div class="uom-filters__all uom-display-none">{{#each checkboxes.all}}
+              <input class="uom-form__checkbox-input" type="checkbox" name="{{name}}" value="{{title}}" id="{{id}}-{{../filters-id}}"{{#if checked}} checked{{/if}}>
+              <label class="uom-form__checkbox-label" for="{{id}}-{{../filters-id}}">{{title}}</label>{{/each}}
             </div>
-            <button class="nsw-filters__more">{{#if checkboxes.more}}{{checkboxes.more}}{{else}}Show all{{/if}}{{#if checkboxes.count}} ({{checkboxes.count}}){{/if}}</button>{{/if}}
+            <button class="uom-filters__more">{{#if checkboxes.more}}{{checkboxes.more}}{{else}}Show all{{/if}}{{#if checkboxes.count}} ({{checkboxes.count}}){{/if}}</button>{{/if}}
           </fieldset>
         </div>
       </div>{{/if}}{{#if dates}}
-      <div class="nsw-filters__item">{{#if collapsed}}
-        <button class="nsw-filters__item-button">
-          <span class="nsw-filters__item-name">Date</span>
-          <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+      <div class="uom-filters__item">{{#if collapsed}}
+        <button class="uom-filters__item-button">
+          <span class="uom-filters__item-name">Date</span>
+          <span class="material-icons uom-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
         </button>{{/if}}
-        <div class="nsw-filters__item-content">{{#each dates.list}}
-          <div class="nsw-form__group">
-            <fieldset class="nsw-form__date">
-              <legend class="nsw-form__label{{#if collapsed}} sr-only{{/if}}">{{title}}</legend>
-              <div class="nsw-form__date-wrapper">
-                <div class="nsw-form__date-input">
-                  <label class="nsw-form__label nsw-form__label--small" for="{{id}}-{{../filters-id}}-day">Day</label>
-                  <input class="nsw-form__input" type="text" maxlength="2" id="{{id}}-{{../filters-id}}-day" name="{{id}}-{{../filters-id}}-day">
+        <div class="uom-filters__item-content">{{#each dates.list}}
+          <div class="uom-form__group">
+            <fieldset class="uom-form__date">
+              <legend class="uom-form__label{{#if collapsed}} sr-only{{/if}}">{{title}}</legend>
+              <div class="uom-form__date-wrapper">
+                <div class="uom-form__date-input">
+                  <label class="uom-form__label uom-form__label--small" for="{{id}}-{{../filters-id}}-day">Day</label>
+                  <input class="uom-form__input" type="text" maxlength="2" id="{{id}}-{{../filters-id}}-day" name="{{id}}-{{../filters-id}}-day">
                 </div>
-                <div class="nsw-form__date-input">
-                  <label class="nsw-form__label nsw-form__label--small" for="{{id}}-{{../filters-id}}-month">Month</label>
-                  <input class="nsw-form__input" type="text" maxlength="2" id="{{id}}-{{../filters-id}}-month" name="{{id}}-{{../filters-id}}-month">
+                <div class="uom-form__date-input">
+                  <label class="uom-form__label uom-form__label--small" for="{{id}}-{{../filters-id}}-month">Month</label>
+                  <input class="uom-form__input" type="text" maxlength="2" id="{{id}}-{{../filters-id}}-month" name="{{id}}-{{../filters-id}}-month">
                 </div>
-                <div class="nsw-form__date-input nsw-form__date-input--large">
-                  <label class="nsw-form__label nsw-form__label--small" for="{{id}}-{{../filters-id}}-year">Year</label>
-                  <input class="nsw-form__input" type="text" maxlength="4" id="{{id}}-{{../filters-id}}-year" name="{{id}}-{{../filters-id}}-year">
+                <div class="uom-form__date-input uom-form__date-input--large">
+                  <label class="uom-form__label uom-form__label--small" for="{{id}}-{{../filters-id}}-year">Year</label>
+                  <input class="uom-form__input" type="text" maxlength="4" id="{{id}}-{{../filters-id}}-year" name="{{id}}-{{../filters-id}}-year">
                 </div>
               </div>
             </fieldset>
           </div>{{/each}}
         </div>
-      </div>{{/if}}    
+      </div>{{/if}}
     </div>{{#unless instant}}
-    <div class="nsw-filters__accept">
-      <button type="submit" class="nsw-button nsw-button--dark nsw-button--full-width">Apply filters</button>
+    <div class="uom-filters__accept">
+      <button type="submit" class="uom-button uom-button--dark uom-button--full-width">Apply filters</button>
     </div>{{/unless}}
-    <div class="nsw-filters__cancel">
+    <div class="uom-filters__cancel">
       <button type="reset">Clear all filters</button>
     </div>
   </div>

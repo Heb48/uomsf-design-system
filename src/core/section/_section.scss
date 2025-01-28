@@ -1,48 +1,48 @@
 //Variations
-$nsw-sections: (
+$uom-sections: (
   brand-dark: (
-    background: var(--nsw-brand-dark),
-    color: var(--nsw-text-light)
+    background: var(--uom-brand-dark),
+    color: var(--uom-text-light)
   ),
   brand-supplementary: (
-    background: var(--nsw-brand-supplementary),
-    color: var(--nsw-text-light)
+    background: var(--uom-brand-supplementary),
+    color: var(--uom-text-light)
   ),
   black: (
-    background: var(--nsw-black),
-    color: var(--nsw-text-light)
+    background: var(--uom-black),
+    color: var(--uom-text-light)
   ),
   grey-01: (
-    background: var(--nsw-grey-01),
-    color: var(--nsw-text-light)
+    background: var(--uom-grey-01),
+    color: var(--uom-text-light)
   ),
   grey-02: (
-    background: var(--nsw-grey-02),
-    color: var(--nsw-text-light)
+    background: var(--uom-grey-02),
+    color: var(--uom-text-light)
   ),
   brand-light: (
-    background: var(--nsw-brand-light),
-    color: var(--nsw-text-dark)
+    background: var(--uom-brand-light),
+    color: var(--uom-text-dark)
   ),
   white: (
-    background: var(--nsw-white),
-    color: var(--nsw-text-dark)
+    background: var(--uom-white),
+    color: var(--uom-text-dark)
   ),
   off-white: (
-    background: var(--nsw-off-white),
-    color: var(--nsw-text-dark)
+    background: var(--uom-off-white),
+    color: var(--uom-text-dark)
   ),
   grey-03: (
-    background: var(--nsw-grey-03),
-    color: var(--nsw-text-dark)
+    background: var(--uom-grey-03),
+    color: var(--uom-text-dark)
   ),
   grey-04: (
-    background: var(--nsw-grey-04),
-    color: var(--nsw-text-dark)
+    background: var(--uom-grey-04),
+    color: var(--uom-text-dark)
   )
 );
 
-.nsw-section {
+.uom-section {
   padding: rem($grid-gutters*2) 0;
 
   @include breakpoint('md') {
@@ -54,7 +54,7 @@ $nsw-sections: (
 
     @include breakpoint('md') {
       padding: rem($grid-gutters*2) 0;
-    }    
+    }
   }
 
   &--no-padding {
@@ -62,7 +62,7 @@ $nsw-sections: (
 
     @include breakpoint('md') {
       padding: 0;
-    }    
+    }
   }
 
   &--image {
@@ -77,8 +77,8 @@ $nsw-sections: (
   }
 
   &--box {
-    border-radius: var(--nsw-border-radius);
-    border: 1px solid var(--nsw-grey-04);
+    border-radius: var(--uom-border-radius);
+    border: 1px solid var(--uom-grey-04);
     padding: rem(24px);
 
     @include breakpoint('md') {
@@ -86,15 +86,15 @@ $nsw-sections: (
     }
   }
 
-  @each $name, $variant in $nsw-sections {
+  @each $name, $variant in $uom-sections {
     &--#{"" + $name} {
-      --nsw-section-bg: #{map-get($variant, background)};
+      --uom-section-bg: #{map-get($variant, background)};
       background-color: map-get($variant, background);
       color: map-get($variant, color);
     }
   }
 
   &--invert {
-    color: var(--nsw-text-light);
+    color: var(--uom-text-light);
   }
 }

@@ -4,7 +4,7 @@ order: 40
 width: wide
 directory: layout
 intro: Layouts are common page composition patterns that offer ways of structuring components and content.
-meta-description: NSW Design System layouts for structuring components for NSW Government digital products and services.
+meta-description: UOM Education Cloud Design System layouts for structuring components for UOM digital products and services.
 meta-index: true
 ---
 
@@ -17,12 +17,12 @@ meta-index: true
 </ul>
 
 <h2>Usage</h2>
-<p>A <code>nsw-container</code> keeps a container width of 1200px and the <code>nsw-page-layout</code> acts as a wrapper to align the content's spacing.</p>
+<p>A <code>uom-container</code> keeps a container width of 1200px and the <code>uom-page-layout</code> acts as a wrapper to align the content's spacing.</p>
 
 <h3>Full width - Main content area</h3>
 <p>Displays main content area the full width of the container.</p>
 {{#>_docs-example separated="true"}}
-  <div class="nsw-container">
+  <div class="uom-container">
     {{>_layout}}
   </div>
 {{/_docs-example}}
@@ -30,7 +30,7 @@ meta-index: true
 <h3>Two column - Left side desktop only</h3>
 <p>Displays a left hand sidebar that is visible on 992px+ viewports, with a main content area that is always visible. (Recommended for side navigation).</p>
 {{#>_docs-example separated="true"}}
-  <div class="nsw-container">
+  <div class="uom-container">
     {{>_layout side="left" desktop="true"}}
   </div>
 {{/_docs-example}}
@@ -39,7 +39,7 @@ meta-index: true
 <h3>Two column - Right side</h3>
 <p>Displays a right hand sidebar that stacks on 0 - 991px viewports, with main content area that is always visible. </p>
 {{#>_docs-example separated="true"}}
-  <div class="nsw-container">
+  <div class="uom-container">
     {{>_layout side="right"}}
   </div>
 {{/_docs-example}}

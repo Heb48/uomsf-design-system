@@ -1,10 +1,10 @@
-.nsw-content-block {
-  --nsw-icon-colour-dark: var(--nsw-text-dark);
-  --nsw-icon-colour-accent: var(--nsw-brand-supplementary);
+.uom-content-block {
+  --uom-icon-colour-dark: var(--uom-text-dark);
+  --uom-icon-colour-accent: var(--uom-brand-supplementary);
 
   &__title {
     @include font-size('lg');
-    font-weight: var(--nsw-font-bold);
+    font-weight: var(--uom-font-bold);
   }
 
   &__list {
@@ -22,12 +22,12 @@
         width: rem(4px);
         height: rem(4px);
         border-radius: 100%;
-        background-color: var(--nsw-text-dark);
+        background-color: var(--uom-text-dark);
         top: rem(18px);
         left: 0;
-      
-        .nsw-section--invert & {    
-          background-color: var(--nsw-text-light);
+
+        .uom-section--invert & {
+          background-color: var(--uom-text-light);
         }
       }
     }
@@ -44,7 +44,7 @@
     img {
       width: 100%;
       height: rem(200px);
-      object-fit: cover;      
+      object-fit: cover;
     }
   }
 
@@ -56,8 +56,8 @@
       max-width: rem(64px);
       max-height: rem(64px);
 
-      .nsw-section--invert & {
-        --nsw-icon-colour-dark: var(--nsw-text-light);
+      .uom-section--invert & {
+        --uom-icon-colour-dark: var(--uom-text-light);
       }
     }
   }

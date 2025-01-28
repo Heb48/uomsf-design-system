@@ -5,10 +5,10 @@ class Filters {
   constructor(element) {
     this.element = element
     // Classes
-    this.hideClass = 'nsw-display-none'
+    this.hideClass = 'uom-display-none'
     this.showClass = 'active'
     this.openClass = 'filters-open'
-    this.prefix = 'nsw-'
+    this.prefix = 'uom-'
     this.class = 'filters'
     this.controlsClass = `${this.class}__controls`
     this.wrapperClass = `${this.class}__wrapper`
@@ -25,7 +25,7 @@ class Filters {
     this.controls = this.element.querySelector(`.${this.prefix}${this.controlsClass}`)
     this.controlsButton = this.controls && this.controls.querySelector('button')
     this.controlsButtonIcons = this.controlsButton && this.controlsButton.querySelectorAll('span')
-    this.controlsButtonText = this.controlsButton && this.controlsButton.querySelector('span:not(.nsw-material-icons)')
+    this.controlsButtonText = this.controlsButton && this.controlsButton.querySelector('span:not(.uom-material-icons)')
     this.controlsButtonTextContent = this.controlsButton && this.controlsButtonText.innerText
     this.wrapper = this.element.querySelector(`.${this.prefix}${this.wrapperClass}`)
     this.closeButton = this.wrapper && this.wrapper.querySelector(`.${this.prefix}${this.closeClass} button`)
@@ -185,7 +185,7 @@ class Filters {
 
   showFilters(event) {
     event.preventDefault()
-    if (this.element.classList.contains('nsw-filters--down')) {
+    if (this.element.classList.contains('uom-filters--down')) {
       this.element.classList.toggle(this.showClass)
     } else {
       this.trapFocus(this.wrapper)
@@ -250,8 +250,8 @@ class Filters {
       this.items.forEach((element) => {
         const content = element.querySelector(`.${this.prefix}${this.itemClass}-content`)
         const textInputs = content.querySelectorAll('input[type="text"]')
-        const singleSelects = content.querySelectorAll('select:not([multiple]):not(.nsw-display-none)')
-        const multiSelects = content.querySelectorAll('select[multiple]:not(.nsw-display-none)')
+        const singleSelects = content.querySelectorAll('select:not([multiple]):not(.uom-display-none)')
+        const multiSelects = content.querySelectorAll('select[multiple]:not(.uom-display-none)')
         const checkboxes = content.querySelectorAll('input[type="checkbox"]')
         this.options.push(...textInputs, ...singleSelects, ...checkboxes, ...multiSelects)
       })
@@ -273,8 +273,8 @@ class Filters {
   selectedCount(array) {
     if (!this.count) return
 
-    const dateInputs = array.filter((option) => option.closest('.nsw-form__date'))
-    const removedDateInputs = array.filter((option) => !option.closest('.nsw-form__date'))
+    const dateInputs = array.filter((option) => option.closest('.uom-form__date'))
+    const removedDateInputs = array.filter((option) => !option.closest('.uom-form__date'))
 
     let buttonText = `${this.controlsButtonTextContent}`
 
@@ -295,8 +295,8 @@ class Filters {
   }
 
   setSelectedState() {
-    const formElements = 'textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled]):not(.nsw-display-none)'
-    const checkIcon = '<span class="material-icons nsw-material-icons nsw-material-icons--valid" focusable="false" aria-hidden="true">check_circle</span>'
+    const formElements = 'textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled]):not(.uom-display-none)'
+    const checkIcon = '<span class="material-icons uom-material-icons uom-material-icons--valid" focusable="false" aria-hidden="true">check_circle</span>'
 
     this.buttons.forEach((element) => {
       const buttonName = element.querySelector(`.${this.prefix}${this.itemClass}-name`)

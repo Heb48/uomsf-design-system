@@ -1,7 +1,7 @@
-.nsw-utility-list {
-  background-color: var(--nsw-off-white);
+.uom-utility-list {
+  background-color: var(--uom-off-white);
 
-  .nsw-section--invert & {    
+  .uom-section--invert & {
     background-color: transparent;
   }
 
@@ -9,9 +9,9 @@
 
   &__title {
     @include font-size('lg');
-    font-weight: var(--nsw-font-bold);
+    font-weight: var(--uom-font-bold);
     padding-bottom: rem(16px);
-    
+
     @include breakpoint('md') {
       padding-bottom: rem(24px);
     }
@@ -31,50 +31,50 @@
     align-items: center;
     text-decoration: none;
     cursor: pointer;
-    font-weight: var(--nsw-font-bold);
-    border-bottom: 1px solid var(--nsw-grey-04);
-    color: var(--nsw-brand-dark);
+    font-weight: var(--uom-font-bold);
+    border-bottom: 1px solid var(--uom-grey-04);
+    color: var(--uom-brand-dark);
 
     @include font-size('sm');
 
     &:hover {
-      @include nsw-hover;
+      @include uom-hover;
       outline-width: 0;
     }
 
     &:focus {
-      @include nsw-focus;
+      @include uom-focus;
     }
 
     &:last-child {
       border-bottom: unset;
     }
 
-    .nsw-section--invert & {    
-      color: var(--nsw-text-light);
+    .uom-section--invert & {
+      color: var(--uom-text-light);
       background-color: transparent;
-      color: var(--nsw-text-light);
-      
-      span:not(.nsw-toggletip__element .nsw-material-icons) {
-        color: var(--nsw-text-light);
+      color: var(--uom-text-light);
+
+      span:not(.uom-toggletip__element .uom-material-icons) {
+        color: var(--uom-text-light);
       }
 
-      svg {  
+      svg {
         path {
-          fill: var(--nsw-brand-dark);
+          fill: var(--uom-brand-dark);
         }
       }
-      
+
       &:hover {
-        @include nsw-hover-light();
+        @include uom-hover-light();
       }
-    
+
       &:focus {
-        @include nsw-focus(false);
+        @include uom-focus(false);
       }
-    
+
       &:visited {
-        color: var(--nsw-visited);
+        color: var(--uom-visited);
       }
     }
 
@@ -83,16 +83,16 @@
       height: rem(24px);
 
       path {
-        fill: var(--nsw-brand-dark);
+        fill: var(--uom-brand-dark);
       }
     }
 
     span {
-      color: var(--nsw-brand-dark);
+      color: var(--uom-brand-dark);
     }
   }
 
-  .nsw-toggletip {
+  .uom-toggletip {
     border-bottom: unset;
 
     &__header {
@@ -107,12 +107,12 @@
       a {
         display: flex;
         padding: rem(8px);
-        border-radius: var(--nsw-border-radius);
+        border-radius: var(--uom-border-radius);
         text-decoration: none;
       }
 
-      span:not(.nsw-toggletip__element .nsw-material-icons) {
-        color: var(--nsw-brand-dark);
+      span:not(.uom-toggletip__element .uom-material-icons) {
+        color: var(--uom-brand-dark);
       }
     }
   }
@@ -120,12 +120,12 @@
   &--horizontal {
     @include breakpoint('md') {
       display: flex;
-    
+
       ul {
         display: flex;
         width: 100%;
       }
-  
+
       li {
         border-bottom: unset;
       }

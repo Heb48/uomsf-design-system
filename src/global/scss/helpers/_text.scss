@@ -1,13 +1,13 @@
-.nsw-word-break { 
+.uom-word-break { 
   word-break: break-all;
 
   &--mobile {
-    @include breakpoint($nsw-desktop-breakpoint) {
+    @include breakpoint($uom-desktop-breakpoint) {
       word-break: normal;
     }
   }
 }
 
-.nsw-text-truncate {
+.uom-text-truncate {
   @include text-truncate();
 }

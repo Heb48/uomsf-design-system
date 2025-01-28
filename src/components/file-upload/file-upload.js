@@ -2,8 +2,8 @@
 class FileUpload {
   constructor(element) {
     this.element = element
-    this.input = this.element.querySelector('input.nsw-file-upload__input')
-    this.label = this.element.querySelector('label.nsw-file-upload__label')
+    this.input = this.element.querySelector('input.uom-file-upload__input')
+    this.label = this.element.querySelector('label.uom-file-upload__label')
     this.multipleUpload = this.input && this.input.hasAttribute('multiple')
     this.replaceFiles = this.element.hasAttribute('data-replace-files')
     this.filesList = null
@@ -15,10 +15,10 @@ class FileUpload {
     if (!this.label) {
       const label = document.createElement('label')
       label.htmlFor = this.input.id
-      label.classList.add('nsw-file-upload__label', 'nsw-button', 'nsw-button--dark-outline-solid')
+      label.classList.add('uom-file-upload__label', 'uom-button', 'uom-button--dark-outline-solid')
       label.textContent = 'Select file'
       this.element.insertAdjacentElement('beforeend', label)
-      this.label = this.element.querySelector('label.nsw-file-upload__label')
+      this.label = this.element.querySelector('label.uom-file-upload__label')
     }
 
     this.input.addEventListener('change', this.handleInputChange.bind(this))
@@ -31,24 +31,24 @@ class FileUpload {
 
   createFileList() {
     const ul = document.createElement('ul')
-    ul.classList.add('nsw-file-upload__list')
+    ul.classList.add('uom-file-upload__list')
 
     this.label.insertAdjacentElement('afterend', ul)
-    this.filesList = this.element.querySelector('.nsw-file-upload__list')
+    this.filesList = this.element.querySelector('.uom-file-upload__list')
   }
 
   createFileItem(file) {
     const li = document.createElement('li')
-    li.classList.add('nsw-file-upload__item')
+    li.classList.add('uom-file-upload__item')
     const html = `
-      <span class="nsw-file-upload__item-filename"></span>
-      <button type="button" class="nsw-icon-button">
+      <span class="uom-file-upload__item-filename"></span>
+      <button type="button" class="uom-icon-button">
         <span class="sr-only">Remove file</span>
-        <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel</span>
+        <span class="material-icons uom-material-icons" focusable="false" aria-hidden="true">cancel</span>
       </button>`
 
     li.insertAdjacentHTML('afterbegin', html)
-    li.querySelector('.nsw-file-upload__item-filename').textContent = this.constructor.truncateString(file.name, 50)
+    li.querySelector('.uom-file-upload__item-filename').textContent = this.constructor.truncateString(file.name, 50)
     return li.outerHTML
   }
 
@@ -89,10 +89,10 @@ class FileUpload {
   }
 
   handleFileRemove(event) {
-    if (!event.target.closest('.nsw-icon-button')) return
+    if (!event.target.closest('.uom-icon-button')) return
     event.preventDefault()
-    const item = event.target.closest('.nsw-file-upload__item')
-    const filename = item.querySelector('.nsw-file-upload__item-filename').textContent
+    const item = event.target.closest('.uom-file-upload__item')
+    const filename = item.querySelector('.uom-file-upload__item-filename').textContent
 
     const dataTransfer = new DataTransfer()
     for (let i = 0; i < this.currentFiles.files.length; i += 1) {

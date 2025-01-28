@@ -1,6 +1,6 @@
-$nsw-helper-list-sizes: (-8, -16, -32, 8, 16, 32);
+$uom-helper-list-sizes: (-8, -16, -32, 8, 16, 32);
 
-.nsw-list {
+.uom-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -9,7 +9,7 @@ $nsw-helper-list-sizes: (-8, -16, -32, 8, 16, 32);
     justify-content: center;
   }
 
-  @each $size in $nsw-helper-list-sizes {
+  @each $size in $uom-helper-list-sizes {
     &--#{"" + $size} {
       margin: rem(-$size * 0.5);
 

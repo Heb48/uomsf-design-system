@@ -1,5 +1,5 @@
-.nsw-filters {
-  .nsw-layout__sidebar & {
+.uom-filters {
+  .uom-layout__sidebar & {
     margin: rem(-8px) 0 rem(-16px) 0;
 
     @include breakpoint('lg') {
@@ -9,7 +9,7 @@
 
   &__title {
     @include font-size('lg');
-    font-weight: var(--nsw-font-bold);
+    font-weight: var(--uom-font-bold);
     padding: rem(24px) 0;
 
     @include breakpoint('lg') {
@@ -17,9 +17,9 @@
       margin-top: rem(24px);
     }
 
-    .nsw-filters--down & {
+    .uom-filters--down & {
       display: none;
-      
+
       @include breakpoint('lg') {
         display: block;
       }
@@ -33,8 +33,8 @@
 
     button {
       @include font-size('md');
-      font-weight: var(--nsw-font-bold);
-      background-color: var(--nsw-off-white);
+      font-weight: var(--uom-font-bold);
+      background-color: var(--uom-off-white);
       width: 100%;
       border: 0;
       padding: rem(16px);
@@ -43,10 +43,10 @@
       text-decoration: none;
       text-align: left;
       cursor: pointer;
-      
-      .nsw-section--invert & {    
-        color: var(--nsw-text-dark);
-        background-color: var(--nsw-white);
+
+      .uom-section--invert & {
+        color: var(--uom-text-dark);
+        background-color: var(--uom-white);
       }
 
       span {
@@ -55,68 +55,68 @@
       }
 
       &:hover:enabled {
-        background-color: var(--nsw-brand-dark);
-        color: var(--nsw-text-light);
+        background-color: var(--uom-brand-dark);
+        color: var(--uom-text-light);
 
-        .nsw-section--invert & {
-          background-color: var(--nsw-brand-light);
-          color: var(--nsw-brand-dark);
+        .uom-section--invert & {
+          background-color: var(--uom-brand-light);
+          color: var(--uom-brand-dark);
         }
 
-        .nsw-material-icons {
-          color: var(--nsw-text-light);
-          outline: 2px solid var(--nsw-white);
+        .uom-material-icons {
+          color: var(--uom-text-light);
+          outline: 2px solid var(--uom-white);
         }
 
-        .nsw-material-icons:last-child {
-          color: var(--nsw-text-light);
+        .uom-material-icons:last-child {
+          color: var(--uom-text-light);
           outline: 0;
         }
       }
 
-      &:hover:enabled .nsw-material-icons {
-        .nsw-section--invert & {
-          background-color: var(--nsw-brand-light);
+      &:hover:enabled .uom-material-icons {
+        .uom-section--invert & {
+          background-color: var(--uom-brand-light);
         }
 
-        .nsw-section--invert.nsw-section--grey-01 & {    
-          color: var(--nsw-grey-01);
-          outline: 2px solid var(--nsw-grey-01);
+        .uom-section--invert.uom-section--grey-01 & {
+          color: var(--uom-grey-01);
+          outline: 2px solid var(--uom-grey-01);
         }
-  
-        .nsw-section--invert.nsw-section--brand-dark & {    
-          color: var(--nsw-brand-dark);
-          outline: 2px solid var(--nsw-brand-dark);
+
+        .uom-section--invert.uom-section--brand-dark & {
+          color: var(--uom-brand-dark);
+          outline: 2px solid var(--uom-brand-dark);
         }
       }
 
-      &:hover:enabled .nsw-material-icons:last-child {
-        .nsw-section--invert & {
-          background-color: var(--nsw-brand-light);
+      &:hover:enabled .uom-material-icons:last-child {
+        .uom-section--invert & {
+          background-color: var(--uom-brand-light);
           outline: 0;
         }
 
-        .nsw-section--invert.nsw-section--grey-01 & {    
-          color: var(--nsw-grey-01);
+        .uom-section--invert.uom-section--grey-01 & {
+          color: var(--uom-grey-01);
         }
-  
-        .nsw-section--invert.nsw-section--brand-dark & {    
-          color: var(--nsw-brand-dark);
+
+        .uom-section--invert.uom-section--brand-dark & {
+          color: var(--uom-brand-dark);
         }
       }
 
       &:focus {
-        @include nsw-focus($offset: false);
+        @include uom-focus($offset: false);
       }
     }
 
-    .nsw-material-icons {
-      font-size: rem(map-get($nsw-icon-sizes, 30));
-      border-radius: var(--nsw-border-radius);
+    .uom-material-icons {
+      font-size: rem(map-get($uom-icon-sizes, 30));
+      border-radius: var(--uom-border-radius);
       padding: 0;
       text-decoration: none;
-      outline: 2px solid var(--nsw-brand-dark);
-      transition: transform $nsw-transition-duration, color $nsw-transition-duration;
+      outline: 2px solid var(--uom-brand-dark);
+      transition: transform $uom-transition-duration, color $uom-transition-duration;
 
       &:last-child {
         border: 0;
@@ -126,13 +126,13 @@
     }
 
     &.active {
-      .nsw-material-icons {
-        background-color: var(--nsw-brand-dark);
-        color: var(--nsw-text-light);
+      .uom-material-icons {
+        background-color: var(--uom-brand-dark);
+        color: var(--uom-text-light);
 
         &:last-child {
           background-color: transparent;
-          color: var(--nsw-brand-dark);
+          color: var(--uom-brand-dark);
           outline: 0;
         }
       }
@@ -140,33 +140,33 @@
 
     .active & {
       button {
-        background-color: var(--nsw-brand-dark);
-        color: var(--nsw-text-light);
+        background-color: var(--uom-brand-dark);
+        color: var(--uom-text-light);
 
-        .nsw-section--invert & {
-          background-color: var(--nsw-brand-light);
-          color: var(--nsw-brand-dark);
+        .uom-section--invert & {
+          background-color: var(--uom-brand-light);
+          color: var(--uom-brand-dark);
         }
       }
 
-      .nsw-material-icons {
-        color: var(--nsw-text-light);
-        outline: 2px solid var(--nsw-white);
-        transition: transform $nsw-transition-duration, color $nsw-transition-duration;
+      .uom-material-icons {
+        color: var(--uom-text-light);
+        outline: 2px solid var(--uom-white);
+        transition: transform $uom-transition-duration, color $uom-transition-duration;
 
-        .nsw-section--invert & {
-          background-color: var(--nsw-brand-light);
-          color: var(--nsw-brand-dark);
-          outline: 2px solid var(--nsw-brand-dark);
+        .uom-section--invert & {
+          background-color: var(--uom-brand-light);
+          color: var(--uom-brand-dark);
+          outline: 2px solid var(--uom-brand-dark);
         }
       }
-      
-      .nsw-material-icons:last-child {
+
+      .uom-material-icons:last-child {
         transform: rotate(180deg);
 
-        .nsw-section--invert & {
-          background-color: var(--nsw-brand-light);
-          color: var(--nsw-brand-dark);
+        .uom-section--invert & {
+          background-color: var(--uom-brand-light);
+          color: var(--uom-brand-dark);
           outline: 0;
         }
       }
@@ -174,89 +174,89 @@
   }
 
   &__back {
-    .nsw-filters--fixed & {
+    .uom-filters--fixed & {
       @include z-index('upper');
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
-      background-color: var(--nsw-white);
+      background-color: var(--uom-white);
       padding: rem(16px) rem(8px);
-      border-bottom: 1px solid var(--nsw-grey-04);
+      border-bottom: 1px solid var(--uom-grey-04);
 
       @include breakpoint('lg') {
         display: none;
       }
 
-      .nsw-section--invert.nsw-section--grey-01 & {    
-        background-color: var(--nsw-grey-01);
+      .uom-section--invert.uom-section--grey-01 & {
+        background-color: var(--uom-grey-01);
       }
 
-      .nsw-section--invert.nsw-section--brand-dark & {    
-        background-color: var(--nsw-brand-dark);
+      .uom-section--invert.uom-section--brand-dark & {
+        background-color: var(--uom-brand-dark);
       }
     }
 
-    .nsw-filters--right & {
+    .uom-filters--right & {
       @include z-index('upper');
       position: absolute;
       top: rem(16px);
       padding-right: rem(16px);
-      background-color: var(--nsw-white);
-      transition: $nsw-transition-duration;
+      background-color: var(--uom-white);
+      transition: $uom-transition-duration;
       right: -100vw;
 
       @include breakpoint('lg') {
         display: none;
       }
 
-      .nsw-material-icons {
-        font-size: rem(map-get($nsw-icon-sizes, 30));
+      .uom-material-icons {
+        font-size: rem(map-get($uom-icon-sizes, 30));
       }
 
-      .nsw-section--invert.nsw-section--grey-01 & {    
-        background-color: var(--nsw-grey-01);
+      .uom-section--invert.uom-section--grey-01 & {
+        background-color: var(--uom-grey-01);
       }
 
-      .nsw-section--invert.nsw-section--brand-dark & {    
-        background-color: var(--nsw-brand-dark);
+      .uom-section--invert.uom-section--brand-dark & {
+        background-color: var(--uom-brand-dark);
       }
     }
 
-    .nsw-filters--right.active & {
+    .uom-filters--right.active & {
       right: 0;
     }
   }
 
   &__wrapper {
-    .nsw-filters--fixed &,
-    .nsw-filters--right & {
+    .uom-filters--fixed &,
+    .uom-filters--right & {
       @include z-index('middle');
       position: fixed;
       overflow-y: auto;
-      background-color: var(--nsw-white);
+      background-color: var(--uom-white);
       scroll-padding-bottom: rem(122px);
 
-      .nsw-section--invert.nsw-section--grey-01 & {    
-        background-color: var(--nsw-grey-01);
+      .uom-section--invert.uom-section--grey-01 & {
+        background-color: var(--uom-grey-01);
       }
 
-      .nsw-section--invert.nsw-section--brand-dark & {    
-        background-color: var(--nsw-brand-dark);
+      .uom-section--invert.uom-section--brand-dark & {
+        background-color: var(--uom-brand-dark);
       }
 
       @include breakpoint('lg') {
         position: static;
         background-color: transparent;
         overflow-y: visible;
-        
-        .nsw-section--invert & {    
+
+        .uom-section--invert & {
           background-color: transparent;
         }
       }
     }
 
-    .nsw-filters--fixed & {
+    .uom-filters--fixed & {
       display: none;
       top: 0;
       bottom: 0;
@@ -270,11 +270,11 @@
       }
     }
 
-    .nsw-filters--right & {
+    .uom-filters--right & {
       top: 0;
       bottom: 0;
       width: 100%;
-      transition: $nsw-transition-duration;
+      transition: $uom-transition-duration;
       padding: 0 rem(16px) rem(97px) rem(16px);
       right: -100vw;
       visibility: hidden;
@@ -286,22 +286,22 @@
       }
     }
 
-    .nsw-filters--right.active & {
+    .uom-filters--right.active & {
       right: 0;
       visibility: visible;
     }
 
-    .nsw-filters--fixed.nsw-filters--instant & {
+    .uom-filters--fixed.uom-filters--instant & {
       padding-bottom: 0;
     }
 
-    .nsw-filters--down & {
+    .uom-filters--down & {
       @include z-index('middle');
       display: none;
-      background-color: var(--nsw-off-white);
+      background-color: var(--uom-off-white);
       padding: 0 rem(16px);
-      
-      .nsw-section--invert & {    
+
+      .uom-section--invert & {
         background-color: transparent;
       }
 
@@ -310,8 +310,8 @@
         position: static;
         background-color: transparent;
         padding: 0;
-        
-        .nsw-section--invert & {    
+
+        .uom-section--invert & {
           background-color: transparent;
         }
       }
@@ -323,13 +323,13 @@
   }
 
   &__item {
-    border-top: 1px solid var(--nsw-grey-04);
+    border-top: 1px solid var(--uom-grey-04);
     padding: rem(24px) 0;
 
     &-button {
-      font-size: var(--nsw-font-size-sm-mobile);
-      line-height: var(--nsw-line-height-sm-mobile);
-      font-weight: var(--nsw-font-bold);
+      font-size: var(--uom-font-size-sm-mobile);
+      line-height: var(--uom-line-height-sm-mobile);
+      font-weight: var(--uom-font-bold);
       display: flex;
       width: 100%;
       align-items: center;
@@ -340,31 +340,31 @@
       cursor: pointer;
 
       @include breakpoint('lg') {
-        font-size: var(--nsw-font-size-sm-desktop);
-        line-height: var(--nsw-line-height-sm-desktop);
+        font-size: var(--uom-font-size-sm-desktop);
+        line-height: var(--uom-line-height-sm-desktop);
       }
 
-      .nsw-material-icons {
-        font-size: rem(map-get($nsw-icon-sizes, 30));
+      .uom-material-icons {
+        font-size: rem(map-get($uom-icon-sizes, 30));
 
-        &.nsw-material-icons--valid {
-          font-size: rem(map-get($nsw-icon-sizes, 20));
+        &.uom-material-icons--valid {
+          font-size: rem(map-get($uom-icon-sizes, 20));
         }
       }
 
       &:focus {
-        @include nsw-focus;
+        @include uom-focus;
       }
 
       &.active {
-        >.nsw-material-icons:last-child {
+        >.uom-material-icons:last-child {
           transform: rotate(180deg);
         }
       }
 
-      .nsw-section--invert & {    
+      .uom-section--invert & {
         background-color: transparent;
-        color: var(--nsw-off-white);
+        color: var(--uom-off-white);
       }
     }
 
@@ -372,12 +372,12 @@
       padding: rem(6px) 0 0 0;
     }
 
-    span:not(.nsw-material-icons) {
+    span:not(.uom-material-icons) {
       display: flex;
       align-items: center;
     }
 
-    .nsw-material-icons {
+    .uom-material-icons {
       margin-left: rem(8px);
       border-radius: 50%;
       width: rem(16px);
@@ -385,24 +385,24 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: transform $nsw-transition-duration, color $nsw-transition-duration;
+      transition: transform $uom-transition-duration, color $uom-transition-duration;
 
       &--error {
-        background-color: var(--nsw-status-error-bg);
-        color: var(--nsw-status-error);
+        background-color: var(--uom-status-error-bg);
+        color: var(--uom-status-error);
       }
-  
+
       &--valid {
-        background-color: var(--nsw-status-success-bg);
-        color: var(--nsw-status-success);
+        background-color: var(--uom-status-success-bg);
+        color: var(--uom-status-success);
       }
     }
 
-    .nsw-filters--down & {
-      border-top: 1px solid var(--nsw-grey-03);
+    .uom-filters--down & {
+      border-top: 1px solid var(--uom-grey-03);
 
       @include breakpoint('lg') {
-        border-top: 1px solid var(--nsw-grey-04);
+        border-top: 1px solid var(--uom-grey-04);
         display: block;
       }
 
@@ -410,7 +410,7 @@
         border: 0;
 
         @include breakpoint('lg') {
-          border-top: 1px solid var(--nsw-grey-04);
+          border-top: 1px solid var(--uom-grey-04);
         }
       }
     }
@@ -422,21 +422,21 @@
 
   &__cancel {
     padding-bottom: rem(32px);
-    border-top: 1px solid var(--nsw-grey-04);
+    border-top: 1px solid var(--uom-grey-04);
     padding: rem(32px) 0;
 
-    .nsw-filters--down & {
-      border-top: 1px solid var(--nsw-grey-03);
+    .uom-filters--down & {
+      border-top: 1px solid var(--uom-grey-03);
 
       @include breakpoint('lg') {
-        border-top: 1px solid var(--nsw-grey-04);
+        border-top: 1px solid var(--uom-grey-04);
       }
     }
 
     button {
       @include link-button;
 
-      .nsw-section--invert & {
+      .uom-section--invert & {
         @include link-light;
       }
     }
@@ -444,60 +444,60 @@
 
   &__accept {
     padding: rem(32px) 0;
-    border-top: 1px solid var(--nsw-grey-04);
+    border-top: 1px solid var(--uom-grey-04);
 
     @include breakpoint('lg') {
-      ~.nsw-filters__cancel {
+      ~.uom-filters__cancel {
         border: 0;
         padding-top: 0;
       }
     }
 
     button {
-      .nsw-section--invert & {
-        background-color: var(--nsw-white);
+      .uom-section--invert & {
+        background-color: var(--uom-white);
 
         &:disabled {
-          background-color: var(--nsw-white);
+          background-color: var(--uom-white);
         }
       }
 
-      .nsw-section--invert.nsw-section--grey-01 & {  
-        color: var(--nsw-grey-01);
+      .uom-section--invert.uom-section--grey-01 & {
+        color: var(--uom-grey-01);
 
         &:hover {
-          background-color: var(--nsw-grey-04);
-          background-image: linear-gradient(rgba(var(--nsw-white-rgb), 0.15), rgba(var(--nsw-white-rgb), 0.15));
+          background-color: var(--uom-grey-04);
+          background-image: linear-gradient(rgba(var(--uom-white-rgb), 0.15), rgba(var(--uom-white-rgb), 0.15));
         }
       }
 
-      .nsw-section--invert.nsw-section--brand-dark & {    
-        color: var(--nsw-brand-dark);
+      .uom-section--invert.uom-section--brand-dark & {
+        color: var(--uom-brand-dark);
 
         &:disabled {
-          color: var(--nsw-brand-dark);
+          color: var(--uom-brand-dark);
         }
 
         &:hover {
-          color: var(--nsw-text-light);
-          background-image: linear-gradient(rgba(var(--nsw-white-rgb), 0.15), rgba(var(--nsw-white-rgb), 0.15));
+          color: var(--uom-text-light);
+          background-image: linear-gradient(rgba(var(--uom-white-rgb), 0.15), rgba(var(--uom-white-rgb), 0.15));
         }
       }
     }
 
-    .nsw-filters--fixed &,
-    .nsw-filters--right & {
+    .uom-filters--fixed &,
+    .uom-filters--right & {
       @include z-index('upper');
       position: fixed;
-      background-color: var(--nsw-white);
+      background-color: var(--uom-white);
       padding: rem(24px) rem(16px);
 
-      .nsw-section--invert.nsw-section--grey-01 & {    
-        background-color: var(--nsw-grey-01);
+      .uom-section--invert.uom-section--grey-01 & {
+        background-color: var(--uom-grey-01);
       }
 
-      .nsw-section--invert.nsw-section--brand-dark & {    
-        background-color: var(--nsw-brand-dark);
+      .uom-section--invert.uom-section--brand-dark & {
+        background-color: var(--uom-brand-dark);
       }
 
       @include breakpoint('lg') {
@@ -505,38 +505,38 @@
         padding: rem(32px) 0;
         background-color: transparent;
 
-        .nsw-section--invert & {
+        .uom-section--invert & {
           background-color: transparent;
         }
       }
     }
 
-    .nsw-filters--fixed & {
+    .uom-filters--fixed & {
       bottom: 0;
       left: 0;
       right: 0;
     }
 
-    .nsw-filters--right & {
-      border-top: 1px solid var(--nsw-grey-04);
+    .uom-filters--right & {
+      border-top: 1px solid var(--uom-grey-04);
       bottom: 0;
       width: 100%;
-      transition: $nsw-transition-duration;
+      transition: $uom-transition-duration;
       right: -100vw;
     }
 
-    .nsw-filters--right.active & {
+    .uom-filters--right.active & {
       right: 0;
     }
 
-    .nsw-filters--down & {
-      border-top: 1px solid var(--nsw-grey-03);
+    .uom-filters--down & {
+      border-top: 1px solid var(--uom-grey-03);
 
       @include breakpoint('lg') {
-        border-top: 1px solid var(--nsw-grey-04);
+        border-top: 1px solid var(--uom-grey-04);
       }
 
-      ~.nsw-filters__cancel {
+      ~.uom-filters__cancel {
         border: 0;
         padding-top: 0;
       }
@@ -548,60 +548,60 @@
     @include link-button;
     margin-top: rem(24px);
 
-    .nsw-section--invert & {
+    .uom-section--invert & {
       @include link-light;
     }
   }
 
-  &.nsw-filters--down {
-    .nsw-section--invert & {
-      background-color: var(--nsw-white);
-      color: var(--nsw-text-dark);
+  &.uom-filters--down {
+    .uom-section--invert & {
+      background-color: var(--uom-white);
+      color: var(--uom-text-dark);
 
       @include breakpoint('lg') {
-        color: var(--nsw-text-light);
+        color: var(--uom-text-light);
         background-color: transparent;
       }
     }
 
-    .nsw-filters__item-button {
-      .nsw-section--invert & {
-        color: var(--nsw-text-dark);
-      
+    .uom-filters__item-button {
+      .uom-section--invert & {
+        color: var(--uom-text-dark);
+
         @include breakpoint('lg') {
-          color: var(--nsw-text-light);
+          color: var(--uom-text-light);
         }
       }
     }
 
-    .nsw-filters__cancel button {
+    .uom-filters__cancel button {
       @include link-button;
 
-      .nsw-section--invert & {
+      .uom-section--invert & {
         @include breakpoint('lg') {
           @include link-light;
         }
       }
     }
 
-    .nsw-filters__accept button {
-      .nsw-section--invert.nsw-section--grey-01 & {    
-        background-color: var(--nsw-grey-01);
-        color: var(--nsw-text-light);
+    .uom-filters__accept button {
+      .uom-section--invert.uom-section--grey-01 & {
+        background-color: var(--uom-grey-01);
+        color: var(--uom-text-light);
 
         @include breakpoint('lg') {
-          background-color: var(--nsw-white);
-          color: var(--nsw-grey-01);
+          background-color: var(--uom-white);
+          color: var(--uom-grey-01);
         }
       }
 
-      .nsw-section--invert.nsw-section--brand-dark & {    
-        background-color: var(--nsw-brand-dark);
-        color: var(--nsw-text-light);
+      .uom-section--invert.uom-section--brand-dark & {
+        background-color: var(--uom-brand-dark);
+        color: var(--uom-text-light);
 
         @include breakpoint('lg') {
-          background-color: var(--nsw-white);
-          color: var(--nsw-brand-dark);
+          background-color: var(--uom-white);
+          color: var(--uom-brand-dark);
         }
       }
     }

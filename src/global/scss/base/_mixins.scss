@@ -2,13 +2,13 @@
 
 @mixin breakpoint( $size, $width-type: min-width) {
   @if type-of( $size ) != 'string' {
-    @error 'NSW-DS Breakpoint mixin accepts only strings';
+    @error 'uom-DS Breakpoint mixin accepts only strings';
   }
 
   @if $size != 'xs' and $size != 'sm' and $size != 'md' and $size != 'lg' and $size != 'xl' {
-    @error 'NSW-DS Breakpoint mixin allows the following breakpoint sizes xs, sm, md, lg';
+    @error 'uom-DS Breakpoint mixin allows the following breakpoint sizes xs, sm, md, lg';
   } @else {
-    $px-size: map-get($nsw-breakpoints, $size);
+    $px-size: map-get($uom-breakpoints, $size);
     $rem-size: rem($px-size);
 
     @media ($width-type: $rem-size) {
@@ -18,9 +18,9 @@
 }
 
 // Default focus state
-@mixin nsw-focus($offset: true, $color: var(--nsw-focus)) {
+@mixin uom-focus($offset: true, $color: var(--uom-focus)) {
   @if type-of($offset) != bool {
-    @error 'NSW-DS nsw-focus mixin allows a boolean for $offset: You have used a type of "#{type-of($offset)}" and a value of "#{$offset}"';
+    @error 'uom-DS uom-focus mixin allows a boolean for $offset: You have used a type of "#{type-of($offset)}" and a value of "#{$offset}"';
   }
 
   outline: solid 3px $color;
@@ -32,80 +32,80 @@
 }
 
 // Default hover state
-@mixin nsw-hover {
-  background-color: var(--nsw-hover);
+@mixin uom-hover {
+  background-color: var(--uom-hover);
 }
 
-@mixin nsw-hover-light {
-  background-color: var(--nsw-hover-light);
+@mixin uom-hover-light {
+  background-color: var(--uom-hover-light);
 }
 
 //Links
 @mixin link() {
-  font-weight: var(--nsw-font-bold);
-  color: var(--nsw-link);
+  font-weight: var(--uom-font-bold);
+  color: var(--uom-link);
   text-decoration: underline;
 
   &:visited {
-    color: var(--nsw-visited);
+    color: var(--uom-visited);
   }
 
   &:focus {
-    @include nsw-focus($offset: false);
+    @include uom-focus($offset: false);
   }
 
   &:hover {
-    @include nsw-hover;
-    outline: 2px solid var(--nsw-hover);
+    @include uom-hover;
+    outline: 2px solid var(--uom-hover);
   }
 
   &:active {
-    background-color: var(--nsw-active);
-    outline-color: var(--nsw-active);
+    background-color: var(--uom-active);
+    outline-color: var(--uom-active);
   }
 }
 
 @mixin link-dark() {
-  color: var(--nsw-link);
+  color: var(--uom-link);
 
   &:visited {
-    color: var(--nsw-visited);
+    color: var(--uom-visited);
   }
 
   &:focus {
-    outline-color: var(--nsw-focus);
+    outline-color: var(--uom-focus);
   }
 
   &:hover {
-    background-color: var(--nsw-hover);
-    outline-color: var(--nsw-hover);
+    background-color: var(--uom-hover);
+    outline-color: var(--uom-hover);
   }
 
   &:active {
-    background-color: var(--nsw-active);
-    outline-color: var(--nsw-active);
+    background-color: var(--uom-active);
+    outline-color: var(--uom-active);
   }
 }
 
 @mixin link-light() {
-  color: var(--nsw-link-light);
+  color: var(--uom-link-light);
 
   &:visited {
-    color: var(--nsw-visited-light);
+    color: var(--uom-visited-light);
   }
 
   &:focus {
-    outline-color: var(--nsw-focus-light);
+    outline-color: var(--uom-focus-light);
   }
 
   &:hover {
-    background-color: var(--nsw-hover-light);
-    outline-color: var(--nsw-hover-light);
+    background-color: var(--uom-hover-light);
+    outline-color: var(--uom-hover-light);
   }
 
   &:active {
-    background-color: var(--nsw-active-light);
-    outline-color: var(--nsw-active-light);
+    background-color: var(--uom-active-light);
+    outline-color: var(--uom-active-light);
   }
 }
 
@@ -136,11 +136,11 @@
 // Z-index
 @mixin z-index($index: 'base') {
 
-  @if map-has-key($nsw-z-index, $index) == false {
-    @error 'NSW-DS z-index mixin allows the following values for $index: #{map-keys($nsw-z-index)}. You have used "#{$index}"';
+  @if map-has-key($uom-z-index, $index) == false {
+    @error 'uom-DS z-index mixin allows the following values for $index: #{map-keys($uom-z-index)}. You have used "#{$index}"';
   }
   @else {
-    z-index: map-get($nsw-z-index, $index);
+    z-index: map-get($uom-z-index, $index);
   }
 }
 
@@ -185,16 +185,16 @@
 // Font-size mixin - returns the font size for mobile and desktop based of the values in $font-sizes map
 @mixin font-size($size) {
   @if $size != 'xxs' and $size != 'xs' and $size != 'sm' and $size != 'md' and $size != 'lg' and $size != 'xl' and $size != 'xxl' {
-    @error 'NSW-DS font-size mixin allows the following values for $sizes: xxs, xs, sm, md, lg, xl, xxl. You have used "#{$size}"';
+    @error 'uom-DS font-size mixin allows the following values for $sizes: xxs, xs, sm, md, lg, xl, xxl. You have used "#{$size}"';
   }
 
   @if $size {
-    font-size: var(--nsw-font-size-#{$size}-mobile);
-    line-height: var(--nsw-line-height-#{$size}-mobile);
+    font-size: var(--uom-font-size-#{$size}-mobile);
+    line-height: var(--uom-line-height-#{$size}-mobile);
 
-    @include breakpoint($nsw-font-size-reponsive-breakpoint) {
-      font-size: var(--nsw-font-size-#{$size}-desktop);
-      line-height: var(--nsw-line-height-#{$size}-desktop);
+    @include breakpoint($uom-font-size-reponsive-breakpoint) {
+      font-size: var(--uom-font-size-#{$size}-desktop);
+      line-height: var(--uom-line-height-#{$size}-desktop);
     }
   }
 }
@@ -207,7 +207,7 @@
 
 //Grid
 @mixin container($offset: $grid-gutters*2) {
-  max-width: var(--nsw-container-width);
+  max-width: var(--uom-container-width);
   padding-left: rem($offset);
   padding-right: rem($offset);
   margin-left: auto;
@@ -262,7 +262,7 @@
   }
 }
 
-@mixin media-breakpoint-up($name, $breakpoints: $nsw-breakpoints) {
+@mixin media-breakpoint-up($name, $breakpoints: $uom-breakpoints) {
   $min: breakpoint-min($name, $breakpoints);
   @if $min {
     @media (min-width: $min) {

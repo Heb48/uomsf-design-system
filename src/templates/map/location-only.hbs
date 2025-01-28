@@ -9,65 +9,65 @@ model:
 ---
 
 <style>
-  .nsw-map-bar {
+  .uom-map-bar {
     padding: 1rem 0 1.5rem 0;
   }
 
-  .nsw-map-bar__key {
+  .uom-map-bar__key {
     display: flex;
     align-items: center;
     margin: 0 -0.5rem;
   }
 
-  .nsw-map-bar__key > span {
+  .uom-map-bar__key > span {
     display: flex;
     align-items: center;
     padding: 0 0.5rem;
   }
 
-  .nsw-map-bar svg {
+  .uom-map-bar svg {
     width: 1rem;
     height: 1.5rem;
     margin-right: 0.5rem;
   }
 
-  .nsw-map-results {
+  .uom-map-results {
     padding: 1rem 0;
   }
 
-  .nsw-map-container {
+  .uom-map-container {
     position: relative;
   }
 
-  .nsw-map-controls {
+  .uom-map-controls {
     position: absolute;
     top: 1.5rem;
     right: 0.5rem;
   }
 
 @media (min-width: 48rem) {
-  .nsw-map-controls {
+  .uom-map-controls {
     right: 1rem;
   }
 }
 
 @media (min-width: 62rem) {
-  .nsw-map-results {
+  .uom-map-results {
     padding: 2rem 0 1.5rem 0;
   }
 
-  .nsw-map-bar {
+  .uom-map-bar {
     padding-top: 2rem;
   }
 
-  .nsw-map-controls {
+  .uom-map-controls {
     top: 3rem;
   }
 
-  .nsw-col--line:before {
+  .uom-col--line:before {
     content: '';
     position: absolute;
-    background: var(--nsw-grey-04);
+    background: var(--uom-grey-04);
     height: 1px;
     top: 6rem;
     left: 1rem;
@@ -77,14 +77,14 @@ model:
 
 </style>
 
-{{>_global-alert title="Example page only" content="This is an example page from the NSW Design System, and is for demonstration only. Visit <a target='_blank' href='https://www.nsw.gov.au'>nsw.gov.au</a> for government services."
+{{>_global-alert title="Example page only" content="This is an example page from the UOM Education Cloud Design System, and is for demonstration only. Visit <a target='_blank' href='https://www.nsw.gov.au'>nsw.gov.au</a> for government services."
 }}
 
 {{>_masthead content="#content" nav="#main-nav"}}
 {{>_header header-title="Department of Customer Service"}}
 {{>_main-nav model.nav}}
-<div class="nsw-container nsw-p-bottom-xs">
-  <nav aria-label="Breadcrumbs" class="nsw-breadcrumbs">
+<div class="uom-container uom-p-bottom-xs">
+  <nav aria-label="Breadcrumbs" class="uom-breadcrumbs">
     <ol>
       <li>
         <a href="#">Home</a>
@@ -96,34 +96,34 @@ model:
   </nav>
 </div>
 
-<main id="content" class="nsw-container nsw-p-top-sm nsw-p-bottom-lg">
-  <div class="nsw-layout">
-    <div class="nsw-layout__main">
-      <div class="nsw-grid nsw-grid--flush">
-        <div class="nsw-row">
-          <div class="nsw-col nsw-col-lg-8">
+<main id="content" class="uom-container uom-p-top-sm uom-p-bottom-lg">
+  <div class="uom-layout">
+    <div class="uom-layout__main">
+      <div class="uom-grid uom-grid--flush">
+        <div class="uom-row">
+          <div class="uom-col uom-col-lg-8">
             <h1>Find a service</h1>
-            <p class="nsw-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="uom-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-            <form class="nsw-p-top-lg" action="#" method="_get">
-              <label class="nsw-form__label" for="form-postcode">Search by postcode</label>
-              <div class="nsw-form__input-group">
-                <input class="nsw-form__input" type="text" id="form-postcode" name="postcode" value="">
-                <button type="submit" class="nsw-button nsw-button--dark nsw-button--flex" aria-label="Search for address by postcode">Search</button>
+            <form class="uom-p-top-lg" action="#" method="_get">
+              <label class="uom-form__label" for="form-postcode">Search by postcode</label>
+              <div class="uom-form__input-group">
+                <input class="uom-form__input" type="text" id="form-postcode" name="postcode" value="">
+                <button type="submit" class="uom-button uom-button--dark uom-button--flex" aria-label="Search for address by postcode">Search</button>
               </div>
-              <a href="#" class="nsw-link nsw-link--icon nsw-m-top-xs" aria-label="Use my current location">
-                <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">near_me</span>
+              <a href="#" class="uom-link uom-link--icon uom-m-top-xs" aria-label="Use my current location">
+                <span class="material-icons uom-material-icons" focusable="false" aria-hidden="true">near_me</span>
                 <span>Use my currrent location</span>
               </a>
             </form>
           </div>
         </div>
-        <div class="nsw-row nsw-row--reverse nsw-map-container">
-          <div class="nsw-col nsw-col-lg-7 js-map">
-            <div class="nsw-map-bar">
-              <div class="nsw-map-bar__key">
-                <span><strong>Key:</strong></span>              
-                <span>                
+        <div class="uom-row uom-row--reverse uom-map-container">
+          <div class="uom-col uom-col-lg-7 js-map">
+            <div class="uom-map-bar">
+              <div class="uom-map-bar__key">
+                <span><strong>Key:</strong></span>
+                <span>
                   <svg viewBox="0 0 27 41">
                     <g fill-rule="nonzero">
                       <g fill="#146cfd">
@@ -139,8 +139,8 @@ model:
                     </g>
                   </svg>
                   <span>Open</span>
-                </span>              
-                <span>                
+                </span>
+                <span>
                   <svg viewBox="0 0 27 41">
                     <g fill-rule="nonzero">
                       <g fill="#D7153A">
@@ -159,21 +159,21 @@ model:
                 </span>
               </div>
             </div>
-            <div class="nsw-map">
+            <div class="uom-map">
               <div id='map' style='width: 100%; height: 480px;'></div>
-            </div>            
-          </div>
-          <div class="nsw-col nsw-col-lg-5 js-map-results">
-            <div class="nsw-map-controls">
-              <a href="#" class="js-hide-map">Hide Map</a>            
-              <a href="#" class="js-show-map" style="display: none;">Show Map</a>            
             </div>
-            <div class="nsw-map-results">4 services found</div>
-            <div class="nsw-results">
-              <div class="nsw-list-item">
-                <div class="nsw-list-item__content">
-                  <div class="nsw-list-item__title"><a href="#">Service Alpha</a></div>
-                  <div class="nsw-list-item__copy">
+          </div>
+          <div class="uom-col uom-col-lg-5 js-map-results">
+            <div class="uom-map-controls">
+              <a href="#" class="js-hide-map">Hide Map</a>
+              <a href="#" class="js-show-map" style="display: none;">Show Map</a>
+            </div>
+            <div class="uom-map-results">4 services found</div>
+            <div class="uom-results">
+              <div class="uom-list-item">
+                <div class="uom-list-item__content">
+                  <div class="uom-list-item__title"><a href="#">Service Alpha</a></div>
+                  <div class="uom-list-item__copy">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venian.</p>
                     <p>
                       123 Sydney Street, Sydney NSW 2000<br>
@@ -183,10 +183,10 @@ model:
                   </div>
                 </div>
               </div>
-              <div class="nsw-list-item">
-                <div class="nsw-list-item__content">
-                  <div class="nsw-list-item__title"><a href="#">Service Beta</a></div>
-                  <div class="nsw-list-item__copy">
+              <div class="uom-list-item">
+                <div class="uom-list-item__content">
+                  <div class="uom-list-item__title"><a href="#">Service Beta</a></div>
+                  <div class="uom-list-item__copy">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venian.</p>
                     <p>
                       123 Sydney Street, Sydney NSW 2000<br>
@@ -196,10 +196,10 @@ model:
                   </div>
                 </div>
               </div>
-              <div class="nsw-list-item">
-                <div class="nsw-list-item__content">
-                  <div class="nsw-list-item__title"><a href="#">Service Charlie</a></div>
-                  <div class="nsw-list-item__copy">
+              <div class="uom-list-item">
+                <div class="uom-list-item__content">
+                  <div class="uom-list-item__title"><a href="#">Service Charlie</a></div>
+                  <div class="uom-list-item__copy">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venian.</p>
                     <p>
                       123 Sydney Street, Sydney NSW 2000<br>
@@ -209,10 +209,10 @@ model:
                   </div>
                 </div>
               </div>
-              <div class="nsw-list-item">
-                <div class="nsw-list-item__content">
-                  <div class="nsw-list-item__title"><a href="#">Service Delta</a></div>
-                  <div class="nsw-list-item__copy">
+              <div class="uom-list-item">
+                <div class="uom-list-item__content">
+                  <div class="uom-list-item__title"><a href="#">Service Delta</a></div>
+                  <div class="uom-list-item__copy">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venian.</p>
                     <p>
                       123 Sydney Street, Sydney NSW 2000<br>
@@ -236,9 +236,9 @@ model:
     this.style.display = "none"
     document.querySelector('.js-show-map').style.display = "block"
     document.querySelector('.js-map').style.display = "none"
-    document.querySelector('.js-map-results').classList.remove("nsw-col-lg-5")
-    document.querySelector('.js-map-results').classList.add("nsw-col-lg-8")
-    document.querySelector('.js-map-results').classList.add("nsw-col--line")
+    document.querySelector('.js-map-results').classList.remove("uom-col-lg-5")
+    document.querySelector('.js-map-results').classList.add("uom-col-lg-8")
+    document.querySelector('.js-map-results').classList.add("uom-col--line")
 
   }, false)
 
@@ -247,9 +247,9 @@ model:
     this.style.display = "none"
     document.querySelector('.js-hide-map').style.display = "block"
     document.querySelector('.js-map').style.display = "block"
-    document.querySelector('.js-map-results').classList.remove("nsw-col-lg-8")
-    document.querySelector('.js-map-results').classList.remove("nsw-col--line")
-    document.querySelector('.js-map-results').classList.add("nsw-col-lg-5")
+    document.querySelector('.js-map-results').classList.remove("uom-col-lg-8")
+    document.querySelector('.js-map-results').classList.remove("uom-col--line")
+    document.querySelector('.js-map-results').classList.add("uom-col-lg-5")
 
   }, false)
 </script>
@@ -271,14 +271,14 @@ model:
     geojson.features.forEach(function(marker) {
 
       var markerColor;
-      var nswStyles = getComputedStyle(document.body)
+      var uomStyles = getComputedStyle(document.body)
 
       switch (marker.properties.Organisation_Name) {
         case "Service Alpha":
-          markerColor = nswStyles.getPropertyValue('--nsw-palette-red-02');
+          markerColor = uomStyles.getPropertyValue('--uom-palette-red-02');
           break;
         default:
-          markerColor = nswStyles.getPropertyValue('--nsw-palette-traditional-heritage-blue-75');
+          markerColor = uomStyles.getPropertyValue('--uom-palette-traditional-heritage-blue-75');
       }
 
       new mapboxgl.Marker({

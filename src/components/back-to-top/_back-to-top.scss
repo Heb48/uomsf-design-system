@@ -1,4 +1,4 @@
-.nsw-back-to-top {
+.uom-back-to-top {
   display: flex;
   flex-direction: column-reverse;
   position: fixed;
@@ -19,7 +19,7 @@
     opacity: 1;
   }
 
-  &.nsw-button {
+  &.uom-button {
     padding: 1rem;
     border: 0;
 
@@ -27,7 +27,7 @@
       padding: 0.625rem 1.375rem;
     }
 
-    .nsw-material-icons:last-child {
+    .uom-material-icons:last-child {
       margin-left: 0;
 
       @include breakpoint('md') {

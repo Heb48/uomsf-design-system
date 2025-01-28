@@ -1,40 +1,40 @@
-$nsw-layout-gap: 32px;
+$uom-layout-gap: 32px;
 
-.nsw-layout {
+.uom-layout {
   @include grid();
 
   &__main {
     @include column-default();
 
     &:not(:first-child) {
-      @include column(8, $nsw-desktop-breakpoint);
+      @include column(8, $uom-desktop-breakpoint);
     }
 
     &:not(:last-child) {
-      @include column(8, $nsw-desktop-breakpoint);
+      @include column(8, $uom-desktop-breakpoint);
     }
   }
 
   &__sidebar {
     @include column-default();
-    @include column(4, $nsw-desktop-breakpoint);
+    @include column(4, $uom-desktop-breakpoint);
 
     &:first-child {
       @include breakpoint('lg') {
-        padding-right: rem($grid-gutters*2 + $nsw-layout-gap);
+        padding-right: rem($grid-gutters*2 + $uom-layout-gap);
       }
     }
 
     &:last-child {
-      @include breakpoint($nsw-desktop-breakpoint) {
-        padding-left: rem($grid-gutters*2 + $nsw-layout-gap);
+      @include breakpoint($uom-desktop-breakpoint) {
+        padding-left: rem($grid-gutters*2 + $uom-layout-gap);
       }
     }
 
     &--desktop {
       display: none;
 
-      @include breakpoint($nsw-desktop-breakpoint) {
+      @include breakpoint($uom-desktop-breakpoint) {
         display: block;
       }
     }

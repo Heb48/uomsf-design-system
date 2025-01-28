@@ -1,9 +1,9 @@
-.nsw-callout {
+.uom-callout {
   @include component-spacing();
   padding: rem(16px);
-  border-left: solid 4px var(--nsw-brand-dark);
-      
-  .nsw-section--invert & {    
-    border-color: var(--nsw-brand-light);
+  border-left: solid 4px var(--uom-brand-dark);
+
+  .uom-section--invert & {
+    border-color: var(--uom-brand-light);
   }
 }

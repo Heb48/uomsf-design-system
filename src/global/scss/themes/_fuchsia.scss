@@ -41,15 +41,15 @@ $fuchsia-colors-rgb: map-loop($fuchsia-colors, to-rgb, '$value') !default;
 
 .fuchsia {
   @each $color, $value in $fuchsia-colors {
-    --nsw-#{$color}: #{$value};
+    --uom-#{$color}: #{$value};
   }
 
   @each $color, $value in $fuchsia-colors-rgb {
-    --nsw-#{$color}-rgb: #{$value};
+    --uom-#{$color}-rgb: #{$value};
   }
 }
 
 .fuchsia-accent {
-  --nsw-brand-accent: #{$fuchsia-02};
-  --nsw-brand-accent-rgb: #{to-rgb($fuchsia-02)};
+  --uom-brand-accent: #{$fuchsia-02};
+  --uom-brand-accent-rgb: #{to-rgb($fuchsia-02)};
 }

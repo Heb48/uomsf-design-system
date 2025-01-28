@@ -3,7 +3,7 @@ import { uniqueId } from '../../global/scripts/helpers/utilities'
 class Tabs {
   constructor(element, showTab) {
     this.element = element
-    this.tablistClass = '.nsw-tabs__list'
+    this.tablistClass = '.uom-tabs__list'
     this.tablistItemClass = 'li'
     this.tablistLinkClass = 'a'
     this.showTab = showTab
@@ -27,7 +27,7 @@ class Tabs {
 
   setUpDom() {
     const tabListWrapper = document.createElement('div')
-    tabListWrapper.classList.add('nsw-tabs__list-wrapper')
+    tabListWrapper.classList.add('uom-tabs__list-wrapper')
     this.element.prepend(tabListWrapper)
     tabListWrapper.prepend(this.tabList)
     this.tabList.setAttribute('role', 'tablist')

@@ -41,15 +41,15 @@ $teal-colors-rgb: map-loop($teal-colors, to-rgb, '$value') !default;
 
 .teal {
   @each $color, $value in $teal-colors {
-    --nsw-#{$color}: #{$value};
+    --uom-#{$color}: #{$value};
   }
 
   @each $color, $value in $teal-colors-rgb {
-    --nsw-#{$color}-rgb: #{$value};
+    --uom-#{$color}-rgb: #{$value};
   }
 }
 
 .teal-accent {
-  --nsw-brand-accent: #{$laughing-kookaburra-light-75};
-  --nsw-brand-accent-rgb: #{to-rgb($laughing-kookaburra-light-75)};
+  --uom-brand-accent: #{$laughing-kookaburra-light-75};
+  --uom-brand-accent-rgb: #{to-rgb($laughing-kookaburra-light-75)};
 }

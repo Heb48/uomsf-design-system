@@ -1,42 +1,42 @@
-$nsw-icon-sizes: (
+$uom-icon-sizes: (
   20: 20px,
   24: 24px,
   30: 30px,
   36: 36px
 );
 
-$nsw-icon-colors: (
-  brand: var(--nsw-brand-dark),
-  accent: var(--nsw-brand-accent),
-  error: var(--nsw-status-error),
-  success: var(--nsw-status-success),
-  info: var(--nsw-status-info),
-  warning: var(--nsw-status-warning)
+$uom-icon-colors: (
+  brand: var(--uom-brand-dark),
+  accent: var(--uom-brand-accent),
+  error: var(--uom-status-error),
+  success: var(--uom-status-success),
+  info: var(--uom-status-info),
+  warning: var(--uom-status-warning)
 );
 
-$nsw-icon-angles: (90, 180, 270);
+$uom-icon-angles: (90, 180, 270);
 
-.nsw-material-icons {
-  @each $size, $variant in $nsw-icon-sizes {
+.uom-material-icons {
+  @each $size, $variant in $uom-icon-sizes {
     &--#{"" + $size} {
-      font-size: rem(map-get($nsw-icon-sizes, $size));
+      font-size: rem(map-get($uom-icon-sizes, $size));
     }
   }
 
-  @each $color, $variant in $nsw-icon-colors {
+  @each $color, $variant in $uom-icon-colors {
     &--#{"" + $color} {
-      color: map-get($nsw-icon-colors, $color);
+      color: map-get($uom-icon-colors, $color);
     }
   }
 
-  @each $angle, $variant in $nsw-icon-angles {
+  @each $angle, $variant in $uom-icon-angles {
     &--rotate-#{"" + $angle} {
       transform: rotate(#{$angle}deg);
     }
   }
 
   &--inline {
-    font-size: rem(map-get($nsw-icon-sizes, 20));
+    font-size: rem(map-get($uom-icon-sizes, 20));
     line-height: rem(10px);
     position: relative;
     bottom: rem(-5px);
@@ -44,11 +44,11 @@ $nsw-icon-angles: (90, 180, 270);
   }
 }
 
-.nsw-icon-button {
+.uom-icon-button {
   @include font-size('sm');
-  border-radius: var(--nsw-border-radius);
-  font-weight: var(--nsw-font-bold);
-  color: var(--nsw-brand-dark);
+  border-radius: var(--uom-border-radius);
+  font-weight: var(--uom-font-bold);
+  color: var(--uom-brand-dark);
   background: none;
   border: 0;
   text-decoration: none;
@@ -56,15 +56,15 @@ $nsw-icon-angles: (90, 180, 270);
   display: inline-block;
 
   &:hover {
-    @include nsw-hover;
+    @include uom-hover;
     outline-width: 0;
   }
 
   &:focus {
-    @include nsw-focus($offset: false);
+    @include uom-focus($offset: false);
   }
 
-  .nsw-material-icons,
+  .uom-material-icons,
   svg {
     display: block;
   }
@@ -81,7 +81,7 @@ $nsw-icon-angles: (90, 180, 270);
     align-items: center;
   }
 
-  .nsw-section--invert & {    
+  .uom-section--invert & {
     @include link-light;
   }
 }

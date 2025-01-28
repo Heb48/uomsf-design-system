@@ -1,10 +1,10 @@
-<footer class="nsw-footer{{#if theme}} nsw-footer--{{theme}}{{/if}}">
+<footer class="uom-footer{{#if theme}} uom-footer--{{theme}}{{/if}}">
   {{#if sectionLinks}}
-  <div class="nsw-footer__upper">
-    <div class="nsw-container">
+  <div class="uom-footer__upper">
+    <div class="uom-container">
       {{#each sectionLinks}}
-        <div class="nsw-footer__group">
-          <div class="nsw-footer__heading"><a href="{{url}}">{{title}}</a></div>
+        <div class="uom-footer__group">
+          <div class="uom-footer__heading"><a href="{{url}}">{{title}}</a></div>
           <ul>
             {{#each links}}
             <li><a href="{{url}}">{{text}}</a></li>
@@ -15,25 +15,25 @@
     </div>
   </div>
   {{/if}}
-  <div class="nsw-footer__lower">
-    <div class="nsw-container">
-      <p class="nsw-footer__acknowledgement">{{acknowledgementOfCountry}}</p>
+  <div class="uom-footer__lower">
+    <div class="uom-container">
+      <p class="uom-footer__acknowledgement">{{acknowledgementOfCountry}}</p>
       {{#unless simple}}
       <hr>{{#if social}}
-      <div class="nsw-footer__links">{{/if}}
+      <div class="uom-footer__links">{{/if}}
       <ul>
         {{#each footerLinks}}
         <li><a href="{{url}}">{{text}}</a></li>
         {{/each}}
       </ul>{{#if social}}
-      <div class="nsw-footer__social">
-        <a class="nsw-icon-button" href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <div class="uom-footer__social">
+        <a class="uom-icon-button" href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
           {{#if-equals theme "light"}}
           <svg role="img" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <title>LinkedIn</title>
             <path d="M29.7939 0H3.08695C1.62824 0 0.352905 1.05027 0.352905 2.49231V29.2576C0.352905 30.708 1.62824 32 3.08695 32H29.7855C31.2526 32 32.3529 30.6996 32.3529 29.2576V2.49231C32.3612 1.05027 31.2526 0 29.7939 0ZM10.2721 26.6736H5.68762V12.4199H10.2721V26.6736ZM8.13825 10.2527H8.10491C6.63787 10.2527 5.68762 9.16071 5.68762 7.79369C5.68762 6.40166 6.66287 5.33471 8.16326 5.33471C9.66365 5.33471 10.5806 6.39332 10.6139 7.79369C10.6139 9.16071 9.66365 10.2527 8.13825 10.2527ZM27.0265 26.6736H22.442V18.8799C22.442 17.0127 21.7751 15.7374 20.1164 15.7374C18.8494 15.7374 18.0992 16.596 17.7657 17.4295C17.6407 17.7296 17.6074 18.138 17.6074 18.5548V26.6736H13.0229V12.4199H17.6074V14.4037C18.2742 13.4535 19.3162 12.0865 21.7418 12.0865C24.7509 12.0865 27.0265 14.0703 27.0265 18.3464V26.6736V26.6736Z" fill="#0A66C2"/>
           </svg>
-          {{else}} 
+          {{else}}
           <svg role="img" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <title>LinkedIn</title>
             <path d="M29.7939 0H3.08695C1.62824 0 0.352905 1.05027 0.352905 2.49231V29.2576C0.352905 30.708 1.62824 32 3.08695 32H29.7855C31.2526 32 32.3529 30.6996 32.3529 29.2576V2.49231C32.3612 1.05027 31.2526 0 29.7939 0ZM10.2721 26.6736H5.68762V12.4199H10.2721V26.6736ZM8.13825 10.2527H8.10491C6.63787 10.2527 5.68762 9.16071 5.68762 7.79369C5.68762 6.40166 6.66287 5.33471 8.16326 5.33471C9.66365 5.33471 10.5806 6.39332 10.6139 7.79369C10.6139 9.16071 9.66365 10.2527 8.13825 10.2527ZM27.0265 26.6736H22.442V18.8799C22.442 17.0127 21.7751 15.7374 20.1164 15.7374C18.8494 15.7374 18.0992 16.596 17.7657 17.4295C17.6407 17.7296 17.6074 18.138 17.6074 18.5548V26.6736H13.0229V12.4199H17.6074V14.4037C18.2742 13.4535 19.3162 12.0865 21.7418 12.0865C24.7509 12.0865 27.0265 14.0703 27.0265 18.3464V26.6736V26.6736Z" fill="white"/>
@@ -41,13 +41,13 @@
           {{/if-equals}}
           <span class="sr-only">LinkedIn</span>
         </a>
-        <a class="nsw-icon-button" href="#" target="_blank" rel="noopener" aria-label="X (formerly Twitter)">
+        <a class="uom-icon-button" href="#" target="_blank" rel="noopener" aria-label="X (formerly Twitter)">
           {{#if-equals theme "light"}}
           <svg role="img" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <title>X (formerly Twitter)</title>
             <path d="M18.6348 13.5498L30.2914 0H27.5292L17.4078 11.7651L9.32385 0H0L12.2245 17.7909L0 32H2.76239L13.4508 19.5756L21.9881 32H31.3119L18.6342 13.5498H18.6348ZM14.8514 17.9477L13.6128 16.1761L3.75772 2.07949H8.00059L15.9537 13.4559L17.1923 15.2275L27.5305 30.0151H23.2876L14.8514 17.9484V17.9477Z" fill="black"/>
           </svg>
-          {{else}} 
+          {{else}}
           <svg role="img" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <title>X (formerly Twitter)</title>
             <path d="M18.6348 13.5498L30.2914 0H27.5292L17.4078 11.7651L9.32385 0H0L12.2245 17.7909L0 32H2.76239L13.4508 19.5756L21.9881 32H31.3119L18.6342 13.5498H18.6348ZM14.8514 17.9477L13.6128 16.1761L3.75772 2.07949H8.00059L15.9537 13.4559L17.1923 15.2275L27.5305 30.0151H23.2876L14.8514 17.9484V17.9477Z" fill="white"/>
@@ -55,13 +55,13 @@
           {{/if-equals}}
           <span class="sr-only">X (formerly Twitter)</span>
         </a>
-        <a class="nsw-icon-button" href="#" target="_blank" rel="noopener" aria-label="Facebook">
+        <a class="uom-icon-button" href="#" target="_blank" rel="noopener" aria-label="Facebook">
           {{#if-equals theme "light"}}
           <svg role="img" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <title>Facebook</title>
             <path d="M33 16.0978C33 7.20722 25.7771 0 16.8672 0C7.95732 0 0.734436 7.20722 0.734436 16.0978C0.734436 24.1326 6.63395 30.7924 14.3465 32V20.751H10.2503V16.0978H14.3465V12.5512C14.3465 8.51673 16.755 6.2882 20.4401 6.2882C22.2051 6.2882 24.0514 6.60261 24.0514 6.60261V10.5642H22.017C20.013 10.5642 19.388 11.8051 19.388 13.0781V16.0978H23.8623L23.147 20.751H19.388V32C27.1005 30.7924 33 24.1326 33 16.0978" fill="#1877F2"/>
           </svg>
-          {{else}} 
+          {{else}}
           <svg role="img" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <title>Facebook</title>
             <path d="M33 16.0978C33 7.20722 25.7771 0 16.8672 0C7.95731 0 0.734421 7.20722 0.734421 16.0978C0.734421 24.1326 6.63394 30.7924 14.3465 32V20.751H10.2503V16.0978H14.3465V12.5512C14.3465 8.51673 16.755 6.2882 20.44 6.2882C22.2051 6.2882 24.0513 6.60261 24.0513 6.60261V10.5642H22.017C20.0129 10.5642 19.388 11.8051 19.388 13.0781V16.0978H23.8623L23.147 20.751H19.3879V32C27.1005 30.7924 33 24.1326 33 16.0978" fill="white"/>
@@ -71,9 +71,9 @@
         </a>
       </div>
       </div>{{/if}}
-      <div class="nsw-footer__info">
-        <div class="nsw-footer__copyright">{{copyright}}</div>
-        <div class="nsw-footer__built">Built by <a href="https://www.digital.nsw.gov.au/digital-design-system" target="_blank" rel="noopener noreferrer">NSW Design System</a></div>
+      <div class="uom-footer__info">
+        <div class="uom-footer__copyright">{{copyright}}</div>
+        <div class="uom-footer__built">Built by <a href="https://www.digital.nsw.gov.au/digital-design-system" target="_blank" rel="noopener noreferrer">UOM Education Cloud Design System</a></div>
       </div>
       {{/unless}}
     </div>

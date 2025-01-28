@@ -20,11 +20,11 @@ class Select {
     this.nMultiSelect = this.element.getAttribute('data-n-multi-select') || 1
     this.noUpdateLabel = this.element.getAttribute('data-update-text') && this.element.getAttribute('data-update-text') === 'off'
     this.insetLabel = this.element.getAttribute('data-inset-label') && this.element.getAttribute('data-inset-label') === 'on'
-    this.hideClass = 'nsw-display-none'
+    this.hideClass = 'uom-display-none'
     this.showClass = 'active'
     this.errorClass = 'has-error'
     this.srClass = 'sr-only'
-    this.prefix = 'nsw-'
+    this.prefix = 'uom-'
     this.class = 'multi-select'
     this.buttonClass = `${this.class}__button`
     this.allButtonClass = `${this.class}__all`
@@ -261,7 +261,7 @@ class Select {
     const triggerLabel = this.getSelectedOptionText()
     const activeSelectionClass = this.selectedOptCounter > 0 ? ` ${this.buttonClass}--active` : ''
 
-    let button = `<button class="js-${this.buttonClass} ${error === 'true' ? this.errorClass : ''} ${this.prefix}${this.selectClass} ${this.prefix}${this.buttonClass}${customClasses}${activeSelectionClass}" aria-label="${triggerLabel[1]}" aria-expanded="false" aria-controls="${this.selectId}-dropdown"><span aria-hidden="true" class="js-${this.labelClass} ${this.prefix}${this.labelClass}">${triggerLabel[0]}</span><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>`
+    let button = `<button class="js-${this.buttonClass} ${error === 'true' ? this.errorClass : ''} ${this.prefix}${this.selectClass} ${this.prefix}${this.buttonClass}${customClasses}${activeSelectionClass}" aria-label="${triggerLabel[1]}" aria-expanded="false" aria-controls="${this.selectId}-dropdown"><span aria-hidden="true" class="js-${this.labelClass} ${this.prefix}${this.labelClass}">${triggerLabel[0]}</span><span class="material-icons uom-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>`
 
     if (this.arrowIcon.length > 0 && this.arrowIcon[0].outerHTML) {
       button += this.arrowIcon[0].outerHTML

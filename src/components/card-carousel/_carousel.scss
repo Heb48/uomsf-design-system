@@ -1,6 +1,6 @@
 /* stylelint-disable max-nesting-depth */
 
-.nsw-carousel {
+.uom-carousel {
   --carousel-item-auto-size: 300px;
   position: relative;
   display: flex;
@@ -52,11 +52,11 @@
     max-width: 100%;
   }
 
-  .nsw-icon {
+  .uom-icon {
     height: var(--size, 1em);
     width: var(--size, 1em);
     display: inline-block;
-    color: var(--nsw-brand-dark);
+    color: var(--uom-brand-dark);
     fill: currentColor;
     line-height: 1;
     flex-shrink: 0;
@@ -131,11 +131,11 @@
     }
   }
 
-  &.nsw-carousel--loaded .nsw-carousel__item {
+  &.uom-carousel--loaded .uom-carousel__item {
     opacity: 1;
   }
 
-  &[data-drag=on] .nsw-carousel__item {
+  &[data-drag=on] .uom-carousel__item {
     user-select: none;
 
     img {
@@ -143,7 +143,7 @@
     }
   }
 
-  &:not(.nsw-carousel--is-dragging) .nsw-carousel__list:not(.nsw-carousel__list--animating) .nsw-carousel__item[tabindex='-1'] > * {
+  &:not(.uom-carousel--is-dragging) .uom-carousel__list:not(.uom-carousel__list--animating) .uom-carousel__item[tabindex='-1'] > * {
     visibility: visible;
 
     @include breakpoint('md') {
@@ -156,15 +156,15 @@
     width: 40px;
     height: 40px;
     display: flex;
-    background-color: var(--nsw-white);
+    background-color: var(--uom-white);
     border-radius: 50%;
     z-index: 1;
     transition: 0.2s;
-    border: 2px solid var(--nsw-brand-dark);
+    border: 2px solid var(--uom-brand-dark);
     cursor: pointer;
 
     &:hover {
-      @include nsw-hover();
+      @include uom-hover();
     }
 
     &:active {
@@ -172,11 +172,11 @@
     }
 
     &:focus {
-      @include nsw-focus(false);
+      @include uom-focus(false);
       outline-offset: 1px;
 
       @include breakpoint('md') {
-        outline: solid 3px var(--nsw-focus);
+        outline: solid 3px var(--uom-focus);
         outline-offset: 2px;
       }
     }
@@ -185,33 +185,33 @@
       pointer-events: none;
       opacity: 0.5;
       box-shadow: none;
-      border: 2px solid rgba(var(--nsw-palette-traditional-heritage-blue-100-rgb), 0.2);
+      border: 2px solid rgba(var(--uom-palette-traditional-heritage-blue-100-rgb), 0.2);
     }
 
-    .nsw-icon {
+    .uom-icon {
       --size: 20px;
       display: block;
       margin: auto;
     }
 
-    .nsw-section--invert & {
-      border: 2px solid var(--nsw-white);
+    .uom-section--invert & {
+      border: 2px solid var(--uom-white);
 
       &:hover {
-        @include nsw-hover-light();
+        @include uom-hover-light();
 
-        .nsw-icon {
-          color: var(--nsw-white);
+        .uom-icon {
+          color: var(--uom-white);
         }
       }
 
       &:focus {
-        @include nsw-focus($color: var(--nsw-focus-light));
+        @include uom-focus($color: var(--uom-focus-light));
       }
 
-      .nsw-icon {
+      .uom-icon {
         &:hover {
-          color: var(--nsw-white);
+          color: var(--uom-white);
         }
       }
     }
@@ -245,40 +245,40 @@
         bottom: 0.5em;
       }
 
-      .nsw-carousel__nav-item button {
+      .uom-carousel__nav-item button {
         background-color: transparent;
         width: 1.6rem;
         height: 1.6rem;
-        color: var(--nsw-brand-dark);
+        color: var(--uom-brand-dark);
         font-size: 12px;
-        border-radius: var(--nsw-border-radius);
+        border-radius: var(--uom-border-radius);
         text-align: center;
         margin: 0 0.35em;
 
         &:focus {
-          @include nsw-focus(false);
+          @include uom-focus(false);
           outline-offset: 2px;
         }
 
-        .nsw-section--invert & {
-          background-color: var(--nsw-white);
-          border: 1px solid var(--nsw-white);
+        .uom-section--invert & {
+          background-color: var(--uom-white);
+          border: 1px solid var(--uom-white);
 
           &:focus {
-            @include nsw-focus($color: var(--nsw-focus-light));
+            @include uom-focus($color: var(--uom-focus-light));
             outline-offset: 2px;
           }
         }
       }
 
-      .nsw-carousel__nav-item--selected {
+      .uom-carousel__nav-item--selected {
         button {
-          background-color: var(--nsw-brand-dark);
-          color: var(--nsw-white);
+          background-color: var(--uom-brand-dark);
+          color: var(--uom-white);
 
-          .nsw-section--invert & {
+          .uom-section--invert & {
             background-color: transparent;
-            border: 2px solid var(--nsw-white);
+            border: 2px solid var(--uom-white);
           }
         }
       }
@@ -292,39 +292,39 @@
       height: 1.6em;
       padding: 4px;
       border-radius: 50%;
-      border: 2px solid var(--nsw-brand-dark);
+      border: 2px solid var(--uom-brand-dark);
       transition: all 300ms ease-in-out;
       cursor: pointer;
       line-height: 0;
       margin: 0 0.25em;
 
       &:focus {
-        @include nsw-focus(false);
+        @include uom-focus(false);
         outline-offset: 2px;
       }
 
-      .nsw-section--invert & {
-        border: 2px solid var(--nsw-white);
+      .uom-section--invert & {
+        border: 2px solid var(--uom-white);
 
         &:focus {
-          @include nsw-focus($color: var(--nsw-focus-light));
+          @include uom-focus($color: var(--uom-focus-light));
           outline-offset: 2px;
         }
       }
     }
 
     &--selected button {
-      background-color: var(--nsw-brand-dark);
+      background-color: var(--uom-brand-dark);
 
-      .nsw-section--invert & {
-        background-color: var(--nsw-white);
+      .uom-section--invert & {
+        background-color: var(--uom-white);
       }
     }
   }
 
-  &.nsw-carousel--hide-controls {
-    .nsw-carousel__navigation,
-    .nsw-carousel__control {
+  &.uom-carousel--hide-controls {
+    .uom-carousel__navigation,
+    .uom-carousel__control {
       display: none;
     }
   }

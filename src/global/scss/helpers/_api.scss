@@ -1,11 +1,11 @@
 /* stylelint-disable string-quotes */
 
 // Loop over each breakpoint
-@each $breakpoint in map-keys($nsw-breakpoints) {
+@each $breakpoint in map-keys($uom-breakpoints) {
 
   // Generate media query if needed
   @include media-breakpoint-up($breakpoint) {
-    $infix: breakpoint-infix($breakpoint, $nsw-breakpoints);
+    $infix: breakpoint-infix($breakpoint, $uom-breakpoints);
 
     // Loop over each utility property
     @each $key, $utility in $utilities {

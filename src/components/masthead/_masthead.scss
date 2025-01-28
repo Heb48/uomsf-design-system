@@ -1,4 +1,4 @@
-.nsw-skip {
+.uom-skip {
   position: fixed;
   top: 0;
   left: 0;
@@ -7,8 +7,8 @@
   a {
     @include font-size('xxs');
     @include z-index('middle');
-    background-color: var(--nsw-brand-dark);
-    color: var(--nsw-white);
+    background-color: var(--uom-brand-dark);
+    color: var(--uom-white);
     width: 100%;
     text-decoration: none;
     padding: rem(8px) rem(16px);
@@ -22,7 +22,7 @@
       outline: none;
 
       span {
-        @include nsw-focus($color: var(--nsw-white));
+        @include uom-focus($color: var(--uom-white));
       }
     }
 
@@ -33,24 +33,24 @@
 
   &--light {
     a {
-      background-color: var(--nsw-off-white);
-      color: var(--nsw-palette-grey-900);
+      background-color: var(--uom-off-white);
+      color: var(--uom-palette-grey-900);
 
       &:focus span {
-        @include nsw-focus();
+        @include uom-focus();
       }
     }
   }
 }
 
-.nsw-masthead {
+.uom-masthead {
   @include font-size('xxs');
   padding: rem(8px) 0;
-  background-color: var(--nsw-brand-dark);
-  color: var(--nsw-white);
+  background-color: var(--uom-brand-dark);
+  color: var(--uom-white);
 
   &--light {
-    background-color: var(--nsw-off-white);
-    color: var(--nsw-palette-grey-900);
+    background-color: var(--uom-off-white);
+    color: var(--uom-palette-grey-900);
   }
 }

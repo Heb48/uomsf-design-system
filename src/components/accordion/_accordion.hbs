@@ -1,13 +1,13 @@
-<div class="nsw-accordion js-accordion">
+<div class="uom-accordion js-accordion">
   {{#if toggle}}
-  <div class="nsw-accordion__toggle">
+  <div class="uom-accordion__toggle">
     <button type="button">Expand all</button>
     <button type="button">Collapse all</button>
   </div>
   {{/if}}
   {{#each items}}
-  <div class="nsw-accordion__title{{#if open}} {{open}}{{/if}}">{{title}}</div>
-  <div class="nsw-accordion__content">
+  <div class="uom-accordion__title{{#if open}} {{open}}{{/if}}">{{title}}</div>
+  <div class="uom-accordion__content">
     {{{content}}}
   </div>
   {{/each}}

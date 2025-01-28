@@ -1,19 +1,19 @@
-.nsw-tag {
+.uom-tag {
   @include font-size('xs');
-  font-weight: var(--nsw-font-normal);
+  font-weight: var(--uom-font-normal);
   padding: rem(2px) rem(16px);
-  border: solid 1px var(--nsw-brand-dark);
+  border: solid 1px var(--uom-brand-dark);
   border-radius: rem(24px);
-  color: var(--nsw-brand-dark);
+  color: var(--uom-brand-dark);
   text-decoration: none;
   display: inline-block;
 
   &:visited {
-    color: var(--nsw-brand-dark);
+    color: var(--uom-brand-dark);
   }
-  
-  &:hover:not(.nsw-tag--checkbox, span) {
-    @include nsw-hover;
+
+  &:hover:not(.uom-tag--checkbox, span) {
+    @include uom-hover;
     outline-width: 0;
   }
 
@@ -25,9 +25,9 @@
     outline-width: 3px;
   }
 
-  .nsw-section--invert & {
-    color: var(--nsw-text-light);
-    border-color: var(--nsw-text-light);
+  .uom-section--invert & {
+    color: var(--uom-text-light);
+    border-color: var(--uom-text-light);
 
     &:not(span) {
       @include link-light;
@@ -41,7 +41,7 @@
     position: relative;
 
     &:hover {
-      .nsw-section--invert & {    
+      .uom-section--invert & {
         background-color: transparent;
       }
     }
@@ -53,47 +53,47 @@
       &:hover + label {
         cursor: pointer;
 
-        @include nsw-hover;
-        
-        .nsw-section--invert & {    
-          background-color: var(--nsw-hover-light);
+        @include uom-hover;
+
+        .uom-section--invert & {
+          background-color: var(--uom-hover-light);
         }
       }
 
       &:focus + label {
-        @include nsw-focus;
+        @include uom-focus;
         outline-offset: 0;
 
-        .nsw-section--invert & {    
-          outline-color: var(--nsw-white);
+        .uom-section--invert & {
+          outline-color: var(--uom-white);
         }
       }
 
       &:checked + label {
-        background-color: var(--nsw-brand-dark);
-        color: var(--nsw-text-light);
+        background-color: var(--uom-brand-dark);
+        color: var(--uom-text-light);
 
-        .nsw-section--invert & {    
-          background-color: var(--nsw-white);
-          color: var(--nsw-text-dark);
+        .uom-section--invert & {
+          background-color: var(--uom-white);
+          color: var(--uom-text-dark);
         }
       }
     }
 
     label {
       padding: rem(2px) rem(16px);
-      border: solid 1px var(--nsw-brand-dark);
+      border: solid 1px var(--uom-brand-dark);
       border-radius: rem(24px);
       display: inline-block;
 
-      .nsw-section--invert & {    
-        border-color: var(--nsw-text-light);
+      .uom-section--invert & {
+        border-color: var(--uom-text-light);
       }
     }
   }
 
   &.active {
-    background-color: var(--nsw-brand-dark);
-    color: var(--nsw-text-light);
+    background-color: var(--uom-brand-dark);
+    color: var(--uom-text-light);
   }
 }

@@ -42,30 +42,30 @@ layout: blank-layout.hbs
 
 <h3>Month labels</h3>
 
-<p>By default, the calendar widget shows the full English name of the months; if you wish to change this default (e.g., passing a short version of the label or using a different language), add a data-months attribute to the .nsw-date-input element with the comma-separated list of the labels you want to use:</p>
+<p>By default, the calendar widget shows the full English name of the months; if you wish to change this default (e.g., passing a short version of the label or using a different language), add a data-months attribute to the .uom-date-input element with the comma-separated list of the labels you want to use:</p>
 
 {{#>_docs-code open=true}}
-<div class="nsw-date-input js-date-input" data-months="Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec">
+<div class="uom-date-input js-date-input" data-months="Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec">
   <!-- ... -->
 </div>
 {{/_docs-code}}
 
 <h3>Date format</h3>
 
-<p>By default, the date format of the text input field is 'dd/mm/yyyy'; if you want to change this order (e.g., yyyy/mm/dd), add a data-date-format attribute to the .nsw-date-input element with the new order you want to use:</p>
+<p>By default, the date format of the text input field is 'dd/mm/yyyy'; if you want to change this order (e.g., yyyy/mm/dd), add a data-date-format attribute to the .uom-date-input element with the new order you want to use:</p>
 
 {{#>_docs-code open=true}}
-<div class="nsw-date-input js-date-input" data-date-format="y-m-d">
+<div class="uom-date-input js-date-input" data-date-format="y-m-d">
   <!-- ... -->
 </div>​​
 {{/_docs-code}}
 
 <h3>Date separator</h3>
 
-<p>By default, the slash ('/') is used as date separator; if you want to use a different character (e.g., '-'), add a data-date-separator attribute to the .nsw-date-input element:</p>
+<p>By default, the slash ('/') is used as date separator; if you want to use a different character (e.g., '-'), add a data-date-separator attribute to the .uom-date-input element:</p>
 
 {{#>_docs-code open=true}}
-<div class="nsw-date-input js-date-input" data-date-separator="-">
+<div class="uom-date-input js-date-input" data-date-separator="-">
   <!-- ... -->
 </div>
 {{/_docs-code}}
@@ -78,19 +78,19 @@ layout: blank-layout.hbs
 
 <p>Allowed date ranges for a date picker can be set by specifying earliest and latest allowed dates. Individual dates can also be disabled.</p>
 
-<p>If you want to specify an earliest possible date for the calendar, add a data-min-date attribute to the .nsw-date-input element:</p>
+<p>If you want to specify an earliest possible date for the calendar, add a data-min-date attribute to the .uom-date-input element:</p>
 
 {{#>_docs-code open=true}}
-<div class="nsw-date-input js-date-input" data-min-date="02/01/2024">
+<div class="uom-date-input js-date-input" data-min-date="02/01/2024">
   <!-- ... -->
 </div>
 {{/_docs-code}}
 
-<p>If you want to specify a latest possible date for the calendar, add a data-max-date attribute to the .nsw-date-input element:</p>
+<p>If you want to specify a latest possible date for the calendar, add a data-max-date attribute to the .uom-date-input element:</p>
 </p>
 
 {{#>_docs-code open=true}}
-<div class="nsw-date-input js-date-input" data-max-date="30/01/2024">
+<div class="uom-date-input js-date-input" data-max-date="30/01/2024">
   <!-- ... -->
 </div>
 {{/_docs-code}}
@@ -100,7 +100,7 @@ layout: blank-layout.hbs
 <p>The value of this attribute should be a space-separated list of dates in the format you specify in data-date-format or the default, d-m-y.</p>
 
 {{#>_docs-code open=true}}
-<div class="nsw-date-input js-date-input" data-dates-disabled="18/01/2024 19/01/2024 20/01/2025">
+<div class="uom-date-input js-date-input" data-dates-disabled="18/01/2024 19/01/2024 20/01/2025">
   <!-- ... -->
 </div>
 {{/_docs-code}}
@@ -123,7 +123,7 @@ layout: blank-layout.hbs
 
 <p>The following table lists the keyboard commands that the date picker supports.</p>
 
-<div class="nsw-table" tabindex="0">
+<div class="uom-table" tabindex="0">
   <table>
     <thead>
       <tr>

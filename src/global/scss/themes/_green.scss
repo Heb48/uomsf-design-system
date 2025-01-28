@@ -41,15 +41,15 @@ $green-colors-rgb: map-loop($green-colors, to-rgb, '$value') !default;
 
 .green {
   @each $color, $value in $green-colors {
-    --nsw-#{$color}: #{$value};
+    --uom-#{$color}: #{$value};
   }
 
   @each $color, $value in $green-colors-rgb {
-    --nsw-#{$color}-rgb: #{$value};
+    --uom-#{$color}-rgb: #{$value};
   }
 }
 
 .green-accent {
-  --nsw-brand-accent: #{$green-02};
-  --nsw-brand-accent-rgb: #{to-rgb($green-02)};
+  --uom-brand-accent: #{$green-02};
+  --uom-brand-accent-rgb: #{to-rgb($green-02)};
 }

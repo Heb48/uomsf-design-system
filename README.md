@@ -1,20 +1,20 @@
-# NSW Design System
+# UOM Education Cloud Design System
 
 [![npm version](https://badge.fury.io/js/nsw-design-system.svg)](https://badge.fury.io/js/nsw-design-system)
 [![](https://data.jsdelivr.com/v1/package/npm/nsw-design-system/badge)](https://www.jsdelivr.com/package/npm/nsw-design-system)
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/b183fe4d/nsw-design-system)
 
-View online documentation for the [NSW Design System](https://designsystem.nsw.gov.au/).
+View online documentation for the [UOM Education Cloud Design System](https://designsystem.nsw.gov.au/).
 
-# NSW Design System Documentation
+# UOM Education Cloud Design System Documentation
 
-Welcome to the documentation for the NSW Design System, a frontend toolkit of styles, patterns, standards and guidance for everyone creating distinctly NSW digital products and services. It helps us create unified, trusted, inclusive and audience centered digital experiences for our users that are clearly simple, current and purposeful.  
-  
-This document provides instructions on how to easily integrate and utilise the NSW Design System styles and components in your projects.
+Welcome to the documentation for the UOM Education Cloud Design System, a frontend toolkit of styles, patterns, standards and guidance for everyone creating distinctly NSW digital products and services. It helps us create unified, trusted, inclusive and audience centered digital experiences for our users that are clearly simple, current and purposeful.  
+
+This document provides instructions on how to easily integrate and utilise the UOM Education Cloud Design System styles and components in your projects.
 
 ## Choosing Your Integration Method
 
-How you use the NSW Design System depends on your team's capabilities.
+How you use the UOM Education Cloud Design System depends on your team's capabilities.
 
 We recommend the following methods:
 
@@ -30,13 +30,13 @@ Read the [Getting started page](https://designsystem.nsw.gov.au/docs/content/dev
 
 ## Installing with NPM
 
-Follow these steps to integrate the NSW Design System into your project using npm:
+Follow these steps to integrate the UOM Education Cloud Design System into your project using npm:
 
 1. **Install Node.js and npm:** If you haven't already, install Node.js and npm by following the instructions in the Node.js installation guides.
 
 2. **Create a package.json:** In your project's root directory, run the `npm init` command in your terminal. Follow the prompts to generate a `package.json` file, providing essential project information.
 
-3. **Add nsw-design-system to your dependencies:** Run the following command to install the NSW Design System as a dependency in your project:
+3. **Add nsw-design-system to your dependencies:** Run the following command to install the UOM Education Cloud Design System as a dependency in your project:
 
     ```
     npm install --save nsw-design-system
@@ -79,7 +79,7 @@ After importing the core library, you can start importing individual components 
 
 ### Adding Fonts and Icons
 
-Include the following lines of code in the `<head>` tag of your main HTML document, placing them before the NSW Design System styles import:
+Include the following lines of code in the `<head>` tag of your main HTML document, placing them before the UOM Education Cloud Design System styles import:
 
 ```
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -95,11 +95,11 @@ Alternatively, you can import fonts and icons directly in your CSS:
 
 ### Importing JavaScript
 
-Certain NSW Design System components require JavaScript to enable advanced functionality. To ensure your page is ready for JavaScript execution, include the following script tags at the end of your HTML document:
+Certain UOM Education Cloud Design System components require JavaScript to enable advanced functionality. To ensure your page is ready for JavaScript execution, include the following script tags at the end of your HTML document:
 
 ```
 <script src="path/to/main.js"></script>
-<script>window.NSW.initSite()</script>
+<script>window.UOM.initSite()</script>
 </body>
 </html>
 ```
@@ -108,7 +108,7 @@ Depending on your project setup, you can copy the JavaScript file from `node_mod
 
 ## Using JSDelivr CDN
 
-For a faster setup, you can utilize the JSDelivr CDN to include the NSW Design System's CSS and JavaScript files directly in your project's HTML:
+For a faster setup, you can utilize the JSDelivr CDN to include the UOM Education Cloud Design System's CSS and JavaScript files directly in your project's HTML:
 
 ```
 <html>
@@ -119,7 +119,7 @@ For a faster setup, you can utilize the JSDelivr CDN to include the NSW Design S
   <body>
     <!-- ... -->
     <script src="https://cdn.jsdelivr.net/npm/nsw-design-system@3/dist/js/main.min.js"></script>
-    <script>window.NSW.initSite()</script>
+    <script>window.UOM.initSite()</script>
   </body>
 </html>
 ```
@@ -130,11 +130,11 @@ Please read through our [contributing guidelines](https://www.digital.nsw.gov.au
 
 ## Community
 
-Get notified when there’s an update or new release on the NSW Design System's and chat with the project maintainers and community members.
+Get notified when there’s an update or new release on the UOM Education Cloud Design System's and chat with the project maintainers and community members.
 
 * Join our [Digital NSW Community](https://community.digital.nsw.gov.au/).
 
-* Watch the [NSW Design System Github](https://github.com/digitalnsw/nsw-design-system).
+* Watch the [UOM Education Cloud Design System Github](https://github.com/digitalnsw/nsw-design-system).
 
 * Ask and explore [our GitHub Discussions](https://github.com/digitalnsw/nsw-design-system/discussions).
 
@@ -148,7 +148,7 @@ Access the complete set of design assets required for designing, sharing, and pr
 
 ## Versioning
 
-For transparency into our release cycle and in striving to maintain backward compatibility, The NSW Design System is maintained under [the Semantic Versioning guidelines](https://semver.org/). Sometimes we make mistakes, but we adhere to those rules whenever possible.
+For transparency into our release cycle and in striving to maintain backward compatibility, The UOM Education Cloud Design System is maintained under [the Semantic Versioning guidelines](https://semver.org/). Sometimes we make mistakes, but we adhere to those rules whenever possible.
 
 Our version numbers consist of MAJOR.MINOR.PATCH, where:
 
@@ -160,4 +160,4 @@ Our version numbers consist of MAJOR.MINOR.PATCH, where:
 
 See [the Releases section of our GitHub project](https://github.com/digitalnsw/nsw-design-system/releases) for changelogs for each release version. Release posts on our [what’s happening page](https://designsystem.nsw.gov.au/docs/content/about/whats-happening.html) contain summaries of the most noteworthy changes made in each release.
 
-Feel free to reach out if you have any questions or need more help with integrating the NSW Design System into your projects!
+Feel free to reach out if you have any questions or need more help with integrating the UOM Education Cloud Design System into your projects!

@@ -82,23 +82,23 @@ class Toggletip {
     if (this.toggletipElement) {
       this.toggletipElement.innerHTML = ''
       const createToggletip = `
-      <div class="nsw-toggletip__header">
-        <div id="nsw-toggletip__header" class="sr-only">${cleanHTML(this.toggletipHeading)}</div>
-        <button type="button" class="nsw-icon-button">
+      <div class="uom-toggletip__header">
+        <div id="uom-toggletip__header" class="sr-only">${cleanHTML(this.toggletipHeading)}</div>
+        <button type="button" class="uom-icon-button">
           <span class="sr-only">Remove file</span>
-          <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">close</span>
+          <span class="material-icons uom-material-icons" focusable="false" aria-hidden="true">close</span>
         </button>
       </div>
-      <div id="nsw-toggletip__content" class="nsw-toggletip__content">
+      <div id="uom-toggletip__content" class="uom-toggletip__content">
         ${cleanHTML(this.toggletipContent)}
       </div>
-      <div class="nsw-toggletip__arrow"></div>`
+      <div class="uom-toggletip__arrow"></div>`
       this.toggletipElement.insertAdjacentHTML('afterbegin', createToggletip)
     }
 
     this.constructor.setAttributes(this.toggletipElement, {
-      'aria-labelledby': 'nsw-toggletip__header',
-      'aria-describedby': 'nsw-toggletip__content',
+      'aria-labelledby': 'uom-toggletip__header',
+      'aria-describedby': 'uom-toggletip__content',
       'aria-expanded': 'false',
       tabindex: '0',
       role: 'dialog',
@@ -107,8 +107,8 @@ class Toggletip {
 
   showToggletip() {
     this.createToggletipElement()
-    this.arrowElement = this.toggletipElement.querySelector('.nsw-toggletip__arrow')
-    this.closeButton = this.toggletipElement.querySelector('.nsw-icon-button')
+    this.arrowElement = this.toggletipElement.querySelector('.uom-toggletip__arrow')
+    this.closeButton = this.toggletipElement.querySelector('.uom-icon-button')
 
     this.toggletipElement.setAttribute('aria-expanded', 'true')
     this.toggletipElement.classList.add('active')

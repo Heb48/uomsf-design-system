@@ -1,15 +1,15 @@
-<div class="nsw-hero-banner{{#if theme}} nsw-hero-banner--{{theme}}{{/if}}{{#if wide}} nsw-hero-banner--wide{{/if}}{{#if featured}} nsw-hero-banner--featured{{/if}}{{#if lines}} nsw-hero-banner--lines{{/if}}">
-  <div class="nsw-hero-banner__container">
-    <div class="nsw-hero-banner__wrapper">
-      <div class="nsw-hero-banner__content">
+<div class="uom-hero-banner{{#if theme}} uom-hero-banner--{{theme}}{{/if}}{{#if wide}} uom-hero-banner--wide{{/if}}{{#if featured}} uom-hero-banner--featured{{/if}}{{#if lines}} uom-hero-banner--lines{{/if}}">
+  <div class="uom-hero-banner__container">
+    <div class="uom-hero-banner__wrapper">
+      <div class="uom-hero-banner__content">
         <h1>{{heading}}</h1>{{#if copy}}
-        <p class="nsw-intro">{{copy}}</p>{{/if}}{{#if cta}}
-        <div class="nsw-hero-banner__button"><a href="#" class="nsw-button {{#if-equals theme "dark"}}nsw-button--white{{else}}nsw-button--dark{{/if-equals}}">{{cta}}</a></div>{{/if}}
+        <p class="uom-intro">{{copy}}</p>{{/if}}{{#if cta}}
+        <div class="uom-hero-banner__button"><a href="#" class="uom-button {{#if-equals theme "dark"}}uom-button--white{{else}}uom-button--dark{{/if-equals}}">{{cta}}</a></div>{{/if}}
       </div>
       {{#if links}}
-      <div class="nsw-hero-banner__links">
-        <div class="nsw-hero-banner__list">
-          {{#if links-title}}<div class="nsw-hero-banner__sub-title">{{links-title}}</div>{{/if}}
+      <div class="uom-hero-banner__links">
+        <div class="uom-hero-banner__list">
+          {{#if links-title}}<div class="uom-hero-banner__sub-title">{{links-title}}</div>{{/if}}
           <ul>
             {{#each links}}
             <li><a href="#">{{this}}</a></li>
@@ -18,9 +18,9 @@
         </div>
       </div>
       {{/if}}
-      <div class="nsw-hero-banner__box">{{#if img}}
-        <img class="nsw-hero-banner__image" src="{{img}}" alt="" />{{else if lines}}
-        <div class="nsw-hero-banner__lines"></div>{{/if}}
+      <div class="uom-hero-banner__box">{{#if img}}
+        <img class="uom-hero-banner__image" src="{{img}}" alt="" />{{else if lines}}
+        <div class="uom-hero-banner__lines"></div>{{/if}}
       </div>
     </div>
   </div>

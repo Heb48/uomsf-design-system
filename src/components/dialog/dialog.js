@@ -2,7 +2,7 @@
 class Dialog {
   constructor(element) {
     this.element = element
-    this.elementWrapper = this.element.querySelector('.nsw-dialog__wrapper')
+    this.elementWrapper = this.element.querySelector('.uom-dialog__wrapper')
     this.openBtn = document.querySelectorAll(`.js-open-dialog-${this.element.getAttribute('id')}`)
     this.closeBtn = this.element.querySelectorAll('.js-close-dialog')
     this.focusableEls = this.element.querySelectorAll('a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])')

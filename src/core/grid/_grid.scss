@@ -1,6 +1,6 @@
 @use 'sass:math';
 
-.nsw-container {
+.uom-container {
   @include container;
 
   &--flush {
@@ -9,7 +9,7 @@
   }
 }
 
-.nsw-grid {
+.uom-grid {
   @include grid();
 
   &--spaced {
@@ -21,7 +21,7 @@
       margin-bottom: rem(-$grid-gutters*2);
     }
 
-    .nsw-col {
+    .uom-col {
       padding-top: rem($grid-gutters*2);
       padding-bottom: rem($grid-gutters*2);
 
@@ -49,25 +49,25 @@
     top: 0;
     bottom: 0;
 
-    .nsw-container,
-    .nsw-grid {
+    .uom-container,
+    .uom-grid {
       height: 100%;
     }
 
-    .nsw-col {
+    .uom-col {
       padding-top: 0;
       padding-bottom: 0;
 
       > div {
         height: 100%;
-        background-color: var(--nsw-brand-accent);
+        background-color: var(--uom-brand-accent);
         opacity: 0.1;
       }
     }
   }
 }
 
-.nsw-row {
+.uom-row {
   @include row();
 
   &--reverse {
@@ -78,7 +78,7 @@
   }
 }
 
-.nsw-col {
+.uom-col {
   @include column-default();
 
   @for $i from 1 through 12 {
@@ -88,7 +88,7 @@
     }
   }
 
-  @each $breakpoint, $breakpoint-size in $nsw-breakpoints {
+  @each $breakpoint, $breakpoint-size in $uom-breakpoints {
     @include breakpoint($breakpoint) {
       @for $i from 1 through 12 {
         &-#{$breakpoint}-#{$i} {
@@ -100,14 +100,14 @@
   }
 }
 
-.nsw-offset {
+.uom-offset {
   @for $i from 1 through 12 {
     &-#{$i} {
       margin-left: percentage(math.div($i, 12));
     }
   }
 
-  @each $breakpoint, $breakpoint-size in $nsw-breakpoints {
+  @each $breakpoint, $breakpoint-size in $uom-breakpoints {
     @include breakpoint($breakpoint) {
       @for $i from 1 through 12 {
         &-#{$breakpoint}-#{$i} {

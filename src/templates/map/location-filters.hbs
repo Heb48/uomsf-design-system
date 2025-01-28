@@ -9,58 +9,58 @@ model:
 ---
 
 <style>
-  .nsw-map-bar {
+  .uom-map-bar {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 0;
   }
 
-  .nsw-map-bar__key {
+  .uom-map-bar__key {
     display: flex;
     align-items: center;
     margin: 0 -0.5rem;
   }
 
-  .nsw-map-bar__key > span {
+  .uom-map-bar__key > span {
     display: flex;
     align-items: center;
     padding: 0 0.5rem;
   }
 
-  .nsw-map-bar svg {
+  .uom-map-bar svg {
     width: 1rem;
     height: 1.5rem;
     margin-right: 0.5rem;
   }
 
-  .nsw-map-results {
+  .uom-map-results {
     padding: 1rem 0;
   }
 
 @media (min-width: 62rem) {
-  .nsw-map-bar {
+  .uom-map-bar {
     padding-top: 2rem;
   }
 
-  .nsw-filters__title {
+  .uom-filters__title {
     margin-top: 0.5rem;
   }
 
-  .nsw-map-results {
+  .uom-map-results {
     padding: 1.5rem 0;
   }
 }
 
 </style>
 
-{{>_global-alert title="Example page only" content="This is an example page from the NSW Design System, and is for demonstration only. Visit <a target='_blank' href='https://www.nsw.gov.au'>nsw.gov.au</a> for government services."
+{{>_global-alert title="Example page only" content="This is an example page from the UOM Education Cloud Design System, and is for demonstration only. Visit <a target='_blank' href='https://www.nsw.gov.au'>nsw.gov.au</a> for government services."
 }}
 
 {{>_masthead content="#content" nav="#main-nav"}}
 {{>_header header-title="Department of Customer Service"}}
 {{>_main-nav model.nav}}
-<div class="nsw-container nsw-p-bottom-xs">
-  <nav aria-label="Breadcrumbs" class="nsw-breadcrumbs">
+<div class="uom-container uom-p-bottom-xs">
+  <nav aria-label="Breadcrumbs" class="uom-breadcrumbs">
     <ol>
       <li>
         <a href="#">Home</a>
@@ -72,51 +72,51 @@ model:
   </nav>
 </div>
 
-<main id="content" class="nsw-container nsw-p-top-sm nsw-p-bottom-lg">
+<main id="content" class="uom-container uom-p-top-sm uom-p-bottom-lg">
   <form action="#" method="_get">
-    <div class="nsw-layout">
-      <div class="nsw-layout__main">
+    <div class="uom-layout">
+      <div class="uom-layout__main">
         <h1>Find a service</h1>
-        <p class="nsw-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="uom-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-        <div class=" nsw-p-top-lg">
-          <label class="nsw-form__label" for="form-postcode">Search by postcode</label>
-          <div class="nsw-form__input-group">
-            <input class="nsw-form__input" type="text" id="form-postcode" name="postcode" value="">
-            <button type="submit" class="nsw-button nsw-button--dark nsw-button--flex" aria-label="Search for address by postcode">Search</button>
+        <div class=" uom-p-top-lg">
+          <label class="uom-form__label" for="form-postcode">Search by postcode</label>
+          <div class="uom-form__input-group">
+            <input class="uom-form__input" type="text" id="form-postcode" name="postcode" value="">
+            <button type="submit" class="uom-button uom-button--dark uom-button--flex" aria-label="Search for address by postcode">Search</button>
           </div>
-          <a href="#" class="nsw-link nsw-link--icon nsw-m-top-xs" aria-label="Use my current location">
-            <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">near_me</span>
+          <a href="#" class="uom-link uom-link--icon uom-m-top-xs" aria-label="Use my current location">
+            <span class="material-icons uom-material-icons" focusable="false" aria-hidden="true">near_me</span>
             <span>Use my current location</span>
           </a>
         </div>
       </div>
-      <div class="nsw-layout__sidebar nsw-layout__sidebar--desktop"></div>
+      <div class="uom-layout__sidebar uom-layout__sidebar--desktop"></div>
     </div>
-    <div class="nsw-layout">
-      <div class="nsw-layout__sidebar">
-        <div class="nsw-filters nsw-filters--right js-filters">
-          <div class="nsw-filters__controls js-filters--count" aria-label="Search the site">
+    <div class="uom-layout">
+      <div class="uom-layout__sidebar">
+        <div class="uom-filters uom-filters--right js-filters">
+          <div class="uom-filters__controls js-filters--count" aria-label="Search the site">
             <button>
-              <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">tune</span>
+              <span class="material-icons uom-material-icons" focusable="false" aria-hidden="true">tune</span>
               <span>Filters</span>
-              <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_right</span>
+              <span class="material-icons uom-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_right</span>
             </button>
           </div>
-          <div class="nsw-filters__wrapper">          
-            <div class="nsw-filters__back">
-              <button type="button" class="nsw-icon-button nsw-icon-button--flex js-close-sub-nav" aria-expanded="true">
-                <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">close</span>
+          <div class="uom-filters__wrapper">
+            <div class="uom-filters__back">
+              <button type="button" class="uom-icon-button uom-icon-button--flex js-close-sub-nav" aria-expanded="true">
+                <span class="material-icons uom-material-icons" focusable="false" aria-hidden="true">close</span>
                 <span class="sr-only">Close filters</span>
               </button>
             </div>
-            <div class="nsw-filters__title">Filters</div>
-            <div class="nsw-filters__list">
-              <div class="nsw-filters__item">
-                <div class="nsw-filters__item-content">
-                  <label class="nsw-form__label" for="form-radius">Radius</label>
-                  <select class="nsw-form__select" id="form-radius" name="radius">
-                    <option value="">Please select</option>  
+            <div class="uom-filters__title">Filters</div>
+            <div class="uom-filters__list">
+              <div class="uom-filters__item">
+                <div class="uom-filters__item-content">
+                  <label class="uom-form__label" for="form-radius">Radius</label>
+                  <select class="uom-form__select" id="form-radius" name="radius">
+                    <option value="">Please select</option>
                     <option value="5">5 km</option>
                     <option value="10">10 km</option>
                     <option value="15" selected="selected">15 km</option>
@@ -125,47 +125,47 @@ model:
                   </select>
                 </div>
               </div>
-              <div class="nsw-filters__item">
-                <div class="nsw-filters__item-content">
-                  <fieldset class="nsw-form__fieldset">
-                    <legend class="nsw-form__legend">Facilities</legend>
-                    <input class="nsw-form__checkbox-input" type="checkbox" name="form-facilities" value="Wheelchair accessible" id="form-facilities-1">
-                    <label class="nsw-form__checkbox-label" for="form-facilities-1">Wheelchair accessible</label>
-                    <input class="nsw-form__checkbox-input" type="checkbox" name="form-facilities" value="Payment facilities" id="form-facilities-2">
-                    <label class="nsw-form__checkbox-label" for="form-facilities-2">Payment facilities</label>
-                    <input class="nsw-form__checkbox-input" type="checkbox" name="form-facilities" value="Free parking" id="form-facilities-3">
-                    <label class="nsw-form__checkbox-label" for="form-facilities-3">Free parking</label>
-                    <input class="nsw-form__checkbox-input" type="checkbox" name="form-facilities" value="Childcare services" id="form-facilities-4">
-                    <label class="nsw-form__checkbox-label" for="form-facilities-4">Childcare services</label>
+              <div class="uom-filters__item">
+                <div class="uom-filters__item-content">
+                  <fieldset class="uom-form__fieldset">
+                    <legend class="uom-form__legend">Facilities</legend>
+                    <input class="uom-form__checkbox-input" type="checkbox" name="form-facilities" value="Wheelchair accessible" id="form-facilities-1">
+                    <label class="uom-form__checkbox-label" for="form-facilities-1">Wheelchair accessible</label>
+                    <input class="uom-form__checkbox-input" type="checkbox" name="form-facilities" value="Payment facilities" id="form-facilities-2">
+                    <label class="uom-form__checkbox-label" for="form-facilities-2">Payment facilities</label>
+                    <input class="uom-form__checkbox-input" type="checkbox" name="form-facilities" value="Free parking" id="form-facilities-3">
+                    <label class="uom-form__checkbox-label" for="form-facilities-3">Free parking</label>
+                    <input class="uom-form__checkbox-input" type="checkbox" name="form-facilities" value="Childcare services" id="form-facilities-4">
+                    <label class="uom-form__checkbox-label" for="form-facilities-4">Childcare services</label>
                   </fieldset>
                 </div>
               </div>
-              <div class="nsw-filters__item">
-                <div class="nsw-filters__item-content">
-                  <fieldset class="nsw-form__fieldset">
-                    <legend class="nsw-form__legend">Opening hours</legend>
-                    <input class="nsw-form__checkbox-input" type="checkbox" name="form-hours" value="Weekends" id="form-hours-1">
-                    <label class="nsw-form__checkbox-label" for="form-hours-1">Weekends</label>
-                    <input class="nsw-form__checkbox-input" type="checkbox" name="form-hours" value="Out of hours services" id="form-hours-2">
-                    <label class="nsw-form__checkbox-label" for="form-hours-2">Out of hours services</label>
+              <div class="uom-filters__item">
+                <div class="uom-filters__item-content">
+                  <fieldset class="uom-form__fieldset">
+                    <legend class="uom-form__legend">Opening hours</legend>
+                    <input class="uom-form__checkbox-input" type="checkbox" name="form-hours" value="Weekends" id="form-hours-1">
+                    <label class="uom-form__checkbox-label" for="form-hours-1">Weekends</label>
+                    <input class="uom-form__checkbox-input" type="checkbox" name="form-hours" value="Out of hours services" id="form-hours-2">
+                    <label class="uom-form__checkbox-label" for="form-hours-2">Out of hours services</label>
                   </fieldset>
                 </div>
               </div>
             </div>
-            <div class="nsw-filters__accept">
-              <button type="submit" class="nsw-button nsw-button--dark nsw-button--full-width" aria-label="Apply filters">Apply filters</button>
+            <div class="uom-filters__accept">
+              <button type="submit" class="uom-button uom-button--dark uom-button--full-width" aria-label="Apply filters">Apply filters</button>
             </div>
-            <div class="nsw-filters__cancel">
+            <div class="uom-filters__cancel">
               <button type="reset" aria-label="Clear all filters">Clear all filters</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="nsw-layout__main">
-        <div class="nsw-map-bar">
-          <div class="nsw-map-bar__key">
-            <span><strong>Key:</strong></span>              
-            <span>                
+      <div class="uom-layout__main">
+        <div class="uom-map-bar">
+          <div class="uom-map-bar__key">
+            <span><strong>Key:</strong></span>
+            <span>
               <svg viewBox="0 0 27 41">
                 <g fill-rule="nonzero">
                   <g fill="#146cfd">
@@ -181,8 +181,8 @@ model:
                 </g>
               </svg>
               <span>Open</span>
-            </span>              
-            <span>                
+            </span>
+            <span>
               <svg viewBox="0 0 27 41">
                 <g fill-rule="nonzero">
                   <g fill="#D7153A">
@@ -200,22 +200,22 @@ model:
               <span>Closed</span>
             </span>
           </div>
-          <div class="nsw-map-bar__sorting">
-            <a href="#" class="js-hide-map">Hide Map</a>            
-            <a href="#" class="js-show-map" style="display: none;">Show Map</a>            
+          <div class="uom-map-bar__sorting">
+            <a href="#" class="js-hide-map">Hide Map</a>
+            <a href="#" class="js-show-map" style="display: none;">Show Map</a>
           </div>
         </div>
 
-        <div class="nsw-map js-map">
+        <div class="uom-map js-map">
           <div id='map' style='width: 100%; height: 480px;'></div>
         </div>
 
-        <div class="nsw-map-results">4 services found</div>
-        <div class="nsw-results">
-          <div class="nsw-list-item">
-            <div class="nsw-list-item__content">
-              <div class="nsw-list-item__title"><a href="#">Service Alpha</a></div>
-              <div class="nsw-list-item__copy">
+        <div class="uom-map-results">4 services found</div>
+        <div class="uom-results">
+          <div class="uom-list-item">
+            <div class="uom-list-item__content">
+              <div class="uom-list-item__title"><a href="#">Service Alpha</a></div>
+              <div class="uom-list-item__copy">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 <p>
                   123 Sydney Street, Sydney NSW 2000<br>
@@ -225,10 +225,10 @@ model:
               </div>
             </div>
           </div>
-          <div class="nsw-list-item">
-            <div class="nsw-list-item__content">
-              <div class="nsw-list-item__title"><a href="#">Service Beta</a></div>
-              <div class="nsw-list-item__copy">
+          <div class="uom-list-item">
+            <div class="uom-list-item__content">
+              <div class="uom-list-item__title"><a href="#">Service Beta</a></div>
+              <div class="uom-list-item__copy">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venian.</p>
                 <p>
                   123 Sydney Street, Sydney NSW 2000<br>
@@ -238,10 +238,10 @@ model:
               </div>
             </div>
           </div>
-          <div class="nsw-list-item">
-            <div class="nsw-list-item__content">
-              <div class="nsw-list-item__title"><a href="#">Service Charlie</a></div>
-              <div class="nsw-list-item__copy">
+          <div class="uom-list-item">
+            <div class="uom-list-item__content">
+              <div class="uom-list-item__title"><a href="#">Service Charlie</a></div>
+              <div class="uom-list-item__copy">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venian.</p>
                 <p>
                   123 Sydney Street, Sydney NSW 2000<br>
@@ -251,10 +251,10 @@ model:
               </div>
             </div>
           </div>
-          <div class="nsw-list-item">
-            <div class="nsw-list-item__content">
-              <div class="nsw-list-item__title"><a href="#">Service Delta</a></div>
-              <div class="nsw-list-item__copy">
+          <div class="uom-list-item">
+            <div class="uom-list-item__content">
+              <div class="uom-list-item__title"><a href="#">Service Delta</a></div>
+              <div class="uom-list-item__copy">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venian.</p>
                 <p>
                   123 Sydney Street, Sydney NSW 2000<br>
@@ -264,7 +264,7 @@ model:
               </div>
             </div>
           </div>
-        </div>      
+        </div>
       </div>
     </div>
   </div>
@@ -305,14 +305,14 @@ model:
     geojson.features.forEach(function(marker) {
 
       var markerColor;
-      var nswStyles = getComputedStyle(document.body)
+      var uomStyles = getComputedStyle(document.body)
 
       switch (marker.properties.Organisation_Name) {
         case "Service Alpha":
-          markerColor = nswStyles.getPropertyValue('--nsw-palette-red-02');
+          markerColor = uomStyles.getPropertyValue('--uom-palette-red-02');
           break;
         default:
-          markerColor = nswStyles.getPropertyValue('--nsw-palette-traditional-heritage-blue-75');
+          markerColor = uomStyles.getPropertyValue('--uom-palette-traditional-heritage-blue-75');
       }
 
       new mapboxgl.Marker({

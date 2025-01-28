@@ -1,15 +1,16 @@
-.nsw-header {
-  background-color: var(--nsw-white);
+.uom-header {
+  background-color: $brand-background;
   position: relative;
-  border-bottom: solid 1px var(--nsw-grey-04);
+  border-bottom: solid 1px var(--uom-grey-04);
+  width: 100%;
 
-  @include breakpoint($nsw-desktop-breakpoint) {
+  @include breakpoint($uom-desktop-breakpoint) {
     border-bottom: 0;
   }
 
   &--simple {
-    @include breakpoint($nsw-desktop-breakpoint) {
-      border-bottom: solid 1px var(--nsw-grey-04);
+    @include breakpoint($uom-desktop-breakpoint) {
+      border-bottom: solid 1px var(--uom-grey-04);
     }
   }
 
@@ -21,7 +22,7 @@
   &__inner {
     position: relative;
 
-    @include breakpoint($nsw-desktop-breakpoint) {
+    @include breakpoint($uom-desktop-breakpoint) {
       display: flex;
     }
   }
@@ -29,11 +30,11 @@
   &__menu,
   &__search {
     button,
-    a {      
+    a {
       @include font-size('xxs');
-      font-weight: var(--nsw-font-bold);
-      border-radius: var(--nsw-border-radius);
-      color: var(--nsw-brand-dark);
+      font-weight: var(--uom-font-bold);
+      border-radius: var(--uom-border-radius);
+      color: var(--uom-white);
       width: rem(48px);
       height: rem(48px);
       background: none;
@@ -48,15 +49,15 @@
       cursor: pointer;
 
       &:hover {
-        @include nsw-hover;
+        @include uom-hover;
       }
 
       &:focus {
-        @include nsw-focus;
+        @include uom-focus;
       }
 
-      .nsw-material-icons {
-        font-size: rem(map-get($nsw-icon-sizes, 24));
+      .uom-material-icons {
+        font-size: rem(map-get($uom-icon-sizes, 24));
       }
     }
 
@@ -67,8 +68,8 @@
     top: rem(12px);
     left: rem(-6px);
 
-    button {      
-      @include breakpoint($nsw-desktop-breakpoint) {
+    button {
+      @include breakpoint($uom-desktop-breakpoint) {
         display: none;
       }
     }
@@ -79,39 +80,40 @@
     top: rem(12px);
     right: rem(-4px);
 
-    @include breakpoint($nsw-desktop-breakpoint) {
+    @include breakpoint($uom-desktop-breakpoint) {
       right: 0;
       top: 50%;
       margin-top: rem(-24px);
     }
 
-    button {      
-      @include breakpoint($nsw-desktop-breakpoint) {
+    button {
+      @include breakpoint($uom-desktop-breakpoint) {
         > span:last-child {
           @include sr-only;
         }
 
-        .nsw-material-icons {
-          font-size: rem(map-get($nsw-icon-sizes, 36));
+        .uom-material-icons {
+          font-size: rem(map-get($uom-icon-sizes, 36));
         }
       }
     }
   }
 
   &__main {
-    @include breakpoint($nsw-desktop-breakpoint) {
+    @include breakpoint($uom-desktop-breakpoint) {
       position: relative;
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      margin: rem(20px) rem(72px) rem(20px) 0;
+      margin: 0 rem(72px) 0 0;
+      height: 146px;
 
       &:focus-within {
-        @include nsw-focus;
+        @include uom-focus;
       }
     }
 
-    .nsw-header__rectangular-logo {
+    .uom-header__rectangular-logo {
       @include breakpoint('lg') {
         height: rem(60px);
         margin-top: rem(8px);
@@ -125,7 +127,7 @@
     display: flex;
     justify-content: center;
 
-    @include breakpoint($nsw-desktop-breakpoint) {
+    @include breakpoint($uom-desktop-breakpoint) {
       padding: 0;
     }
 
@@ -133,22 +135,22 @@
       height: rem(48px);
       display: block;
 
-      @include breakpoint($nsw-desktop-breakpoint) {
+      @include breakpoint($uom-desktop-breakpoint) {
         height: rem(76px);
       }
 
-      &.nsw-header__waratah-gov {
-        height: rem(55px);
+      &.uom-header__waratah-gov {
+        height: rem(140px);
 
-        @include breakpoint($nsw-desktop-breakpoint) {
-          height: rem(76px);
+        @include breakpoint($uom-desktop-breakpoint) {
+          height: rem(140px);
         }
       }
     }
 
     a {
       display: flex;
-      color: var(--nsw-brand-dark);
+      color: var(--uom-brand-dark);
       text-decoration: none;
       align-items: center;
 
@@ -160,36 +162,36 @@
       &:focus {
         outline-width: 3px;
 
-        @include breakpoint($nsw-desktop-breakpoint) {
+        @include breakpoint($uom-desktop-breakpoint) {
           outline: none;
         }
       }
 
-      @include breakpoint($nsw-desktop-breakpoint) {
+      @include breakpoint($uom-desktop-breakpoint) {
         @include pseudo-clickable-block;
       }
 
       svg:not(:first-child) {
         margin-left: rem(24px);
 
-        @include breakpoint($nsw-desktop-breakpoint) {
+        @include breakpoint($uom-desktop-breakpoint) {
           margin-left: rem(40px);
         }
-      }      
+      }
     }
   }
 
   &__waratah-gov {
     margin-bottom: rem(-7px);
 
-    @include breakpoint($nsw-desktop-breakpoint) {
+    @include breakpoint($uom-desktop-breakpoint) {
       margin-bottom: 0;
     }
 
     .hide {
       display: none;
 
-      @include breakpoint($nsw-desktop-breakpoint) {
+      @include breakpoint($uom-desktop-breakpoint) {
         display: inline;
       }
     }
@@ -197,9 +199,9 @@
 
   &__name {
     padding: rem(12px) 0;
-    color: var(--nsw-brand-dark);
+    color: var(--uom-brand-dark);
 
-    @include breakpoint($nsw-desktop-breakpoint) {
+    @include breakpoint($uom-desktop-breakpoint) {
       padding: 0;
       margin-left: rem(40px);
     }
@@ -207,8 +209,8 @@
 
   &__title {
     @include font-size('lg');
-    font-weight: var(--nsw-font-bold);
-    color: var(--nsw-brand-dark);
+    font-weight: var(--uom-font-bold);
+    color: var(--uom-white);
     display: flex;
     align-items: center;
 
@@ -216,21 +218,21 @@
       line-height: rem(28px);
     }
 
-    .nsw-tag {
-      margin-left: rem(24px);
+    .uom-tag {
+      margin-left: rem(32px);
     }
   }
 
   &__description {
     @include font-size('xs');
-    color: var(--nsw-brand-dark);
+    color: var(--uom-brand-dark);
   }
 
   &__logo {
     display: flex;
     justify-content: center;
 
-    @include breakpoint($nsw-desktop-breakpoint) {
+    @include breakpoint($uom-desktop-breakpoint) {
       justify-content: flex-start;
     }
 
@@ -238,19 +240,19 @@
       height: rem(48px);
       display: block;
 
-      @include breakpoint($nsw-desktop-breakpoint) {
+      @include breakpoint($uom-desktop-breakpoint) {
         height: rem(76px);
       }
     }
   }
-  
+
   &__search-area {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
 
-    @include breakpoint($nsw-desktop-breakpoint) {
+    @include breakpoint($uom-desktop-breakpoint) {
       width: rem(394px);
       left: auto;
       right: rem(16px);
@@ -268,8 +270,8 @@
 
     > button {
       border-radius: 0;
-      
-      @include breakpoint($nsw-desktop-breakpoint) {
+
+      @include breakpoint($uom-desktop-breakpoint) {
         display: none;
       }
     }
@@ -281,32 +283,32 @@
         padding: 0;
         width: rem(48px);
 
-        @include breakpoint($nsw-desktop-breakpoint) {
+        @include breakpoint($uom-desktop-breakpoint) {
           display: flex;
         }
       }
 
-      .nsw-material-icons {
-        font-size: rem(map-get($nsw-icon-sizes, 36));
+      .uom-material-icons {
+        font-size: rem(map-get($uom-icon-sizes, 36));
       }
     }
 
     input {
       @include font-size('md');
-      background: var(--nsw-off-white);
+      background: var(--uom-off-white);
       padding: rem(8px) rem(72px) rem(8px) rem(16px);
-      color: var(--nsw-text-dark);
+      color: var(--uom-text-dark);
       width: 100%;
       appearance: none;
       border: 0;
       height: rem(72px);
 
       &:focus {
-        @include nsw-focus($offset: false);
+        @include uom-focus($offset: false);
       }
 
-      @include breakpoint($nsw-desktop-breakpoint) {
-        border-radius: var(--nsw-border-radius);
+      @include breakpoint($uom-desktop-breakpoint) {
+        border-radius: var(--uom-border-radius);
         height: rem(48px);
         padding: 0 rem(16px);
       }

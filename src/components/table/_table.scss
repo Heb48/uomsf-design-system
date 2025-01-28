@@ -1,11 +1,11 @@
-$nsw-vertical-align: (
+$uom-vertical-align: (
   valign-baseline: baseline,
   valign-top: top,
   valign-middle: middle,
   valign-bottom: bottom,
 );
 
-.nsw-table {
+.uom-table {
   @include component-spacing();
   display: block;
   width: 100%;
@@ -13,7 +13,7 @@ $nsw-vertical-align: (
   -webkit-overflow-scrolling: touch;
 
   &:focus {
-    @include nsw-focus;
+    @include uom-focus;
   }
 
   table {
@@ -34,10 +34,10 @@ $nsw-vertical-align: (
     }
 
     tbody tr:nth-of-type(even) {
-      background-color: var(--nsw-off-white);
-      
-      .nsw-section--invert & {    
-        background-color: var(--nsw-hover-light);
+      background-color: var(--uom-off-white);
+
+      .uom-section--invert & {
+        background-color: var(--uom-hover-light);
       }
     }
   }
@@ -45,13 +45,13 @@ $nsw-vertical-align: (
   &--bordered {
     th,
     td {
-      border: solid 1px var(--nsw-grey-01);
+      border: solid 1px var(--uom-grey-01);
     }
   }
 }
 
-@each $name, $alignment in $nsw-vertical-align {
-  .nsw-table--#{"" + $name} {
+@each $name, $alignment in $uom-vertical-align {
+  .uom-table--#{"" + $name} {
     th,
     td {
       vertical-align: $alignment;

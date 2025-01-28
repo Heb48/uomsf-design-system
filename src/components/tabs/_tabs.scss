@@ -1,10 +1,10 @@
-.nsw-tabs {
+.uom-tabs {
   @include component-spacing();
 
   &__list-wrapper {
     overflow: hidden;
     height: rem(48px);
-    background-color: var(--nsw-off-white);
+    background-color: var(--uom-off-white);
 
     @include breakpoint('md') {
       background-color: transparent;
@@ -30,11 +30,11 @@
       padding: rem(12px) rem(16px);
       position: relative;
       text-decoration: none;
-      color: var(--nsw-brand-dark);
+      color: var(--uom-brand-dark);
       height: 100%;
 
       &:hover {
-        @include nsw-hover;
+        @include uom-hover;
         outline-width: 0;
       }
 
@@ -44,7 +44,7 @@
       }
 
       &.active {
-        color: var(--nsw-text-dark);
+        color: var(--uom-text-dark);
 
         &::after {
           content: '';
@@ -53,31 +53,31 @@
           left: 0;
           width: 100%;
           height: 0;
-          border-bottom: solid 2px var(--nsw-brand-accent);
+          border-bottom: solid 2px var(--uom-brand-accent);
         }
-      
-        .nsw-section--invert & {    
-          color: var(--nsw-text-light);
+
+        .uom-section--invert & {
+          color: var(--uom-text-light);
         }
       }
-      
-      .nsw-section--invert & {    
-        color: var(--nsw-text-light);
+
+      .uom-section--invert & {
+        color: var(--uom-text-light);
       }
     }
   }
 
   &__content {
     padding: rem(24px) rem(16px);
-    border-bottom: solid 1px var(--nsw-grey-04);
-    border-top: solid 2px var(--nsw-grey-04);
+    border-bottom: solid 1px var(--uom-grey-04);
+    border-top: solid 2px var(--uom-grey-04);
     margin-top: -2px;
 
     &:focus {
-      @include nsw-focus;
+      @include uom-focus;
 
-      .nsw-section--invert & {    
-        outline-color: var(--nsw-white);
+      .uom-section--invert & {
+        outline-color: var(--uom-white);
       }
     }
 

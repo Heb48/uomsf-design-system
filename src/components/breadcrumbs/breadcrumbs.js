@@ -1,7 +1,7 @@
 class Breadcrumbs {
   constructor(element) {
     this.element = element
-    this.allBreadcrumbs = this.element.querySelector('.nsw-breadcrumbs ol')
+    this.allBreadcrumbs = this.element.querySelector('.uom-breadcrumbs ol')
     this.secondBreadcrumb = this.element.querySelector('.js-breadcrumbs li:nth-child(2)')
     this.condition = false
   }
@@ -13,13 +13,13 @@ class Breadcrumbs {
 
     this.element.addEventListener('click', (event) => {
       event.preventDefault()
-      this.allBreadcrumbs.classList.toggle('nsw-breadcrumbs__show-all')
+      this.allBreadcrumbs.classList.toggle('uom-breadcrumbs__show-all')
     })
   }
 
   createToggle() {
-    const toggle = this.constructor.createElement('li', ['nsw-breadcrumbs__show-more-toggle'])
-    toggle.innerHTML = '<button aria-label="Show more breadcrumbs" class="nsw-breadcrumbs__toggle-button" type="button">…</button>'
+    const toggle = this.constructor.createElement('li', ['uom-breadcrumbs__show-more-toggle'])
+    toggle.innerHTML = '<button aria-label="Show more breadcrumbs" class="uom-breadcrumbs__toggle-button" type="button">…</button>'
 
     this.allBreadcrumbs.insertBefore(toggle, this.secondBreadcrumb)
   }

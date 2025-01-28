@@ -1,10 +1,10 @@
 /* stylelint-disable declaration-no-important */
 
-.nsw-block {
-  @include component-spacing();  
+.uom-block {
+  @include component-spacing();
 }
 
-@each $prop, $abbrev in (margin: nsw-m, padding: nsw-p) {
+@each $prop, $abbrev in (margin: uom-m, padding: uom-p) {
   @each $size, $lengths in $spacers {
     $length-mobile: rem(map-get($lengths, mobile));
     $length-desktop: rem(map-get($lengths, desktop));

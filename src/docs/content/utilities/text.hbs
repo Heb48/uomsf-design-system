@@ -10,54 +10,54 @@ meta-index: true
 
 <h3>Text alignment</h3>
 
-{{#>_docs-example open=true separated=true}} 
-<p class="nsw-text-left">Start aligned text on all viewport sizes.</p>
-<p class="nsw-text-center">Center aligned text on all viewport sizes.</p>
-<p class="nsw-text-right">End aligned text on all viewport sizes.</p>
+{{#>_docs-example open=true separated=true}}
+<p class="uom-text-left">Start aligned text on all viewport sizes.</p>
+<p class="uom-text-center">Center aligned text on all viewport sizes.</p>
+<p class="uom-text-right">End aligned text on all viewport sizes.</p>
 {{/_docs-example}}
 
 <h3>Text wrapping and overflow</h3>
 
-<p>Wrap text with a <code>.nsw-text-wrap</code> class.</p>
+<p>Wrap text with a <code>.uom-text-wrap</code> class.</p>
 
-{{#>_docs-example open=true separated=true}} 
-<span class="nsw-status-label nsw-text-wrap nsw-text-center" style="width: 6rem;">This text should wrap.</span>
+{{#>_docs-example open=true separated=true}}
+<span class="uom-status-label uom-text-wrap uom-text-center" style="width: 6rem;">This text should wrap.</span>
 {{/_docs-example}}
 
-<p>Prevent text from wrapping with a <code>.nsw-text-nowrap</code> class.</p>
+<p>Prevent text from wrapping with a <code>.uom-text-nowrap</code> class.</p>
 
-{{#>_docs-example open=true separated=true}} 
-<span class="nsw-status-label nsw-text-nowrap" style="width: 6rem;">This text should overflow the parent.</span>
+{{#>_docs-example open=true separated=true}}
+<span class="uom-status-label uom-text-nowrap" style="width: 6rem;">This text should overflow the parent.</span>
 {{/_docs-example}}
 
 <h3>Word break</h3>
 
-<p>Prevent long strings of text from breaking your components’ layout by using .nsw-text-break to set word-wrap: break-word and word-break: break-word. We use word-wrap instead of the more common overflow-wrap for wider browser support, and add the deprecated word-break: break-word to avoid issues with flex containers.</p>
+<p>Prevent long strings of text from breaking your components’ layout by using .uom-text-break to set word-wrap: break-word and word-break: break-word. We use word-wrap instead of the more common overflow-wrap for wider browser support, and add the deprecated word-break: break-word to avoid issues with flex containers.</p>
 
-<div class="nsw-section nsw-section--white nsw-block nsw-p-sm">
-  <div class="nsw-table nsw-table--valign-middle">
+<div class="uom-section uom-section--white uom-block uom-p-sm">
+  <div class="uom-table uom-table--valign-middle">
     <table>
       <thead>
         <tr>
-          <th class="nsw-p-top-0">Class</th>
-          <th class="nsw-p-top-0">Properties</th>
+          <th class="uom-p-top-0">Class</th>
+          <th class="uom-p-top-0">Properties</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><code>nsw-overflow-break</code></td>
+          <td><code>uom-overflow-break</code></td>
           <td>overflow-wrap: break-word;</td>
         </tr>
         <tr>
-          <td><code>nsw-word-break-normal</code></td>
+          <td><code>uom-word-break-normal</code></td>
           <td>word-break: normal;</td>
         </tr>
         <tr>
-          <td><code>nsw-word-break-break-all</code></td>
+          <td><code>uom-word-break-break-all</code></td>
           <td>word-break: break-all;</td>
         </tr>
         <tr>
-          <td><code>nsw-word-break-keep-all</code></td>
+          <td><code>uom-word-break-keep-all</code></td>
           <td>word-break: keep-all;</td>
         </tr>
       </tbody>
@@ -65,38 +65,38 @@ meta-index: true
   </div>
 </div>
 
-{{#>_docs-example open=true separated=true}} 
-<p class="nsw-overflow-break">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
-<p class="nsw-word-break-normal">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
-<p class="nsw-word-break-break-all">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
-<p class="nsw-word-break-keep-all">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+{{#>_docs-example open=true separated=true}}
+<p class="uom-overflow-break">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+<p class="uom-word-break-normal">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+<p class="uom-word-break-break-all">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+<p class="uom-word-break-keep-all">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
 {{/_docs-example}}
 
 <h3>Text transform</h3>
 <p>Transform text with text capitalization classes.</p>
 
-{{#>_docs-example open=true separated=true}} 
-<p class="nsw-text-lowercase">Lowercased text.</p>
-<p class="nsw-text-uppercase">Uppercased text.</p>
-<p class="nsw-text-capitalize">Capitalized text.</p>
+{{#>_docs-example open=true separated=true}}
+<p class="uom-text-lowercase">Lowercased text.</p>
+<p class="uom-text-uppercase">Uppercased text.</p>
+<p class="uom-text-capitalize">Capitalized text.</p>
 {{/_docs-example}}
 
 
 <h3>Font weight and italics </h3>
 <p>Quickly change the font-weight or font-style of text with these utilities.</p>
 
-{{#>_docs-example open=true separated=true}} 
-<p class="nsw-text-bold">Bold text.</p>
-<p class="nsw-text-normal">Normal weight text.</p>
-<p class="nsw-text-italic">Italic text.</p>
+{{#>_docs-example open=true separated=true}}
+<p class="uom-text-bold">Bold text.</p>
+<p class="uom-text-normal">Normal weight text.</p>
+<p class="uom-text-italic">Italic text.</p>
 {{/_docs-example}}
 
 <h3>Text color</h3>
 
-<p>Control the text color of an element using the <code>nsw-text--{color}</code> utilities.</p>
+<p>Control the text color of an element using the <code>uom-text--{color}</code> utilities.</p>
 
-<div class="nsw-section nsw-section--white nsw-block nsw-p-sm">
-  <div class="nsw-table nsw-table--bordered nsw-table--valign-middle">
+<div class="uom-section uom-section--white uom-block uom-p-sm">
+  <div class="uom-table uom-table--bordered uom-table--valign-middle">
     <table>
       <tbody>
         <tr>
@@ -127,7 +127,7 @@ meta-index: true
     </table>
   </div>
 </div>
- 
+
 {{#>_docs-example showcode=true separated=true}}
 {{#each model.textLight as |value property|}}
 <p class="{{@key}}">.{{@key}}</p>
@@ -140,7 +140,7 @@ meta-index: true
 {{/each}}
 {{/_docs-example}}
 
-{{#>_docs-code open=true}}  
+{{#>_docs-code open=true}}
 {{#each model.textColour as |value property|}}
 <p class="{{@key}}">.{{@key}}</p>
 {{/each}}

@@ -1,169 +1,169 @@
-$nsw-buttons: (
+$uom-buttons: (
   primary: (
-    text-color: var(--nsw-brand-dark),
-    text-color-invert: var(--nsw-section-bg),
-    text-color-hover: var(--nsw-brand-dark),
-    text-color-hover-invert: var(--nsw-section-bg),
-    background: var(--nsw-primary),
-    background-invert: var(--nsw-white),
-    background-hover: var(--nsw-primary-hover),
-    background-hover-invert: var(--nsw-white),
+    text-color: var(--uom-brand-dark),
+    text-color-invert: var(--uom-section-bg),
+    text-color-hover: var(--uom-brand-dark),
+    text-color-hover-invert: var(--uom-section-bg),
+    background: var(--uom-primary),
+    background-invert: var(--uom-white),
+    background-hover: var(--uom-primary-hover),
+    background-hover-invert: var(--uom-white),
     border: transparent,
     border-hover: transparent,
-    focus: var(--nsw-focus),
-    focus-invert: var(--nsw-focus-light),
+    focus: var(--uom-focus),
+    focus-invert: var(--uom-focus-light),
     hover: white,
     hover-invert: black
   ),
   secondary: (
-    text-color: var(--nsw-brand-dark),
-    text-color-invert: var(--nsw-section-bg),
-    text-color-hover: var(--nsw-brand-dark),
-    text-color-hover-invert: var(--nsw-section-bg),
-    background: var(--nsw-secondary),
-    background-invert: var(--nsw-white),
-    background-hover: var(--nsw-secondary-hover),
-    background-hover-invert: var(--nsw-white),
+    text-color: var(--uom-brand-dark),
+    text-color-invert: var(--uom-section-bg),
+    text-color-hover: var(--uom-brand-dark),
+    text-color-hover-invert: var(--uom-section-bg),
+    background: var(--uom-secondary),
+    background-invert: var(--uom-white),
+    background-hover: var(--uom-secondary-hover),
+    background-hover-invert: var(--uom-white),
     border: transparent,
     border-hover: transparent,
-    focus: var(--nsw-focus),
-    focus-invert: var(--nsw-focus-light),
+    focus: var(--uom-focus),
+    focus-invert: var(--uom-focus-light),
     hover: white,
     hover-invert: black
   ),
   tertiary: (
-    text-color: var(--nsw-brand-dark),
-    text-color-invert: var(--nsw-white),
+    text-color: var(--uom-brand-dark),
+    text-color-invert: var(--uom-white),
     background: transparent,
     background-invert: transparent,
-    background-hover: var(--nsw-primary-hover),
-    background-hover-invert: var(--nsw-white),
-    border: var(--nsw-brand-dark),
-    border-invert: var(--nsw-white),
-    focus: var(--nsw-focus),
-    focus-invert: var(--nsw-focus-light),
+    background-hover: var(--uom-primary-hover),
+    background-hover-invert: var(--uom-white),
+    border: var(--uom-brand-dark),
+    border-invert: var(--uom-white),
+    focus: var(--uom-focus),
+    focus-invert: var(--uom-focus-light),
   ),
   dark-outline-solid: (
-    text-color: var(--nsw-brand-dark),
-    text-color-invert: var(--nsw-white),
-    text-color-hover: var(--nsw-text-light),
-    text-color-hover-invert: var(--nsw-section-bg),
-    background: var(--nsw-white),
-    background-invert: var(--nsw-section-bg),
-    background-hover: var(--nsw-primary-light),
-    background-hover-invert: var(--nsw-white),
-    border: var(--nsw-brand-dark),
-    border-invert: var(--nsw-white),
+    text-color: var(--uom-brand-dark),
+    text-color-invert: var(--uom-white),
+    text-color-hover: var(--uom-text-light),
+    text-color-hover-invert: var(--uom-section-bg),
+    background: var(--uom-white),
+    background-invert: var(--uom-section-bg),
+    background-hover: var(--uom-primary-light),
+    background-hover-invert: var(--uom-white),
+    border: var(--uom-brand-dark),
+    border-invert: var(--uom-white),
     border-hover: transparent,
     border-hover-invert: transparent,
-    focus: var(--nsw-focus),
-    focus-invert: var(--nsw-focus-light)
+    focus: var(--uom-focus),
+    focus-invert: var(--uom-focus-light)
   ),
   light: (
-    text-color: var(--nsw-text-dark),
-    text-color-invert: var(--nsw-section-bg),
-    text-color-hover: var(--nsw-text-dark),
-    text-color-hover-invert: var(--nsw-section-bg),
-    background: var(--nsw-brand-light),
-    background-invert: var(--nsw-brand-light),
-    background-hover: var(--nsw-brand-light),
-    background-hover-invert: var(--nsw-brand-light),
+    text-color: var(--uom-text-dark),
+    text-color-invert: var(--uom-section-bg),
+    text-color-hover: var(--uom-text-dark),
+    text-color-hover-invert: var(--uom-section-bg),
+    background: var(--uom-brand-light),
+    background-invert: var(--uom-brand-light),
+    background-hover: var(--uom-brand-light),
+    background-hover-invert: var(--uom-brand-light),
     border: transparent,
     border-invert: transparent,
     border-hover: transparent,
     border-hover-invert: transparent,
-    focus: var(--nsw-focus),
-    focus-invert: var(--nsw-focus-light),
+    focus: var(--uom-focus),
+    focus-invert: var(--uom-focus-light),
     hover: black,
     hover-invert: white
   ),
   light-outline: (
-    text-color: var(--nsw-brand-light),
-    text-color-invert: var(--nsw-brand-light),
-    text-color-hover: var(--nsw-text-dark),
-    text-color-hover-invert: var(--nsw-section-bg),
+    text-color: var(--uom-brand-light),
+    text-color-invert: var(--uom-brand-light),
+    text-color-hover: var(--uom-text-dark),
+    text-color-hover-invert: var(--uom-section-bg),
     background: transparent,
     background-invert: transparent,
-    background-hover: var(--nsw-brand-light),
-    background-hover-invert: var(--nsw-brand-light),
-    border: var(--nsw-brand-light),
-    border-invert: var(--nsw-brand-light),
+    background-hover: var(--uom-brand-light),
+    background-hover-invert: var(--uom-brand-light),
+    border: var(--uom-brand-light),
+    border-invert: var(--uom-brand-light),
     border-hover: transparent,
     border-hover-invert: transparent,
-    focus: var(--nsw-focus),
-    focus-invert: var(--nsw-focus-light)
+    focus: var(--uom-focus),
+    focus-invert: var(--uom-focus-light)
   ),
   white: (
-    text-color: var(--nsw-text-dark),
-    text-color-invert: var(--nsw-section-bg),
-    text-color-hover: var(--nsw-text-dark),
-    text-color-hover-invert: var(--nsw-section-bg),
-    background: var(--nsw-white),
-    background-invert: var(--nsw-white),
-    background-hover: var(--nsw-white),
-    background-hover-invert: var(--nsw-white),
+    text-color: var(--uom-text-dark),
+    text-color-invert: var(--uom-section-bg),
+    text-color-hover: var(--uom-text-dark),
+    text-color-hover-invert: var(--uom-section-bg),
+    background: var(--uom-white),
+    background-invert: var(--uom-white),
+    background-hover: var(--uom-white),
+    background-hover-invert: var(--uom-white),
     border: transparent,
     border-invert: transparent,
     border-hover: transparent,
     border-hover-invert: transparent,
-    focus: var(--nsw-white),
-    focus-invert: var(--nsw-focus-light),
+    focus: var(--uom-white),
+    focus-invert: var(--uom-focus-light),
     hover: black,
     hover-invert: black
   ),
   white-outline: (
-    text-color: var(--nsw-white),
-    text-color-invert: var(--nsw-white),
-    text-color-hover: var(--nsw-text-dark),
-    text-color-hover-invert: var(--nsw-section-bg),
+    text-color: var(--uom-white),
+    text-color-invert: var(--uom-white),
+    text-color-hover: var(--uom-text-dark),
+    text-color-hover-invert: var(--uom-section-bg),
     background: transparent,
     background-invert: transparent,
-    background-hover: var(--nsw-white),
-    background-hover-invert: var(--nsw-white),
-    border: var(--nsw-white),
-    border-invert: var(--nsw-white),
+    background-hover: var(--uom-white),
+    background-hover-invert: var(--uom-white),
+    border: var(--uom-white),
+    border-invert: var(--uom-white),
     border-hover: transparent,
     border-hover-invert: transparent,
-    focus: var(--nsw-white),
-    focus-invert: var(--nsw-focus-light),
+    focus: var(--uom-white),
+    focus-invert: var(--uom-focus-light),
     hover: black,
     hover-invert: white
   ),
   danger: (
-    text-color: var(--nsw-text-light),
-    text-color-invert: var(--nsw-text-light),
-    text-color-hover: var(--nsw-text-light),
-    text-color-hover-invert: var(--nsw-text-light),
-    background: var(--nsw-status-error),
-    background-invert: var(--nsw-status-error),
-    background-hover: var(--nsw-status-error),
-    background-hover-invert: var(--nsw-status-error),
+    text-color: var(--uom-text-light),
+    text-color-invert: var(--uom-text-light),
+    text-color-hover: var(--uom-text-light),
+    text-color-hover-invert: var(--uom-text-light),
+    background: var(--uom-status-error),
+    background-invert: var(--uom-status-error),
+    background-hover: var(--uom-status-error),
+    background-hover-invert: var(--uom-status-error),
     border: transparent,
     border-invert: transparent,
     border-hover: transparent,
     border-hover-invert: transparent,
-    focus: var(--nsw-focus),
-    focus-invert: var(--nsw-focus-light),
+    focus: var(--uom-focus),
+    focus-invert: var(--uom-focus-light),
     hover: white,
     hover-invert: white
   ),
   info: (
-    text-color: var(--nsw-text-light),
-    text-color-hover: var(--nsw-text-light),
-    background: var(--nsw-status-info),
-    background-hover: var(--nsw-status-info),
+    text-color: var(--uom-text-light),
+    text-color-hover: var(--uom-text-light),
+    background: var(--uom-status-info),
+    background-hover: var(--uom-status-info),
     border: transparent,
     border-hover: transparent,
-    focus: var(--nsw-focus),
-    focus-invert: var(--nsw-focus-light),
+    focus: var(--uom-focus),
+    focus-invert: var(--uom-focus-light),
     hover: white
   ),
 );
 
-.nsw-button {
+.uom-button {
   @include font-size('sm');
-  border-radius: var(--nsw-border-radius);
-  font-weight: var(--nsw-font-bold);
+  border-radius: var(--uom-border-radius);
+  font-weight: var(--uom-font-bold);
   border: solid 1px transparent;
   white-space: normal;
   text-decoration: none;
@@ -177,9 +177,9 @@ $nsw-buttons: (
   vertical-align: middle;
   user-select: none;
   display: inline-block;
-  transition: background ($nsw-transition-duration);
+  transition: background ($uom-transition-duration);
 
-  &:not(.nsw-button--flex) {
+  &:not(.uom-button--flex) {
     min-width: rem(124px);
   }
 
@@ -188,7 +188,7 @@ $nsw-buttons: (
   }
 
   &:focus {
-    @include nsw-focus;
+    @include uom-focus;
   }
 
   &:disabled,
@@ -197,8 +197,8 @@ $nsw-buttons: (
     cursor: not-allowed;
   }
 
-  .nsw-material-icons {
-    font-size: rem(map-get($nsw-icon-sizes, 24));
+  .uom-material-icons {
+    font-size: rem(map-get($uom-icon-sizes, 24));
     line-height: rem(10px);
     position: relative;
     bottom: rem(-7px);
@@ -220,8 +220,8 @@ $nsw-buttons: (
     @include font-size('xs');
     padding: rem(5px);
 
-    .nsw-material-icons {
-      font-size: rem(map-get($nsw-icon-sizes, 20));
+    .uom-material-icons {
+      font-size: rem(map-get($uom-icon-sizes, 20));
 
       &:first-child {
         margin-right: rem(4px);
@@ -242,7 +242,7 @@ $nsw-buttons: (
     justify-content: center;
     align-items: center;
 
-    .nsw-material-icons {
+    .uom-material-icons {
       position: static;
     }
   }
@@ -251,15 +251,15 @@ $nsw-buttons: (
     display: block;
     width: 100%;
 
-    @include breakpoint($nsw-desktop-breakpoint) {
+    @include breakpoint($uom-desktop-breakpoint) {
       display: inline-block;
       width: auto;
     }
   }
 }
 
-.nsw-button {
-  @each $color, $property-map in $nsw-buttons {
+.uom-button {
+  @each $color, $property-map in $uom-buttons {
     &--#{"" + $color} {
       color: map-get($property-map, text-color);
       background-color: map-get($property-map, background);
@@ -278,13 +278,13 @@ $nsw-buttons: (
         background-color: map-get($property-map, background-hover);
         border-color: map-get($property-map, border-hover);
         @if map-get($property-map, hover) == white {
-          background-image: linear-gradient(rgba(var(--nsw-white-rgb), 0.01), rgba(var(--nsw-white-rgb), 0.01));
+          background-image: linear-gradient(rgba(var(--uom-white-rgb), 0.01), rgba(var(--uom-white-rgb), 0.01));
         }
         @if map-get($property-map, hover) == black {
-          background-image: linear-gradient(rgba(var(--nsw-black-rgb), 0.07), rgba(var(--nsw-black-rgb), 0.07));
+          background-image: linear-gradient(rgba(var(--uom-black-rgb), 0.07), rgba(var(--uom-black-rgb), 0.07));
         }
 
-        .nsw-material-icons {
+        .uom-material-icons {
           color: map-get($property-map, text-color-hover);
         }
       }
@@ -294,13 +294,13 @@ $nsw-buttons: (
         background-color: map-get($property-map, background-hover);
         border-color: map-get($property-map, border-hover);
         @if map-get($property-map, hover) == white {
-          background-image: linear-gradient(rgba(var(--nsw-white-rgb), 0.075), rgba(var(--nsw-white-rgb), 0.075));
+          background-image: linear-gradient(rgba(var(--uom-white-rgb), 0.075), rgba(var(--uom-white-rgb), 0.075));
         }
         @if map-get($property-map, hover) == black {
-          background-image: linear-gradient(rgba(var(--nsw-black-rgb), 0.035), rgba(var(--nsw-black-rgb), 0.035));
+          background-image: linear-gradient(rgba(var(--uom-black-rgb), 0.035), rgba(var(--uom-black-rgb), 0.035));
         }
 
-        .nsw-material-icons {
+        .uom-material-icons {
           color: map-get($property-map, text-color-hover);
         }
       }
@@ -312,15 +312,15 @@ $nsw-buttons: (
         border-color: map-get($property-map, border);
       }
 
-      .nsw-material-icons {
+      .uom-material-icons {
         color: map-get($property-map, text-color);
       }
     }
   }
 }
 
-.nsw-section--invert .nsw-button {
-  @each $color, $property-map in $nsw-buttons {
+.uom-section--invert .uom-button {
+  @each $color, $property-map in $uom-buttons {
     &--#{"" + $color} {
       color: map-get($property-map, text-color-invert);
       background-color: map-get($property-map, background-invert);
@@ -339,13 +339,13 @@ $nsw-buttons: (
         background-color: map-get($property-map, background-hover-invert);
         border-color: map-get($property-map, border-hover-invert);
         @if map-get($property-map, hover-invert) == white {
-          background-image: linear-gradient(rgba(var(--nsw-white-rgb), 0.15), rgba(var(--nsw-white-rgb), 0.15));
+          background-image: linear-gradient(rgba(var(--uom-white-rgb), 0.15), rgba(var(--uom-white-rgb), 0.15));
         }
         @if map-get($property-map, hover-invert) == black {
-          background-image: linear-gradient(rgba(var(--nsw-black-rgb), 0.07), rgba(var(--nsw-black-rgb), 0.07));
+          background-image: linear-gradient(rgba(var(--uom-black-rgb), 0.07), rgba(var(--uom-black-rgb), 0.07));
         }
 
-        .nsw-material-icons {
+        .uom-material-icons {
           color: map-get($property-map, text-color-hover-invert);
         }
       }
@@ -355,13 +355,13 @@ $nsw-buttons: (
         background-color: map-get($property-map, background-hover-invert);
         border-color: map-get($property-map, border-hover-invert);
         @if map-get($property-map, hover) == white {
-          background-image: linear-gradient(rgba(var(--nsw-white-rgb), 0.075), rgba(var(--nsw-white-rgb), 0.075));
+          background-image: linear-gradient(rgba(var(--uom-white-rgb), 0.075), rgba(var(--uom-white-rgb), 0.075));
         }
         @if map-get($property-map, hover) == black {
-          background-image: linear-gradient(rgba(var(--nsw-black-rgb), 0.035), rgba(var(--nsw-black-rgb), 0.035));
+          background-image: linear-gradient(rgba(var(--uom-black-rgb), 0.035), rgba(var(--uom-black-rgb), 0.035));
         }
 
-        .nsw-material-icons {
+        .uom-material-icons {
           color: map-get($property-map, text-color-hover-invert);
         }
       }
@@ -373,15 +373,15 @@ $nsw-buttons: (
         border-color: map-get($property-map, border-invert);
       }
 
-      .nsw-material-icons {
+      .uom-material-icons {
         color: map-get($property-map, text-color-invert);
       }
     }
   }
 }
 
-.nsw-dialog .nsw-button {
-  @each $color, $property-map in $nsw-buttons {
+.uom-dialog .uom-button {
+  @each $color, $property-map in $uom-buttons {
     &--#{"" + $color} {
       color: map-get($property-map, text-color);
       background-color: map-get($property-map, background);
@@ -400,13 +400,13 @@ $nsw-buttons: (
         background-color: map-get($property-map, background-hover);
         border-color: map-get($property-map, border-hover);
         @if map-get($property-map, hover) == white {
-          background-image: linear-gradient(rgba(var(--nsw-white-rgb), 0.15), rgba(var(--nsw-white-rgb), 0.15));
+          background-image: linear-gradient(rgba(var(--uom-white-rgb), 0.15), rgba(var(--uom-white-rgb), 0.15));
         }
         @if map-get($property-map, hover) == black {
-          background-image: linear-gradient(rgba(var(--nsw-black-rgb), 0.07), rgba(var(--nsw-black-rgb), 0.07));
+          background-image: linear-gradient(rgba(var(--uom-black-rgb), 0.07), rgba(var(--uom-black-rgb), 0.07));
         }
 
-        .nsw-material-icons {
+        .uom-material-icons {
           color: map-get($property-map, text-color-hover);
         }
       }
@@ -416,13 +416,13 @@ $nsw-buttons: (
         background-color: map-get($property-map, background-hover);
         border-color: map-get($property-map, border-hover);
         @if map-get($property-map, hover) == white {
-          background-image: linear-gradient(rgba(var(--nsw-white-rgb), 0.075), rgba(var(--nsw-white-rgb), 0.075));
+          background-image: linear-gradient(rgba(var(--uom-white-rgb), 0.075), rgba(var(--uom-white-rgb), 0.075));
         }
         @if map-get($property-map, hover) == black {
-          background-image: linear-gradient(rgba(var(--nsw-black-rgb), 0.035), rgba(var(--nsw-black-rgb), 0.035));
+          background-image: linear-gradient(rgba(var(--uom-black-rgb), 0.035), rgba(var(--uom-black-rgb), 0.035));
         }
 
-        .nsw-material-icons {
+        .uom-material-icons {
           color: map-get($property-map, text-color-hover);
         }
       }
@@ -434,7 +434,7 @@ $nsw-buttons: (
         border-color: map-get($property-map, border);
       }
 
-      .nsw-material-icons {
+      .uom-material-icons {
         color: map-get($property-map, text-color);
       }
     }

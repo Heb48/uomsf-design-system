@@ -15,7 +15,7 @@ assignees: ''
 > Give a brief description of the style, component or pattern you want to propose.
 
 ## Why
-> Explain why you think this should be added to the NSW design system.
+> Explain why you think this should be added to the UOM Education Cloud Design System.
 >
 > - What evidence do you have that it's needed by multiple services across government?
 > - What evidence do you have that it meets the needs of the users of those services?

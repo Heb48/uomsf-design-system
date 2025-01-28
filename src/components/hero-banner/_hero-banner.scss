@@ -1,5 +1,5 @@
-.nsw-hero-banner {
-  background-color: var(--nsw-white);
+.uom-hero-banner {
+  background-color: var(--uom-white);
   position: relative;
 
   &::after {
@@ -9,7 +9,7 @@
     left: 0;
     right: 0;
     height: 1px;
-    background-color: rgba(var(--nsw-black-rgb), 0.1);
+    background-color: rgba(var(--uom-black-rgb), 0.1);
   }
 
   &__container {
@@ -25,45 +25,45 @@
     @include column(7, md);
     @include column(6, xl);
 
-    @include breakpoint('xs') { 
+    @include breakpoint('xs') {
       padding-top: rem(32px);
       padding-bottom: rem(32px);
     }
 
-    @include breakpoint('md') { 
+    @include breakpoint('md') {
       min-height: rem(260px);
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
 
-    @include breakpoint('lg') { 
+    @include breakpoint('lg') {
       padding-top: rem(88px);
       padding-bottom: rem(88px);
     }
 
-    .nsw-hero-banner--wide & {
+    .uom-hero-banner--wide & {
       @include column(8, md);
-      @include column(7, xl);      
-    } 
+      @include column(7, xl);
+    }
 
-    .nsw-hero-banner--featured & {
-      @include breakpoint('md') { 
+    .uom-hero-banner--featured & {
+      @include breakpoint('md') {
         min-height: 0;
         display: block;
-      }   
-    } 
+      }
+    }
 
-    .nsw-button {
+    .uom-button {
       margin: rem(24px) 0 0 0;
     }
 
-    .nsw-intro {
+    .uom-intro {
       margin: rem(8px) 0 0 0;
 
       @include breakpoint('md') {
         margin-top: rem(16px);
-      }    
+      }
     }
   }
 
@@ -72,18 +72,18 @@
     @include column(4, md);
     @include column(4, xl, 1);
 
-    @include breakpoint('xs') { 
+    @include breakpoint('xs') {
       margin-top: rem(-8px);
       padding-top: 0;
       padding-bottom: rem(32px);
     }
 
-    @include breakpoint('md') { 
+    @include breakpoint('md') {
       margin-top: 0;
       padding-top: rem(32px);
     }
 
-    @include breakpoint('lg') { 
+    @include breakpoint('lg') {
       padding-top: rem(88px);
       padding-bottom: rem(88px);
     }
@@ -91,7 +91,7 @@
 
   &__list {
     @include z-index;
-    border-left: solid 2px var(--nsw-brand-accent);
+    border-left: solid 2px var(--uom-brand-accent);
     padding-left: rem(16px);
     position: relative;
 
@@ -110,10 +110,10 @@
       }
     }
 
-    a:not(.nsw-icon-button) {
+    a:not(.uom-icon-button) {
       line-height: 1.5;
       padding: rem(8px) rem(24px) rem(8px) 0;
-      
+
       @include breakpoint('md') {
         padding: rem(4px) rem(4px) rem(4px) 0;
       }
@@ -123,7 +123,7 @@
   &__sub-title {
     @include font-size(md);
     margin: 0 0 rem(16px) 0;
-    font-weight: var(--nsw-font-bold);
+    font-weight: var(--uom-font-bold);
   }
 
   &__box {
@@ -142,7 +142,7 @@
 
     @include breakpoint('xl') {
       width: 50%;
-      padding-left: calc(var(--nsw-container-width)/12 + #{rem($grid-gutters)}*2);
+      padding-left: calc(var(--uom-container-width)/12 + #{rem($grid-gutters)}*2);
     }
   }
 
@@ -155,7 +155,7 @@
 
   &__lines {
     display: none;
-    background-color: var(--nsw-brand-light);
+    background-color: var(--uom-brand-light);
     position: relative;
 
     @include breakpoint('md') {
@@ -170,51 +170,51 @@
       bottom: 0;
       left: rem(-16px);
       width: rem(32px);
-      background-color: var(--nsw-brand-supplementary);
+      background-color: var(--uom-brand-supplementary);
     }
   }
 
   &--light {
-    background-color: var(--nsw-brand-light);
+    background-color: var(--uom-brand-light);
 
-    .nsw-hero-banner__lines {
-      background-color: var(--nsw-brand-dark);
+    .uom-hero-banner__lines {
+      background-color: var(--uom-brand-dark);
     }
   }
 
   &--off-white {
-    background-color: var(--nsw-off-white);
+    background-color: var(--uom-off-white);
   }
 
   &--dark {
-    background-color: var(--nsw-brand-dark);
+    background-color: var(--uom-brand-dark);
 
-    .nsw-hero-banner__content {
-      color: var(--nsw-text-light);
+    .uom-hero-banner__content {
+      color: var(--uom-text-light);
     }
 
-    .nsw-hero-banner__links {
-      color: var(--nsw-text-light);
+    .uom-hero-banner__links {
+      color: var(--uom-text-light);
 
       a {
         @include link-light;
       }
     }
 
-    .nsw-hero-banner__list {
-      border-color: var(--nsw-brand-light);
+    .uom-hero-banner__list {
+      border-color: var(--uom-brand-light);
     }
   }
 
   &--lines {
-    border-bottom: rem(32px) solid var(--nsw-brand-light);
+    border-bottom: rem(32px) solid var(--uom-brand-light);
 
     @include breakpoint('md') {
       border: 0;
     }
 
-    &.nsw-hero-banner--light {
-      border-color: var(--nsw-brand-dark);
+    &.uom-hero-banner--light {
+      border-color: var(--uom-brand-dark);
     }
 
     &::after {
@@ -225,20 +225,20 @@
       }
     }
 
-    .nsw-hero-banner__container {
-      border-bottom: rem(16px) solid var(--nsw-brand-supplementary);
+    .uom-hero-banner__container {
+      border-bottom: rem(16px) solid var(--uom-brand-supplementary);
 
       @include breakpoint('md') {
         border: 0;
       }
     }
 
-    .nsw-hero-banner__box {
+    .uom-hero-banner__box {
       width: 25%;
 
       @include breakpoint('xl') {
         width: 50%;
-        padding-left: calc(var(--nsw-container-width)/4 + #{rem($grid-gutters)}*2);
+        padding-left: calc(var(--uom-container-width)/4 + #{rem($grid-gutters)}*2);
       }
     }
   }

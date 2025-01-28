@@ -1,19 +1,19 @@
-$nsw-status-labels: ( info, success, warning, error );
+$uom-status-labels: ( info, success, warning, error );
 
-.nsw-status-label {
+.uom-status-label {
   @include font-size('xs');
   padding: rem(2px) rem(16px);
-  border: solid 1px var(--nsw-off-white);
-  background-color: var(--nsw-off-white);
+  border: solid 1px var(--uom-off-white);
+  background-color: var(--uom-off-white);
   border-radius: rem(24px);
-  color: var(--nsw-text-dark);
+  color: var(--uom-text-dark);
   display: inline-block;
 
-  @each $color, $variant in $nsw-status-labels {
+  @each $color, $variant in $uom-status-labels {
     &--#{"" + $color} {
-      border-color: var(--nsw-status-#{$color});
-      background-color: var(--nsw-status-#{$color});
-      color: var(--nsw-white);
+      border-color: var(--uom-status-#{$color});
+      background-color: var(--uom-status-#{$color});
+      color: var(--uom-white);
     }
   }
 }

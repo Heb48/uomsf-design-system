@@ -4,13 +4,13 @@ width: narrow
 no-blank: true
 order: 20
 intro: Maps allow you to show data relative to a physical location.
-figma: https://www.figma.com/file/nJOsPzjVMG609Cs3Ng8xaw/V3.0-NSW-Design-System?node-id=4319%3A24995
-meta-description: NSW Design System maps method allows users to visualise data relative to a physical location. 
+figma: https://www.figma.com/file/nJOsPzjVMG609Cs3Ng8xaw/V3.0-uom-Design-System?node-id=4319%3A24995
+meta-description: UOM Education Cloud Design System maps method allows users to visualise data relative to a physical location.
 meta-index: true
 ---
 
-<nav class="nsw-in-page-nav" aria-labelledby="in-page-nav">
-  <div id="in-page-nav" class="nsw-in-page-nav__title">On this page</div>
+<nav class="uom-in-page-nav" aria-labelledby="in-page-nav">
+  <div id="in-page-nav" class="uom-in-page-nav__title">On this page</div>
   <ul>
     <li>
       <a href="#when-to-use">When to use</a>
@@ -31,7 +31,7 @@ meta-index: true
 </nav>
 
 <h2 id="when-to-use">When to use</h2>
-<figure class="nsw-media nsw-media--right-30 nsw-media--transparent">
+<figure class="uom-media uom-media--right-30 uom-media--transparent">
   <img src="/assets/images/page-maps.png" alt="Map example page">
 </figure>
 <p>Use a map when your users need to see the location of things relative to each other - for example locations where they can access a service.</p>
@@ -51,7 +51,7 @@ meta-index: true
   <li>use clear and legible labels</li>
 </ul>
 <h3>Data points</h3>
-<figure class="nsw-media nsw-media--right-50 nsw-media--transparent">
+<figure class="uom-media uom-media--right-50 uom-media--transparent">
   <div id='map' style='width: 100%; height: 300px;'></div>
 </figure>
 <p>Markers are used to indicate relevant data points for the user to focus and interact. When a user selects a data point, it should centre on the map and it’s listing should move to the top of the results. On selection, a pop up can also be triggered to provide a snapshot of the data point and link to further information (if requried). Pop ups should be dismissable by the close icon and also close when an alternate data point is selected.</p>
@@ -72,9 +72,9 @@ meta-index: true
 </ul>
 
 <h2 id="data-info-styling">Data &amp; information styling</h2>
-<p>Maps in NSW Government should have a consistent look and feel. Configure your map to use the following styles.</p>
+<p>Maps in UOM should have a consistent look and feel. Configure your map to use the following styles.</p>
 <h3>Designing</h3>
-<figure class="nsw-media nsw-media--right-50 nsw-media--transparent">
+<figure class="uom-media uom-media--right-50 uom-media--transparent">
   <div id='mapTwo' style='width: 100%; height: 300px;'></div>
 </figure>
 <p>Use pins, cirlces or lines to represent data points. Markers are implemented using a hosted marker generator. We’ve created a sample set in Figma that can used to show example styling to developers.</p>
@@ -92,7 +92,7 @@ meta-index: true
 <p>When adding markers, use a generator to make sure you have the flexibility needed. We've used <a href="https://www.mapbox.com" target="_blank">Mapbox</a> in our demo which contains an icon generator. If you're using leaflet, <a href="https://www.mapmarker.io" target="_blank">MapMarker.io</a> is a publicly available (CC licence) resource to generate markers on-the fly, or the SVGs below can be modified in figma.</p>
 <p>Use hex colours from the NSW Brand Palette, and work with designers if you've not been given specific colours, as your branding colours may be different to NSW corporate branding.</p>
 <h3>Marker examples</h3>
-<div class="nsw-list nsw-list--8 nsw-m-top-md">
+<div class="uom-list uom-list--8 uom-m-top-md">
   <svg display="block" height="41px" width="27px" viewBox="0 0 27 41">
     <g fill-rule="nonzero">
       <g fill="#146cfd">
@@ -157,34 +157,34 @@ meta-index: true
 
 
 <h2 id="example-page-layouts">Example page layouts</h2>
-<div class="nsw-grid nsw-m-top-md">
-  <div class="nsw-col nsw-col-md-6 nsw-col-lg-4">
-    <div class="nsw-card nsw-card--headline">
-      <div class="nsw-card__content">
-        <div class="nsw-card__title">
+<div class="uom-grid uom-m-top-md">
+  <div class="uom-col uom-col-md-6 uom-col-lg-4">
+    <div class="uom-card uom-card--headline">
+      <div class="uom-card__content">
+        <div class="uom-card__title">
           <a target="_blank" href="/templates/map/location-filters.html">Location primary with sub filters</a>
         </div>
-        <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
+        <span class="material-icons uom-material-icons" focusable="false" aria-hidden="true">east</span>
       </div>
     </div>
   </div>
-  <div class="nsw-col nsw-col-md-6 nsw-col-lg-4">
-    <div class="nsw-card nsw-card--headline">
-      <div class="nsw-card__content">
-        <div class="nsw-card__title">
+  <div class="uom-col uom-col-md-6 uom-col-lg-4">
+    <div class="uom-card uom-card--headline">
+      <div class="uom-card__content">
+        <div class="uom-card__title">
           <a target="_blank" href="/templates/map/equal-filters.html">Equal value filters</a>
         </div>
-        <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
+        <span class="material-icons uom-material-icons" focusable="false" aria-hidden="true">east</span>
       </div>
     </div>
   </div>
-  <div class="nsw-col nsw-col-md-6 nsw-col-lg-4">
-    <div class="nsw-card nsw-card--headline">
-      <div class="nsw-card__content">
-        <div class="nsw-card__title">
+  <div class="uom-col uom-col-md-6 uom-col-lg-4">
+    <div class="uom-card uom-card--headline">
+      <div class="uom-card__content">
+        <div class="uom-card__title">
           <a target="_blank" href="/templates/map/location-only.html">Location based only</a>
         </div>
-        <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
+        <span class="material-icons uom-material-icons" focusable="false" aria-hidden="true">east</span>
       </div>
     </div>
   </div>
@@ -196,7 +196,7 @@ meta-index: true
     border-radius: 4px!important;
     box-shadow: 0px 4px 12px rgb(0 0 0 / 15%)!important;
     min-width: 150px;
-    font-family: var(--nsw-font-family);
+    font-family: var(--uom-font-family);
   }
 </style>
 

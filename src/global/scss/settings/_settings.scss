@@ -1,8 +1,8 @@
-$prefix: 'nsw-';
+$prefix: 'uom-';
 $enable-important-utilities: true !default;
 
 // Breakpoints
-$nsw-breakpoints: (
+$uom-breakpoints: (
   xs: 0,
   sm: 576px,
   md: 768px,
@@ -11,25 +11,25 @@ $nsw-breakpoints: (
 ) !default;
 
 //Breakpoint to switch to desktop view (Layout and Navigation)
-$nsw-desktop-breakpoint: lg;
+$uom-desktop-breakpoint: lg;
 
 // Font
-$nsw-base-font-size: 16px;
-$nsw-font-size-reponsive-breakpoint: lg !default;
+$uom-base-font-size: 16px;
+$uom-font-size-reponsive-breakpoint: lg !default;
 
-$nsw-font-weight-lighter: lighter !default;
-$nsw-font-weight-light: 300 !default;
-$nsw-font-weight-normal: 400 !default;
-$nsw-font-weight-medium: 500 !default;
-$nsw-font-weight-semibold: 600 !default;
-$nsw-font-weight-bold: 700 !default;
-$nsw-font-weight-bolder: bolder !default;
+$uom-font-weight-lighter: lighter !default;
+$uom-font-weight-light: 300 !default;
+$uom-font-weight-normal: 400 !default;
+$uom-font-weight-medium: 500 !default;
+$uom-font-weight-semibold: 600 !default;
+$uom-font-weight-bold: 700 !default;
+$uom-font-weight-bolder: bolder !default;
 
 // Grid
 $grid-gutters: 8px;
 
 // z-index
-$nsw-z-index: (
+$uom-z-index: (
   top: 900,
   upper: 300,
   middle: 200,
@@ -39,74 +39,74 @@ $nsw-z-index: (
 ) !default;
 
 // Base Colours
-$nsw-base-colours: (
-  brand-dark: var(--nsw-brand-dark),
-  // brand-light: var(--nsw-brand-light),
-  primary-dark: var(--nsw-primary-dark),
-  // primary-light: var(--nsw-primary-light),
-  secondary-dark: var(--nsw-secondary-dark),
-  // secondary-light: var(--nsw-secondary-light),
-  brand-supplementary: var(--nsw-brand-supplementary),
-  brand-accent: var(--nsw-brand-accent),
-  black: var(--nsw-black),
-  white: var(--nsw-white),
-  off-white: var(--nsw-off-white),
-  grey-01: var(--nsw-grey-01),
-  grey-02: var(--nsw-grey-02),
-  grey-03: var(--nsw-grey-03),
-  grey-04: var(--nsw-grey-04)
+$uom-base-colours: (
+  brand-dark: var(--uom-brand-dark),
+  brand-light: var(--uom-brand-light),
+  primary-dark: var(--uom-primary-dark),
+  primary-light: var(--uom-primary-light),
+  secondary-dark: var(--uom-secondary-dark),
+  secondary-light: var(--uom-secondary-light),
+  brand-supplementary: var(--uom-brand-supplementary),
+  brand-accent: var(--uom-brand-accent),
+  black: var(--uom-black),
+  white: var(--uom-white),
+  off-white: var(--uom-off-white),
+  grey-01: var(--uom-grey-01),
+  grey-02: var(--uom-grey-02),
+  grey-03: var(--uom-grey-03),
+  grey-04: var(--uom-grey-04)
 );
 
-$nsw-base-colours-rgb: (
-  brand-dark: rgba(var(--nsw-brand-dark-rgb), var(--nsw-bg-opacity)),
-  // brand-light: rgba(var(--nsw-brand-light-rgb), var(--nsw-bg-opacity)),
-  brand-supplementary: rgba(var(--nsw-brand-supplementary-rgb), var(--nsw-bg-opacity)),
-  brand-accent: rgba(var(--nsw-brand-accent-rgb), var(--nsw-bg-opacity)),
-  black: rgba(var(--nsw-black-rgb), var(--nsw-bg-opacity)),
-  white: rgba(var(--nsw-white-rgb), var(--nsw-bg-opacity)),
-  off-white: rgba(var(--nsw-off-white-rgb), var(--nsw-bg-opacity)),
-  grey-01: rgba(var(--nsw-grey-01-rgb), var(--nsw-bg-opacity)),
-  grey-02: rgba(var(--nsw-grey-02-rgb), var(--nsw-bg-opacity)),
-  grey-03: rgba(var(--nsw-grey-03-rgb), var(--nsw-bg-opacity)),
-  grey-04: rgba(var(--nsw-grey-04-rgb), var(--nsw-bg-opacity))
+$uom-base-colours-rgb: (
+  brand-dark: rgba(var(--uom-brand-dark-rgb), var(--uom-bg-opacity)),
+  // brand-light: rgba(var(--uom-brand-light-rgb), var(--uom-bg-opacity)),
+  brand-supplementary: rgba(var(--uom-brand-supplementary-rgb), var(--uom-bg-opacity)),
+  brand-accent: rgba(var(--uom-brand-accent-rgb), var(--uom-bg-opacity)),
+  black: rgba(var(--uom-black-rgb), var(--uom-bg-opacity)),
+  white: rgba(var(--uom-white-rgb), var(--uom-bg-opacity)),
+  off-white: rgba(var(--uom-off-white-rgb), var(--uom-bg-opacity)),
+  grey-01: rgba(var(--uom-grey-01-rgb), var(--uom-bg-opacity)),
+  grey-02: rgba(var(--uom-grey-02-rgb), var(--uom-bg-opacity)),
+  grey-03: rgba(var(--uom-grey-03-rgb), var(--uom-bg-opacity)),
+  grey-04: rgba(var(--uom-grey-04-rgb), var(--uom-bg-opacity))
 );
 
 
 // Background Colours
-$nsw-bg-colours: map-merge($nsw-base-colours-rgb, (
+$uom-bg-colours: map-merge($uom-base-colours-rgb, (
   transparent: transparent,
-  info-dark: rgba(var(--nsw-status-info-rgb), var(--nsw-bg-opacity)),
-  // info-light: rgba(var(--nsw-status-info-bg-rgb), var(--nsw-bg-opacity)),
-  success-dark: rgba(var(--nsw-status-success-rgb), var(--nsw-bg-opacity)),
-  // success-light: rgba(var(--nsw-status-success-bg-rgb), var(--nsw-bg-opacity)),
-  warning-dark: rgba(var(--nsw-status-warning-rgb), var(--nsw-bg-opacity)),
-  // warning-light: rgba(var(--nsw-status-warning-bg-rgb), var(--nsw-bg-opacity)),
-  error-dark: rgba(var(--nsw-status-error-rgb), var(--nsw-bg-opacity)),
-  // error-light: rgba(var(--nsw-status-error-bg-rgb), var(--nsw-bg-opacity))
+  info-dark: rgba(var(--uom-status-info-rgb), var(--uom-bg-opacity)),
+  // info-light: rgba(var(--uom-status-info-bg-rgb), var(--uom-bg-opacity)),
+  success-dark: rgba(var(--uom-status-success-rgb), var(--uom-bg-opacity)),
+  // success-light: rgba(var(--uom-status-success-bg-rgb), var(--uom-bg-opacity)),
+  warning-dark: rgba(var(--uom-status-warning-rgb), var(--uom-bg-opacity)),
+  // warning-light: rgba(var(--uom-status-warning-bg-rgb), var(--uom-bg-opacity)),
+  error-dark: rgba(var(--uom-status-error-rgb), var(--uom-bg-opacity)),
+  // error-light: rgba(var(--uom-status-error-bg-rgb), var(--uom-bg-opacity))
 ));
 
 // Text Colours
-$nsw-text-colours: map-merge($nsw-base-colours, (
-  dark: var(--nsw-text-dark),
-  light: var(--nsw-text-light),
+$uom-text-colours: map-merge($uom-base-colours, (
+  dark: var(--uom-text-dark),
+  light: var(--uom-text-light),
 ));
 
-$nsw-border: var(--nsw-border-width) var(--nsw-border-style) var(--nsw-border-color);
+$uom-border: var(--uom-border-width) var(--uom-border-style) var(--uom-border-color);
 
-$nsw-border-widths: (
-  1: var(--nsw-border-width) var(--nsw-border-style) var(--nsw-border-color),
-  2: 2px var(--nsw-border-style) var(--nsw-border-color),
-  3: 3px var(--nsw-border-style) var(--nsw-border-color),
-  4: 4px var(--nsw-border-style) var(--nsw-border-color),
-  5: 5px var(--nsw-border-style) var(--nsw-border-color),
-  6: 6px var(--nsw-border-style) var(--nsw-border-color)
+$uom-border-widths: (
+  1: var(--uom-border-width) var(--uom-border-style) var(--uom-border-color),
+  2: 2px var(--uom-border-style) var(--uom-border-color),
+  3: 3px var(--uom-border-style) var(--uom-border-color),
+  4: 4px var(--uom-border-style) var(--uom-border-color),
+  5: 5px var(--uom-border-style) var(--uom-border-color),
+  6: 6px var(--uom-border-style) var(--uom-border-color)
 ) !default;
 
 // Box shadow
-$nsw-box-shadow: var(--nsw-box-shadow) !default;
+$uom-box-shadow: var(--uom-box-shadow) !default;
 
 // Position
-$nsw-position-values: (
+$uom-position-values: (
   0: 0,
   50: 50%,
   100: 100%
@@ -174,4 +174,4 @@ $sizes: (
 ) !default;
 
 // Transitions
-$nsw-transition-duration: 0.15s ease-in-out !default;
+$uom-transition-duration: 0.15s ease-in-out !default;

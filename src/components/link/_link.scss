@@ -1,4 +1,4 @@
-.nsw-link {
+.uom-link {
   &--button {
     @include font-size('sm');
     @include link;
@@ -6,23 +6,23 @@
     border: 0;
     padding: 0;
 
-    &.nsw-small {
+    &.uom-small {
       @include font-size('xs');
     }
   }
 
   &--icon {
     display: inline-block;
-    font-weight: var(--nsw-font-bold);
+    font-weight: var(--uom-font-bold);
     text-decoration: none;
 
     span {
       text-decoration: underline;
     }
 
-    .nsw-material-icons,
+    .uom-material-icons,
     svg {
-      font-size: rem(map-get($nsw-icon-sizes, 20));
+      font-size: rem(map-get($uom-icon-sizes, 20));
       line-height: rem(10px);
       position: relative;
       bottom: rem(-5px);

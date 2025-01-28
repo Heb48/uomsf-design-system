@@ -1,11 +1,11 @@
-.nsw-tooltip,
-.nsw-toggletip {
+.uom-tooltip,
+.uom-toggletip {
   white-space: nowrap;
-  border-bottom: 2px dotted var(--nsw-brand-dark);
+  border-bottom: 2px dotted var(--uom-brand-dark);
 
   &:focus,
   &:active {
-    @include nsw-focus;
+    @include uom-focus;
   }
 
   &__element {
@@ -15,33 +15,33 @@
     top: 0;
     left: 0;
     max-width: 260px;
-    border-radius: var(--nsw-border-radius);
-    box-shadow: var(--nsw-box-shadow);
-    line-height: var(--nsw-line-height-md-desktop);
+    border-radius: var(--uom-border-radius);
+    box-shadow: var(--uom-box-shadow);
+    line-height: var(--uom-line-height-md-desktop);
 
     @include z-index('upper');
     @include font-size('xs');
 
     &:focus,
     &:active {
-      @include nsw-focus;
+      @include uom-focus;
     }
 
     &--dark {
-      background-color: var(--nsw-grey-02);
-      color: var(--nsw-text-light);
+      background-color: var(--uom-grey-02);
+      color: var(--uom-text-light);
 
       a {
         @include link-light();
 
         &:focus,
         &:active {
-          @include nsw-focus(true, var(--nsw-text-light));
+          @include uom-focus(true, var(--uom-text-light));
         }
       }
 
-      .nsw-icon-button {
-        color: var(--nsw-text-light);
+      .uom-icon-button {
+        color: var(--uom-text-light);
         text-decoration: none;
 
         @include link-light();
@@ -49,28 +49,28 @@
     }
 
     &--light {
-      background-color: var(--nsw-white);
-      color: var(--nsw-text-dark);
+      background-color: var(--uom-white);
+      color: var(--uom-text-dark);
 
       a {
         @include link;
 
         &:focus,
         &:active {
-          @include nsw-focus;
+          @include uom-focus;
         }
       }
 
-      .nsw-icon-button {
-        color: var(--nsw-brand-dark);
+      .uom-icon-button {
+        color: var(--uom-brand-dark);
         text-decoration: none;
 
         @include link-dark;
       }
 
-      .nsw-tooltip__arrow,
-      .nsw-toggletip__arrow {
-        background-color: var(--nsw-white);
+      .uom-tooltip__arrow,
+      .uom-toggletip__arrow {
+        background-color: var(--uom-white);
       }
     }
 
@@ -81,18 +81,18 @@
 
   &__arrow {
     position: absolute;
-    background-color: var(--nsw-grey-02);
+    background-color: var(--uom-grey-02);
     width: 12px;
     height: 12px;
     transform: rotate(45deg);
   }
 
-  .nsw-section--invert & {    
-    border-bottom: 2px dotted var(--nsw-text-light);
+  .uom-section--invert & {
+    border-bottom: 2px dotted var(--uom-text-light);
   }
 }
 
-.nsw-tooltip {
+.uom-tooltip {
   cursor: help;
 
   &__element {
@@ -104,7 +104,7 @@
   }
 }
 
-.nsw-toggletip {
+.uom-toggletip {
   cursor: pointer;
 
   &__header {
@@ -112,14 +112,14 @@
     justify-content: flex-end;
     align-items: center;
 
-    .nsw-icon-button {
+    .uom-icon-button {
       margin: rem(6px) rem(6px) 0 rem(8px);
 
-      .nsw-material-icons {
-        font-size: var(--nsw-font-size-sm-mobile);
-    
+      .uom-material-icons {
+        font-size: var(--uom-font-size-sm-mobile);
+
         @include breakpoint('lg') {
-          font-size: var(--nsw-font-size-sm-desktop);
+          font-size: var(--uom-font-size-sm-desktop);
         }
       }
     }
@@ -127,7 +127,7 @@
 
   &__content {
     padding: 0 rem(16px) rem(16px);
-    
+
     &:first-child {
       margin-top: 0;
     }

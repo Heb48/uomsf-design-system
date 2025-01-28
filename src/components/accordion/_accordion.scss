@@ -1,36 +1,36 @@
-.nsw-accordion {
+.uom-accordion {
   @include component-spacing();
 
   &__title,
   &__button {
     @include font-size('md');
-    font-weight: var(--nsw-font-bold);
+    font-weight: var(--uom-font-bold);
     padding: rem(16px) rem(48px) rem(16px) rem(16px);
     margin-top: rem(8px);
-    background-color: var(--nsw-off-white);
+    background-color: var(--uom-off-white);
     display: block;
     width: 100%;
     text-align: left;
     position: relative;
-    transition: background $nsw-transition-duration, color $nsw-transition-duration;
+    transition: background $uom-transition-duration, color $uom-transition-duration;
 
     .active,
     &:hover & {
-      background-color: var(--nsw-brand-dark);
-      color: var(--nsw-text-light);
+      background-color: var(--uom-brand-dark);
+      color: var(--uom-text-light);
       cursor: pointer;
 
-      .nsw-section--invert & {    
-        background-color: var(--nsw-brand-light);
-        color: var(--nsw-text-dark);
-        
-        .nsw-material-icons {
-          color: var(--nsw-brand-dark);
+      .uom-section--invert & {
+        background-color: var(--uom-brand-light);
+        color: var(--uom-text-dark);
+
+        .uom-material-icons {
+          color: var(--uom-brand-dark);
         }
       }
 
-      .nsw-material-icons {
-        color: var(--nsw-text-light);
+      .uom-material-icons {
+        color: var(--uom-text-light);
       }
     }
   }
@@ -42,27 +42,27 @@
 
     button {
       @include font-size('sm');
-      color: var(--nsw-link);
+      color: var(--uom-link);
       text-decoration: underline;
       text-decoration-skip-ink: auto;
-      font-weight: var(--nsw-font-bold);
+      font-weight: var(--uom-font-bold);
       border: 0;
       padding: 0;
       background: none;
 
       &:hover:enabled {
-        @include nsw-hover;
-        outline: 2px solid var(--nsw-hover);
+        @include uom-hover;
+        outline: 2px solid var(--uom-hover);
         cursor: pointer;
 
-        .nsw-section--invert & {    
-          background-color: var(--nsw-hover-light);
-          outline-color: var(--nsw-hover-light);
+        .uom-section--invert & {
+          background-color: var(--uom-hover-light);
+          outline-color: var(--uom-hover-light);
         }
       }
 
       &:focus {
-        @include nsw-focus($offset: false);
+        @include uom-focus($offset: false);
       }
 
       &:first-child {
@@ -72,13 +72,13 @@
       &:disabled {
         opacity: 0.4;
         cursor: not-allowed;
-      }      
+      }
 
-      .nsw-section--invert & {    
-        color: var(--nsw-text-light);
+      .uom-section--invert & {
+        color: var(--uom-text-light);
 
         &:focus {
-          outline-color: var(--nsw-white);
+          outline-color: var(--uom-white);
         }
       }
     }
@@ -90,29 +90,29 @@
       margin-top: 0;
     }
 
-    .nsw-material-icons {
-      font-size: rem(map-get($nsw-icon-sizes, 30));
-      color: var(--nsw-brand-dark);
+    .uom-material-icons {
+      font-size: rem(map-get($uom-icon-sizes, 30));
+      color: var(--uom-brand-dark);
       transform: translateY(-50%);
       position: absolute;
       top: 50%;
       right: rem(8px);
-      transition: transform $nsw-transition-duration, color $nsw-transition-duration;
+      transition: transform $uom-transition-duration, color $uom-transition-duration;
     }
   }
 
   &__button {
     border: 0;
-    color: var(--nsw-text-dark);
+    color: var(--uom-text-dark);
 
     &:focus {
-      @include nsw-focus;
+      @include uom-focus;
       @include z-index;
       position: relative;
     }
 
     &.active {
-      .nsw-material-icons {
+      .uom-material-icons {
         transform: translateY(-50%) rotate(180deg);
       }
     }

@@ -1,4 +1,4 @@
-.nsw-popover {
+.uom-popover {
   display: none;
   width: max-content;
   position: absolute;
@@ -6,15 +6,15 @@
   left: 0;
   min-width: rem(280px);
   max-width: rem(280px);
-  border-radius: var(--nsw-border-radius);
-  box-shadow: var(--nsw-box-shadow);
-  background-color: var(--nsw-white);
+  border-radius: var(--uom-border-radius);
+  box-shadow: var(--uom-box-shadow);
+  background-color: var(--uom-white);
 
   @include z-index('upper');
 
   &:focus,
   &:active {
-    @include nsw-focus(false);
+    @include uom-focus(false);
   }
 
   &.active {

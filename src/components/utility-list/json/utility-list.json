@@ -34,7 +34,7 @@
               }
             },
             "mail": {
-              "icon": "<span class=\"material-icons nsw-material-icons\" focusable=\"false\" aria-hidden=\"true\" aria-label=\"Share via Email\">email<\/span>",
+              "icon": "<span class=\"material-icons uom-material-icons\" focusable=\"false\" aria-hidden=\"true\" aria-label=\"Share via Email\">email<\/span>",
               "data": {
                 "data-subject": "Email Subject",
                 "data-body": "Content of my email.",
@@ -59,7 +59,7 @@
               "aria-label": "Share on LinkedIn"
             },
             "mail": {
-              "icon": "<span class=\"material-icons nsw-material-icons\" focusable=\"false\" aria-hidden=\"true\" aria-label=\"Share via Email\">email<\/span>",
+              "icon": "<span class=\"material-icons uom-material-icons\" focusable=\"false\" aria-hidden=\"true\" aria-label=\"Share via Email\">email<\/span>",
               "data": {
                 "data-subject": "Email Subject",
                 "data-body": "Content of my email.",
@@ -106,7 +106,7 @@
               }
             },
             "mail": {
-              "icon": "<span class=\"material-icons nsw-material-icons\" focusable=\"false\" aria-hidden=\"true\" aria-label=\"Share via Email\">email<\/span>",
+              "icon": "<span class=\"material-icons uom-material-icons\" focusable=\"false\" aria-hidden=\"true\" aria-label=\"Share via Email\">email<\/span>",
               "data": {
                 "data-subject": "Email Subject",
                 "data-body": "Content of my email.",
@@ -132,7 +132,7 @@
               "aria-label": "Share on LinkedIn"
             },
             "mail": {
-              "icon": "<span class=\"material-icons nsw-material-icons\" focusable=\"false\" aria-hidden=\"true\" aria-label=\"Share via Email\">email<\/span>",
+              "icon": "<span class=\"material-icons uom-material-icons\" focusable=\"false\" aria-hidden=\"true\" aria-label=\"Share via Email\">email<\/span>",
               "data": {
                 "data-subject": "Email Subject",
                 "data-body": "Content of my email.",

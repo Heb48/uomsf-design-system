@@ -2,14 +2,14 @@
   overflow: hidden;
 }
 
-.nsw-main-nav {
+.uom-main-nav {
   @include z-index('middle');
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--nsw-white);
+  background-color: $primary;
   transition: all 0.25s ease-in-out;
   transform: translateX(-100%);
   visibility: hidden;
@@ -23,8 +23,8 @@
 
   &.no-scroll {
     overflow-y: hidden;
-  
-    @include breakpoint($nsw-desktop-breakpoint) {
+
+    @include breakpoint($uom-desktop-breakpoint) {
       overflow-y: visible;
     }
   }
@@ -33,10 +33,10 @@
     transform: translateX(-100%);
   }
 
-  @include breakpoint($nsw-desktop-breakpoint) {
+  @include breakpoint($uom-desktop-breakpoint) {
     position: relative;
     transform: none;
-    background-color: var(--nsw-off-white);
+    background-color: var(--uom-off-white);
     top: auto;
     left: auto;
     transition: none;
@@ -47,16 +47,16 @@
 
   &__header {
     padding: rem(8px) rem(16px);
-    border-bottom: solid 2px var(--nsw-brand-dark);
+    border-bottom: solid 2px var(--uom-brand-dark);
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    @include breakpoint($nsw-desktop-breakpoint) {
+    @include breakpoint($uom-desktop-breakpoint) {
       display: none;
     }
 
-    .nsw-icon-button {
+    .uom-icon-button {
       &:first-child {
         margin-left: rem(-16px);
       }
@@ -72,7 +72,7 @@
     padding: 0;
     margin: 0;
 
-    @include breakpoint($nsw-desktop-breakpoint) {
+    @include breakpoint($uom-desktop-breakpoint) {
       @include container(0);
       display: flex;
       flex-direction: row;
@@ -81,28 +81,28 @@
       position: relative;
     }
 
-    > li {      
-      @include breakpoint($nsw-desktop-breakpoint) {
+    > li {
+      @include breakpoint($uom-desktop-breakpoint) {
         &.active {
-          box-shadow: inset 0 -4px 0 var(--nsw-brand-dark);
+          box-shadow: inset 0 -4px 0 var(--uom-brand-dark);
         }
       }
     }
 
-    > li > a {      
-      @include breakpoint($nsw-desktop-breakpoint) {
-        .nsw-material-icons {
+    > li > a {
+      @include breakpoint($uom-desktop-breakpoint) {
+        .uom-material-icons {
           transform: rotate(90deg);
           margin-left: rem(6px);
-          transition: transform $nsw-transition-duration, color $nsw-transition-duration;
+          transition: transform $uom-transition-duration, color $uom-transition-duration;
         }
 
         &.active {
-          background-color: var(--nsw-white);
-          box-shadow: inset 0 -4px 0 var(--nsw-brand-dark);
+          background-color: var(--uom-white);
+          box-shadow: inset 0 -4px 0 var(--uom-brand-dark);
         }
 
-        &.active .nsw-material-icons {
+        &.active .uom-material-icons {
           transform: rotate(270deg);
         }
       }
@@ -115,17 +115,17 @@
     margin: 0;
   }
 
-  li {    
+  li {
     margin: 0;
-    border-bottom: solid 1px var(--nsw-grey-04);
+    border-bottom: solid 1px var(--uom-grey-04);
 
-    @include breakpoint($nsw-desktop-breakpoint) {
+    @include breakpoint($uom-desktop-breakpoint) {
       border: 0;
     }
 
     a {
       padding: rem(16px);
-      color: var(--nsw-text-dark);
+      color: var(--uom-text-dark);
       text-decoration: none;
       display: flex;
       flex-direction: row;
@@ -134,24 +134,24 @@
       flex-wrap: nowrap;
 
       &:hover {
-        @include nsw-hover;
+        @include uom-hover;
       }
 
-      .nsw-material-icons {
-        color: var(--nsw-brand-dark);
+      .uom-material-icons {
+        color: var(--uom-brand-dark);
         margin-right: rem(-8px);
       }
 
-      @include breakpoint($nsw-desktop-breakpoint) {
-        font-weight: var(--nsw-font-bold);
+      @include breakpoint($uom-desktop-breakpoint) {
+        font-weight: var(--uom-font-bold);
       }
     }
   }
 
   a {
-    font-weight: var(--nsw-font-normal);
+    font-weight: var(--uom-font-normal);
 
-    @include breakpoint($nsw-desktop-breakpoint) {
+    @include breakpoint($uom-desktop-breakpoint) {
       @include z-index('middle');
       position: relative;
     }
@@ -166,30 +166,30 @@
   }
 
   &__title {
-    font-weight: var(--nsw-font-bold);
+    font-weight: var(--uom-font-bold);
 
-    @include breakpoint($nsw-desktop-breakpoint) {
+    @include breakpoint($uom-desktop-breakpoint) {
       @include font-size('md');
       display: inline-flex;
-    }      
+    }
 
-    .nsw-main-nav__sub-nav & {
-      border-bottom: solid 1px var(--nsw-grey-04);
+    .uom-main-nav__sub-nav & {
+      border-bottom: solid 1px var(--uom-grey-04);
 
-      @include breakpoint($nsw-desktop-breakpoint) {
+      @include breakpoint($uom-desktop-breakpoint) {
         border-bottom: 0;
-      }      
+      }
     }
 
     a {
-      font-weight: var(--nsw-font-bold);
+      font-weight: var(--uom-font-bold);
 
-      .nsw-material-icons {
+      .uom-material-icons {
         display: none;
 
-        @include breakpoint($nsw-desktop-breakpoint) {
+        @include breakpoint($uom-desktop-breakpoint) {
           display: block;
-        }  
+        }
       }
     }
   }
@@ -199,14 +199,14 @@
     margin-top: rem(16px);
     display: none;
 
-    @include breakpoint($nsw-desktop-breakpoint) {
+    @include breakpoint($uom-desktop-breakpoint) {
       display: block;
     }
   }
 
-  &__sub-nav {    
+  &__sub-nav {
     @include z-index;
-    background-color: var(--nsw-white);
+    background-color: var(--uom-white);
     position: absolute;
     top: 0;
     left: 0;
@@ -224,18 +224,18 @@
 
     &.no-scroll {
       overflow-y: hidden;
-    
-      @include breakpoint($nsw-desktop-breakpoint) {
+
+      @include breakpoint($uom-desktop-breakpoint) {
         overflow-y: visible;
       }
     }
 
-    @include breakpoint($nsw-desktop-breakpoint) {
+    @include breakpoint($uom-desktop-breakpoint) {
       @include container;
       padding: rem(48) rem(40);
       top: 100%;
-      background-color: var(--nsw-white);
-      box-shadow: 0 4px 9px -5px rgba(var(--nsw-black-rgb), 0.4);
+      background-color: var(--uom-white);
+      box-shadow: 0 4px 9px -5px rgba(var(--uom-black-rgb), 0.4);
       transition: none;
       transform: none;
       height: auto;
@@ -247,23 +247,23 @@
       }
     }
 
-    ul {      
-      @include breakpoint($nsw-desktop-breakpoint) {
+    ul {
+      @include breakpoint($uom-desktop-breakpoint) {
         margin-top: rem(32px);
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
 
-        .nsw-material-icons {
+        .uom-material-icons {
           display: none;
         }
       }
     }
 
-    li {      
-      @include breakpoint($nsw-desktop-breakpoint) {
+    li {
+      @include breakpoint($uom-desktop-breakpoint) {
         width: 32%;
-        border-top: solid 1px var(--nsw-grey-04);
+        border-top: solid 1px var(--uom-grey-04);
 
         &:nth-child(3n+2) {
           margin-left: 2%;
@@ -271,30 +271,30 @@
         }
 
         &:nth-last-child(-n+3) {
-          box-shadow: inset 0 -1px 0 var(--nsw-grey-04);
+          box-shadow: inset 0 -1px 0 var(--uom-grey-04);
         }
 
         a {
-          color: var(--nsw-brand-dark);
+          color: var(--uom-brand-dark);
         }
       }
     }
 
-    .nsw-main-nav__title {
-      @include breakpoint($nsw-desktop-breakpoint) {
-        a {      
+    .uom-main-nav__title {
+      @include breakpoint($uom-desktop-breakpoint) {
+        a {
           padding: 0;
-          color: var(--nsw-brand-dark);
+          color: var(--uom-brand-dark);
         }
 
-        .nsw-material-icons {
+        .uom-material-icons {
           margin: 0 0 0 rem(12px);
         }
       }
     }
 
-    .nsw-main-nav__sub-nav {
-      @include breakpoint($nsw-desktop-breakpoint) {
+    .uom-main-nav__sub-nav {
+      @include breakpoint($uom-desktop-breakpoint) {
         display: none;
       }
     }

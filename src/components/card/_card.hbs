@@ -1,20 +1,20 @@
-<div class="nsw-card{{#if headline}} nsw-card--headline{{/if}}{{#if highlight}} nsw-card--highlight{{/if}}{{#if horizontal}} nsw-card--horizontal{{/if}}{{#if theme}} nsw-card--{{theme}}{{/if}}">
+<div class="uom-card{{#if headline}} uom-card--headline{{/if}}{{#if highlight}} uom-card--highlight{{/if}}{{#if horizontal}} uom-card--horizontal{{/if}}{{#if theme}} uom-card--{{theme}}{{/if}}">
   {{#if img}}
-  <div class="nsw-card__image">
+  <div class="uom-card__image">
     <img src="{{img}}" alt="{{heading}}">
   </div>
   {{/if}}
-  <div class="nsw-card__content">{{#if tag}}
-    <div class="nsw-card__tag">{{tag}}</div>{{/if}}{{#if date}}
-    <div class="nsw-card__date">
+  <div class="uom-card__content">{{#if tag}}
+    <div class="uom-card__tag">{{tag}}</div>{{/if}}{{#if date}}
+    <div class="uom-card__date">
       <time{{#if date-machine}} datetime="{{date-machine}}"{{/if}}>{{date}}</time>
     </div>{{/if}}
-    <div class="nsw-card__title">
+    <div class="uom-card__title">
       <a href="#">{{heading}}</a>
     </div>{{#if copy}}
-    <div class="nsw-card__copy">
+    <div class="uom-card__copy">
       <p>{{copy}}</p>
     </div>{{/if}}
-    <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
+    <span class="material-icons uom-material-icons" focusable="false" aria-hidden="true">east</span>
   </div>
 </div>

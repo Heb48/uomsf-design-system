@@ -1,5 +1,5 @@
 //Variations
-$nsw-loaders: (
+$uom-loaders: (
   sm: (
     size: rem(24px),
     border: 3px,
@@ -14,7 +14,7 @@ $nsw-loaders: (
   )
 );
 
-.nsw-loader {
+.uom-loader {
   text-align: center;
   width: fit-content;
 
@@ -23,7 +23,7 @@ $nsw-loaders: (
     display: inline-flex;
     border-radius: 50%;
     border-style: solid;
-    animation-name: nsw-loader-animation-rotate;
+    animation-name: uom-loader-animation-rotate;
     animation-duration: 1.4s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -31,10 +31,10 @@ $nsw-loaders: (
     height: rem(64px);
     border-width: 4px;
     transform-origin: 50% 50% calc((4rem / 2) + 4px);
-    border-color: var(--nsw-grey-03);
-    border-top-color: var(--nsw-brand-accent);
-    
-    @each $size, $variant in $nsw-loaders {
+    border-color: var(--uom-grey-03);
+    border-top-color: var(--uom-brand-accent);
+
+    @each $size, $variant in $uom-loaders {
       &--#{"" + $size} {
         width: map-get($variant, size);
         height: map-get($variant, size);
@@ -47,11 +47,11 @@ $nsw-loaders: (
   }
 
   &__label {
-    display: block;    
+    display: block;
   }
 }
 
-@keyframes nsw-loader-animation-rotate {
+@keyframes uom-loader-animation-rotate {
   0% {
     transform: rotate(0deg);
   }

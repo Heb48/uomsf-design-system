@@ -3,7 +3,7 @@ class ColorSwatches {
     this.element = element
     this.options = opts
     this.target = document.querySelectorAll(this.element.getAttribute('data-target') || 'body')
-    this.selectedClass = 'nsw-color-swatches__item--selected'
+    this.selectedClass = 'uom-color-swatches__item--selected'
     this.select = false
     this.list = false
     this.swatches = false
@@ -33,8 +33,8 @@ class ColorSwatches {
 
       Object.keys(data).forEach((element) => {
         customContent = `${customContent}
-        <tr class="nsw-color-swatches__data"><td><div class="nsw-docs__swatch" style="background-color: var(${data[element].var})"></div></td>
-        <td><p>${element}</p></td>               
+        <tr class="uom-color-swatches__data"><td><div class="uom-docs__swatch" style="background-color: var(${data[element].var})"></div></td>
+        <td><p>${element}</p></td>
         <td><p>${data[element].hex}</p></td>
         <td><p><code>${data[element].var}</code></p></td></tr>`
       })
@@ -66,16 +66,16 @@ class ColorSwatches {
       const ariaChecked = i === this.select.selectedIndex ? 'true' : 'false'
       const customClass = i === this.select.selectedIndex ? ` ${this.selectedClass}` : ''
       const customAttributes = this.getSwatchCustomAttr(this.select.options[i])
-      customContent = `${customContent}<li class="nsw-color-swatches__item js-color-swatches__item${customClass}" role="radio" aria-checked="${ariaChecked}" data-color="${this.select.options[i].getAttribute('data-color')}" data-value="${this.select.options[i].value}"><span class="js-color-swatches__option" tabindex="0"${customAttributes}><span class="sr-only js-color-swatch__label">${this.select.options[i].text}</span><span aria-hidden="true" style="${this.select.options[i].getAttribute('data-style')}" class="nsw-color-swatches__swatch"></span></span></li>`
+      customContent = `${customContent}<li class="uom-color-swatches__item js-color-swatches__item${customClass}" role="radio" aria-checked="${ariaChecked}" data-color="${this.select.options[i].getAttribute('data-color')}" data-value="${this.select.options[i].value}"><span class="js-color-swatches__option" tabindex="0"${customAttributes}><span class="sr-only js-color-swatch__label">${this.select.options[i].text}</span><span aria-hidden="true" style="${this.select.options[i].getAttribute('data-style')}" class="uom-color-swatches__swatch"></span></span></li>`
     }
 
     const list = document.createElement('ul')
-    list.setAttribute('class', 'nsw-color-swatches__list js-color-swatches__list')
+    list.setAttribute('class', 'uom-color-swatches__list js-color-swatches__list')
     list.setAttribute('role', 'radiogroup')
 
     list.innerHTML = customContent
     this.element.insertBefore(list, this.select)
-    this.select.classList.add('nsw-hide-xs')
+    this.select.classList.add('uom-hide-xs')
 
     this.list = this.element.querySelector('.js-color-swatches__list')
     this.swatches = this.list.getElementsByClassName('js-color-swatches__option')

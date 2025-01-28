@@ -1,13 +1,13 @@
 /* stylelint-disable declaration-no-important, selector-no-qualifying-type  */
 @media print {
-  .nsw-infobar,
-  .nsw-header,
-  .nsw-footer,
-  .nsw-pagination {
+  .uom-infobar,
+  .uom-header,
+  .uom-footer,
+  .uom-pagination {
     display: none;
   }
 
-  .nsw-accordion__content {
+  .uom-accordion__content {
     display: block;
   }
 
@@ -15,7 +15,7 @@
   *::before,
   *::after {
     background: transparent !important;
-    color: var(--nsw-black) !important;
+    color: var(--uom-black) !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
@@ -44,7 +44,7 @@
 
   pre,
   blockquote {
-    border: 1px solid var(--nsw-black);
+    border: 1px solid var(--uom-black);
     page-break-inside: avoid;
   }
 

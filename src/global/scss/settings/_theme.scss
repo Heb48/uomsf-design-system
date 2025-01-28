@@ -2,13 +2,13 @@
 
 // Theme Colours
 $brand-dark: $traditional-heritage-blue-100 !default;
-// $brand-light: $traditional-heritage-blue-25 !default;
+$brand-background: $traditional-heritage-blue-dark !default;
 $primary: $laughing-kookaburra-light-100 !default;
 $primary-hover: $laughing-kookaburra-light-25 !default;
 $secondary: $mt-william-greenstone-light-100 !default;
 $secondary-hover: $mt-william-greenstone-light-50 !default;
 $brand-supplementary: $traditional-heritage-blue-75 !default;
-$brand-accent: $red-02 !default;
+$brand-accent: $laughing-kookaburra-light-100 !default;
 $off-white: $grey-50 !default;
 
 // Text Colours
@@ -95,96 +95,96 @@ $state-colors-rgb: map-loop($state-colors, to-rgb, '$value') !default;
 
 :root {
   @each $color, $value in $theme-colors {
-    --nsw-#{$color}: #{$value};
+    --uom-#{$color}: #{$value};
   }
 
   @each $color, $value in $theme-colors-rgb {
-    --nsw-#{$color}-rgb: #{$value};
+    --uom-#{$color}-rgb: #{$value};
   }
 
   @each $color, $value in $text-colors {
-    --nsw-#{$color}: #{$value};
+    --uom-#{$color}: #{$value};
   }
 
   @each $color, $value in $text-colors-rgb {
-    --nsw-#{$color}-rgb: #{$value};
+    --uom-#{$color}-rgb: #{$value};
   }
 
   @each $color, $value in $state-colors {
-    --nsw-#{$color}: #{$value};
+    --uom-#{$color}: #{$value};
   }
 
   @each $color, $value in $state-colors-rgb {
-    --nsw-#{$color}-rgb: #{$value};
+    --uom-#{$color}-rgb: #{$value};
   }
 
   @each $color, $value in $semantic-colors {
-    --nsw-status-#{$color}: #{$value};
+    --uom-status-#{$color}: #{$value};
   }
 
   @each $color, $value in $semantic-colors-rgb {
-    --nsw-status-#{$color}-rgb: #{$value};
+    --uom-status-#{$color}-rgb: #{$value};
   }
 
   /* Deprecated */
-  --nsw-text-hover: var(--nsw-hover);
-  --nsw-text-hover-light: var(--nsw-hover-light);
-  --nsw-text-link: var(--nsw-link);
-  --nsw-text-link-hover: var(--nsw-hover);
-  --nsw-text-link-hover-light: var(--nsw-hover-light);
-  --nsw-text-visited: var(--nsw-visited);
+  --uom-text-hover: var(--uom-hover);
+  --uom-text-hover-light: var(--uom-hover-light);
+  --uom-text-link: var(--uom-link);
+  --uom-text-link-hover: var(--uom-hover);
+  --uom-text-link-hover-light: var(--uom-hover-light);
+  --uom-text-visited: var(--uom-visited);
 
   /* Font */
-  --nsw-font-family: 'Source Sans Pro', sans-serif;
-  --nsw-font-size: 16px;
-  --nsw-line-height: 1.5;
-  --nsw-font-normal: 400;
-  --nsw-font-bold: 700;
+  --uom-font-family: 'Source Sans Pro', sans-serif;
+  --uom-font-size: 16px;
+  --uom-line-height: 1.5;
+  --uom-font-normal: 400;
+  --uom-font-bold: 700;
 
-  --nsw-font-size-xxs-mobile: #{rem(12px)};
-  --nsw-font-size-xxs-desktop: #{rem(12px)};
-  --nsw-line-height-xxs-mobile: 1.5;
-  --nsw-line-height-xxs-desktop: 1.5;
+  --uom-font-size-xxs-mobile: #{rem(12px)};
+  --uom-font-size-xxs-desktop: #{rem(12px)};
+  --uom-line-height-xxs-mobile: 1.5;
+  --uom-line-height-xxs-desktop: 1.5;
 
-  --nsw-font-size-xs-mobile: #{rem(14px)};
-  --nsw-font-size-xs-desktop: #{rem(14px)};
-  --nsw-line-height-xs-mobile: 1.35;
-  --nsw-line-height-xs-desktop: 1.35;
+  --uom-font-size-xs-mobile: #{rem(14px)};
+  --uom-font-size-xs-desktop: #{rem(14px)};
+  --uom-line-height-xs-mobile: 1.35;
+  --uom-line-height-xs-desktop: 1.35;
 
-  --nsw-font-size-sm-mobile: #{rem(16px)};
-  --nsw-font-size-sm-desktop: #{rem(16px)};
-  --nsw-line-height-sm-mobile: 1.5;
-  --nsw-line-height-sm-desktop: 1.5;
+  --uom-font-size-sm-mobile: #{rem(16px)};
+  --uom-font-size-sm-desktop: #{rem(16px)};
+  --uom-line-height-sm-mobile: 1.5;
+  --uom-line-height-sm-desktop: 1.5;
 
-  --nsw-font-size-md-mobile: #{rem(18px)};
-  --nsw-font-size-md-desktop: #{rem(20px)};
-  --nsw-line-height-md-mobile: 1.33;
-  --nsw-line-height-md-desktop: 1.4;
+  --uom-font-size-md-mobile: #{rem(18px)};
+  --uom-font-size-md-desktop: #{rem(20px)};
+  --uom-line-height-md-mobile: 1.33;
+  --uom-line-height-md-desktop: 1.4;
 
-  --nsw-font-size-lg-mobile: #{rem(22px)};
-  --nsw-font-size-lg-desktop: #{rem(24px)};
-  --nsw-line-height-lg-mobile: 1.25;
-  --nsw-line-height-lg-desktop: 1.33;
+  --uom-font-size-lg-mobile: #{rem(22px)};
+  --uom-font-size-lg-desktop: #{rem(24px)};
+  --uom-line-height-lg-mobile: 1.25;
+  --uom-line-height-lg-desktop: 1.33;
 
-  --nsw-font-size-xl-mobile: #{rem(28px)};
-  --nsw-font-size-xl-desktop: #{rem(32px)};
-  --nsw-line-height-xl-mobile: 1.25;
-  --nsw-line-height-xl-desktop: 1.25;
+  --uom-font-size-xl-mobile: #{rem(28px)};
+  --uom-font-size-xl-desktop: #{rem(32px)};
+  --uom-line-height-xl-mobile: 1.25;
+  --uom-line-height-xl-desktop: 1.25;
 
-  --nsw-font-size-xxl-mobile: #{rem(36px)};
-  --nsw-font-size-xxl-desktop: #{rem(48px)};
-  --nsw-line-height-xxl-mobile: 1.25;
-  --nsw-line-height-xxl-desktop: 1.25;
+  --uom-font-size-xxl-mobile: #{rem(36px)};
+  --uom-font-size-xxl-desktop: #{rem(48px)};
+  --uom-line-height-xxl-mobile: 1.25;
+  --uom-line-height-xxl-desktop: 1.25;
 
   /* Borders */
-  --nsw-border-width: 1px;
-  --nsw-border-style: solid;
-  --nsw-border-color: var(--nsw-brand-accent);
-  --nsw-border-radius: 0;
+  --uom-border-width: 1px;
+  --uom-border-style: solid;
+  --uom-border-color: var(--uom-brand-accent);
+  --uom-border-radius: 0;
 
   /* Shadows */
-  --nsw-box-shadow: 0 #{rem(4px)} #{rem(12px)} 0 rgba(var(--nsw-black-rgb), 0.15);
+  --uom-box-shadow: 0 #{rem(4px)} #{rem(12px)} 0 rgba(var(--uom-black-rgb), 0.15);
 
   /* Maximum width of container */
-  --nsw-container-width: #{rem(1200px)};
+  --uom-container-width: #{rem(1200px)};
 }

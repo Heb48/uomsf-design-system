@@ -1,16 +1,16 @@
 {{#if-equals type "link"}}
   {{#each list}}
-<a href="{{url}}" class="nsw-tag">{{text}}</a>
+<a href="{{url}}" class="uom-tag">{{text}}</a>
   {{/each}}
 {{/if-equals}}
 {{#if-equals type "text"}}
   {{#each list}}
-<span class="nsw-tag">{{text}}</span>
+<span class="uom-tag">{{text}}</span>
   {{/each}}
 {{/if-equals}}
 {{#if-equals type "checkbox"}}
   {{#each list}}
-<div class="nsw-tag nsw-tag--checkbox">
+<div class="uom-tag uom-tag--checkbox">
   <input type="checkbox" id="{{id}}" name="tag-input"{{#if checked}} checked{{/if}}>
   <label for="{{id}}">{{text}}</label>
 </div>

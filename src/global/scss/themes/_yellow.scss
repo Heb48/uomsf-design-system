@@ -41,15 +41,15 @@ $yellow-colors-rgb: map-loop($yellow-colors, to-rgb, '$value') !default;
 
 .yellow {
   @each $color, $value in $yellow-colors {
-    --nsw-#{$color}: #{$value};
+    --uom-#{$color}: #{$value};
   }
 
   @each $color, $value in $yellow-colors-rgb {
-    --nsw-#{$color}-rgb: #{$value};
+    --uom-#{$color}-rgb: #{$value};
   }
 }
 
 .yellow-accent {
-  --nsw-brand-accent: #{$yellow-02};
-  --nsw-brand-accent-rgb: #{to-rgb($yellow-02)};
+  --uom-brand-accent: #{$yellow-02};
+  --uom-brand-accent-rgb: #{to-rgb($yellow-02)};
 }
