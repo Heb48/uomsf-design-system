@@ -258,7 +258,7 @@ const searchValues = [
     url: 'https://digitalnsw.github.io/nsw-design-system/templates/index.html',
   },
   {
-    label: 'What is Design System',
+    label: 'What is a Design System',
     template: 'result',
     keywords: 'Benefits, Build faster and at scale, brand and accessibility compliance, Consistent code and design language, Quality across all layers, Support, Questions, Report issues, Issues tracker, Report a bug',
     url: 'https://digitalnsw.github.io/nsw-design-system/docs/content/about/what-is-design-system.html',
