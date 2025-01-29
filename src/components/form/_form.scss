@@ -59,8 +59,10 @@ $uom-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
 
   &__label {
     @include font-size('sm');
+    color: var(--uom-brand-dark);
     font-weight: var(--uom-font-bold);
     display: block;
+    margin-bottom: rem(5px);
 
     &--small {
       font-weight: var(--uom-font-normal);
@@ -74,7 +76,7 @@ $uom-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
     + textarea,
     + select,
     + .uom-form__input-group {
-      margin-top: rem(4px);
+      margin-top: rem(2px);
     }
   }
 
@@ -87,11 +89,12 @@ $uom-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
 
   &__input {
     @include font-size('sm');
-    padding: rem(11px) rem(16px);
+    padding: rem(13px) rem(16px) rem(10px);
     border-radius: var(--uom-border-radius);
     background-color: var(--uom-white);
     color: var(--uom-text-dark);
-    border: 1px solid var(--uom-grey-01);
+    border: 1px solid var(--uom-brand-dark);
+    font-family: var(--uom-font-family);
     vertical-align: middle;
     appearance: none;
     -webkit-appearance: none; /* stylelint-disable-line property-no-vendor-prefix */
@@ -121,7 +124,11 @@ $uom-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
 
   &__input {
     &:hover {
-      background-image: linear-gradient(var(--uom-hover), var(--uom-hover));
+      background-image: linear-gradient(var(--uom-primary-hover), var(--uom-primary-hover));
+
+      &:focus {
+        background-image: linear-gradient(var(--uom-white), var(--uom-white));
+      }
     }
 
     &:disabled {

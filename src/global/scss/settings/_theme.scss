@@ -3,6 +3,7 @@
 // Theme Colours
 $brand-dark: $traditional-heritage-blue-100 !default;
 $brand-background: $traditional-heritage-blue-dark !default;
+$brand-focus: $traditional-heritage-blue-dark !default;
 $primary: $laughing-kookaburra-light-100 !default;
 $primary-hover: $laughing-kookaburra-light-25 !default;
 $secondary: $mt-william-greenstone-light-100 !default;
@@ -27,6 +28,7 @@ $error-bg: #f7e7eb !default;
 
 $theme-colors: (
   'brand-dark': $brand-dark,
+  'brand-focus': $brand-focus,
   'primary': $primary,
   'primary-hover': $primary-hover,
   'secondary': $secondary,

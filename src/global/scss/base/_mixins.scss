@@ -18,14 +18,13 @@
 }
 
 // Default focus state
-@mixin uom-focus($offset: true, $color: var(--uom-focus)) {
+@mixin uom-focus($offset: false, $color: var(--uom-brand-focus)) {
   @if type-of($offset) != bool {
     @error 'uom-DS uom-focus mixin allows a boolean for $offset: You have used a type of "#{type-of($offset)}" and a value of "#{$offset}"';
   }
 
-  outline: solid 3px $color;
+  outline: solid 1px $color;
   outline-offset: 0;
-
   @if $offset == true {
     outline-offset: 3px;
   }
