@@ -20,7 +20,7 @@ $uom-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
   &__helper {
     @include font-size('xs');
     display: block;
-    margin-bottom: rem(4px);
+    margin-bottom: rem(8px);
 
     &--error,
     &--valid {
@@ -62,7 +62,6 @@ $uom-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
     color: var(--uom-brand-dark);
     font-weight: var(--uom-font-bold);
     display: block;
-    margin-bottom: rem(5px);
 
     &--small {
       font-weight: var(--uom-font-normal);
@@ -75,8 +74,9 @@ $uom-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
     + input,
     + textarea,
     + select,
+    + div,
     + .uom-form__input-group {
-      margin-top: rem(2px);
+      margin-top: rem(8px);
     }
   }
 
@@ -95,6 +95,7 @@ $uom-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
     color: var(--uom-text-dark);
     border: 1px solid var(--uom-brand-dark);
     font-family: var(--uom-font-family);
+    // margin-top: rem(8px);
     vertical-align: middle;
     appearance: none;
     -webkit-appearance: none; /* stylelint-disable-line property-no-vendor-prefix */
@@ -185,7 +186,7 @@ $uom-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
 
     .uom-material-icons {
       display: block;
-      font-size: rem(map-get($uom-icon-sizes, 36));
+      font-size: rem(map-get($uom-icon-sizes, 24));
       position: static;
 
       .uom-section--invert & {
@@ -255,7 +256,7 @@ $uom-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
     padding: 0;
     margin: 0;
     position: absolute;
-    top: rem(48px);
+    top: rem(52px);
     right: 0;
     left: 0;
     overflow: hidden;
@@ -281,8 +282,8 @@ $uom-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
       }
 
       &:focus {
-        outline-width: 3px;
-        outline-offset: -3px;
+        outline-width: 2px;
+        outline-offset: -2px;
       }
 
       span {

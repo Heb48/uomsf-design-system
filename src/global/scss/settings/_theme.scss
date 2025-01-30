@@ -148,8 +148,8 @@ $state-colors-rgb: map-loop($state-colors, to-rgb, '$value') !default;
   --uom-line-height-xxs-mobile: 1.5;
   --uom-line-height-xxs-desktop: 1.5;
 
-  --uom-font-size-xs-mobile: #{rem(14px)};
-  --uom-font-size-xs-desktop: #{rem(14px)};
+  --uom-font-size-xs-mobile: #{rem(15px)};
+  --uom-font-size-xs-desktop: #{rem(15px)};
   --uom-line-height-xs-mobile: 1.35;
   --uom-line-height-xs-desktop: 1.35;
 
