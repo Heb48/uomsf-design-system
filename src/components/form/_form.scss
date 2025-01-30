@@ -167,12 +167,20 @@ $uom-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
       border-bottom-left-radius: 0;
       border-width: 1px;
       white-space: nowrap;
-      border-color: var(--uom-grey-01);
+      border-color: var(--uom-brand-background);
+
+      &--dark {
+        background-color: var(--uom-primary);
+      }
 
       .uom-section--invert & {
         color: var(--uom-text-light);
         background-color: var(--uom-brand-dark);
         border-color: var(--uom-white);
+      }
+
+      &:hover {
+        background-color: var(--uom-primary-hover);
       }
 
       &:focus {
@@ -186,7 +194,7 @@ $uom-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
 
     .uom-material-icons {
       display: block;
-      font-size: rem(map-get($uom-icon-sizes, 24));
+      font-size: rem(map-get($uom-icon-sizes, 30));
       position: static;
 
       .uom-section--invert & {
@@ -199,11 +207,16 @@ $uom-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
     }
 
     &--icon {
-      .uom-button {
+      .uom-button, {
         padding: 0;
-        min-width: rem(60px);
-        border-color: var(--uom-grey-01);
-        border-left-width: 0;
+        min-width: rem(52px);
+        background-color: var(--uom-primary);
+        border-color: var(--uom-brand-dark);
+        border-left-width: 1px;
+
+        &:hover {
+          background-color: var(--uom-primary-hover);
+        }
 
         .uom-material-icons:first-child {
           margin-right: 0;
@@ -224,6 +237,9 @@ $uom-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
       }
 
       .uom-button--white {
+        background-color: var(--uom-white);
+        border-left: 0;
+
         .uom-material-icons {
           color: var(--uom-brand-dark);
 
