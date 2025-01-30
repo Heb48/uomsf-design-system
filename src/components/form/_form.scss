@@ -250,10 +250,11 @@ $uom-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
     border-radius: var(--uom-border-radius);
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    border: 1px solid var(--uom-grey-04);
     background-color: var(--uom-white);
-    box-shadow: 0 4px 12px 0 rgba(var(--uom-black-rgb), 0.15);
+    box-shadow: 0 0 24px 0 rgba(var(--uom-black-rgb), 0.08);
     list-style-type: none;
-    padding: 0;
+    padding: rem(4px) 0;
     margin: 0;
     position: absolute;
     top: rem(52px);
@@ -268,17 +269,23 @@ $uom-form-tick: '<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000
     li {
       padding: 0;
       margin: 0;
+      border-bottom: 1px solid var(--uom-grey-04);
+
+      &:last-child {
+        border-bottom: 0;
+      }
     }
 
     a {
       display: block;
-      padding: rem(10px);
+      padding: rem(10px) rem(16px);
       color: var(--uom-text-dark);
       font-weight: var(--uom-font-normal);
 
       &:hover {
         @include uom-hover;
         outline-width: 0;
+        background-color: var(--uom-secondary-hover);
       }
 
       &:focus {
